@@ -6,6 +6,7 @@ import shutil
 SRC_DIR = "src"
 DATA_FILE = os.path.join(SRC_DIR, "data", "logos.json")
 BRAND_MANUALS_FILE = os.path.join(SRC_DIR, "data", "brand_manuals.json")
+FONTS_FILE = os.path.join(SRC_DIR, "data", "fonts.json")
 TEMPLATES_DIR = os.path.join(SRC_DIR, "templates")
 PUBLIC_DIR = "public"
 DIST_DIR = "dist"
@@ -42,7 +43,9 @@ def clean_and_setup_dist():
     shutil.copy2(DATA_FILE, os.path.join(DIST_DIR, "logos.json"))
     if os.path.exists(BRAND_MANUALS_FILE):
         shutil.copy2(BRAND_MANUALS_FILE, os.path.join(DIST_DIR, "brand_manuals.json"))
-    print("✓ Copied logos.json and brand_manuals.json databases to dist/ for search availability")
+    if os.path.exists(FONTS_FILE):
+        shutil.copy2(FONTS_FILE, os.path.join(DIST_DIR, "fonts.json"))
+    print("✓ Copied logos.json, brand_manuals.json, and fonts.json databases to dist/ for search availability")
 
 def load_template(name):
     path = os.path.join(TEMPLATES_DIR, name)
@@ -106,6 +109,49 @@ def render_guideline_card(gm):
     </div>
     """
 
+FONT_CATEGORY_COLORS = {
+    "نسخ": "#556b2f", # olive green
+    "رقعة": "#4a5568", # slate
+    "ثلث": "#800020", # burgundy
+    "ديوان": "#1b3a5b", # navy
+    "كوفي": "#b8860b", # dark goldenrod
+    "عصري": "#0d9488", # teal
+    "أنيق": "#059669", # emerald
+    "زخرفية": "#be185d", # pink
+    "حر": "#b45309", # amber
+    "يدوي": "#4f46e5", # indigo
+}
+
+def render_font_card(f):
+    stripe_color = FONT_CATEGORY_COLORS.get(f["category"], "#d97706") # gold fallback
+    return f"""
+    <div class="logo-card" data-category-name="{f['category']}" style="position: relative; overflow: hidden; border-top: 4px solid {stripe_color}; display: flex; flex-direction: column;">
+      <div class="card-preview" style="padding: 2.2rem 1.5rem; min-height: 140px; display: flex; align-items: center; justify-content: center; background-color: var(--bg-primary); border-bottom: 1px solid var(--border-color); overflow: hidden;">
+        <p style="font-family: 'preview-font-{f['id']}', sans-serif; font-size: 1.7rem; color: var(--text-primary); text-align: center; line-height: 1.5; direction: rtl; width: 100%;">
+          الخط العربي... أصالة تنبض بالجمال.
+        </p>
+      </div>
+      <div class="logo-card-info" style="padding: 1.25rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div>
+          <span class="logo-card-cat" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-green); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700; display: inline-block;">
+            🖋️ {f['category']}
+          </span>
+          <h3 class="logo-card-title" style="margin-top: 0.5rem; font-size: 1rem; font-weight: 700; color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+            {f['name']}
+          </h3>
+        </div>
+        <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color);">
+          <a href="{f['font_url']}" download="{f['slug']}.ttf" class="btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.25rem; text-decoration: none; cursor: pointer; background: linear-gradient(135deg, var(--accent-green), var(--accent-green-hover)); color: white; font-weight: 700;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            تحميل الخط
+          </a>
+        </div>
+      </div>
+    </div>
+    """
+
 def compile_page(template_content, base_template, context):
     page = base_template
     # Replace content first
@@ -117,7 +163,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -257,6 +303,62 @@ def build_site():
     with open(os.path.join(DIST_DIR, "guidelines", "index.html"), "w", encoding="utf-8") as f:
         f.write(guidelines_rendered)
     print("✓ Guidelines Page built.")
+
+    # 4.6. Build Fonts Page (fonts.html)
+    print("Building Fonts Page...")
+    fonts_content = load_template("fonts.html")
+    
+    # Load fonts database
+    fonts_db = []
+    if os.path.exists(FONTS_FILE):
+        with open(FONTS_FILE, "r", encoding="utf-8") as f:
+            fonts_db = json.load(f)
+            
+    # Sort fonts by name
+    fonts_db_sorted = sorted(fonts_db, key=lambda x: x.get("name", ""))
+    
+    # Render categories chips dynamically
+    categories_present = sorted(list(set([f["category"] for f in fonts_db_sorted])))
+    category_chips_html = "".join([
+        f'<button class="filter-chip" data-category="{cat}">{cat}</button>'
+        for cat in categories_present
+    ])
+    fonts_content = fonts_content.replace("{{ category_chips }}", category_chips_html)
+    
+    # Render @font-face style block declarations
+    font_faces_css = []
+    for f in fonts_db_sorted:
+        css = f"""
+        @font-face {{
+          font-family: "preview-font-{f['id']}";
+          src: url("{f['font_url']}") format("truetype");
+          font-display: swap;
+        }}
+        """
+        font_faces_css.append(css)
+    font_faces_css_str = "\n".join(font_faces_css)
+    fonts_content = fonts_content.replace("{{ font_faces_css }}", font_faces_css_str)
+    
+    # Render all font cards
+    all_fonts_cards_html = "".join([render_font_card(f) for f in fonts_db_sorted])
+    fonts_content = fonts_content.replace("{{ all_fonts_cards }}", all_fonts_cards_html)
+    
+    fonts_context = {
+        "title": "مكتبة الخطوط العربية المجانية - شعارات السعودية",
+        "meta_description": "تصفح وتحميل الخطوط العربية الاحترافية والمميزة لتصاميم الهوية البصرية والإعلانات بدقة عالية وتنزيل مباشر مجاناً.",
+        "canonical": "https://saudi-logos.vercel.app/fonts",
+        "og_title": "مكتبة الخطوط العربية الفاخرة والمميزة مجاناً",
+        "og_description": "حمّل مجموعة رائعة من الخطوط العربية بمختلف التصنيفات (نسخ، كوفي، ثلث، ديواني، عصري) لمشاريعك التصميمية.",
+        "active_fonts": "active"
+    }
+    fonts_rendered = compile_page(fonts_content, base_template, fonts_context)
+    with open(os.path.join(DIST_DIR, "fonts.html"), "w", encoding="utf-8") as f:
+        f.write(fonts_rendered)
+        
+    os.makedirs(os.path.join(DIST_DIR, "fonts"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "fonts", "index.html"), "w", encoding="utf-8") as f:
+        f.write(fonts_rendered)
+    print("✓ Fonts Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")

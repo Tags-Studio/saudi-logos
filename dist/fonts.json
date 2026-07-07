@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 7799,
+    "name": "Arabic UI Display Semibold",
+    "slug": "arabic-ui-display-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-semibold.ttf"
+  },
+  {
+    "id": 7796,
+    "name": "AlHurraTxtreg",
+    "slug": "alhurratxtreg",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alhurratxtreg-cv.ttf"
+  },
+  {
+    "id": 7798,
+    "name": "Titr",
+    "slug": "titr-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/titr-bold-1.ttf"
+  },
+  {
+    "id": 7792,
+    "name": "Mitra",
+    "slug": "mitra",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mitra-bold.ttf"
+  },
+  {
+    "id": 7795,
+    "name": "IBM Plex Arabic SemiBold",
+    "slug": "ibm-plex-arabic-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-semibold.ttf"
+  },
+  {
+    "id": 7791,
+    "name": "Hacen Liner Print-out Light",
+    "slug": "hacen-liner-print-out-light",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-print-out-light.ttf"
+  },
+  {
+    "id": 7794,
+    "name": "Persian-Titr DF ** 1",
+    "slug": "persian-titr-df-1",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titr-df-1-bold.ttf"
+  },
+  {
+    "id": 7801,
+    "name": "Siavash Mazar",
+    "slug": "siavash-mazar",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/siavash-mazar.ttf"
+  },
+  {
+    "id": 7800,
+    "name": "Bahij Tanseek Pro",
+    "slug": "bahij-tanseek-pro-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bahij-tanseek-pro-bold.ttf"
+  },
+  {
+    "id": 7789,
+    "name": "Hacen Liner Broadcast HD",
+    "slug": "hacen-liner-broadcast-hd",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-broadcast-hd.ttf"
+  },
+  {
+    "id": 7787,
+    "name": "ar_kifk_photoshop",
+    "slug": "ar_kifk_photoshop",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ar-kifk-photoshop-hollow-1.ttf"
+  },
+  {
+    "id": 7785,
+    "name": "Mitra Bold Mazar",
+    "slug": "mitra-bold-mazar",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mitra-bold-mazar.ttf"
+  },
+  {
+    "id": 7790,
+    "name": "IBM Plex Arabic Text",
+    "slug": "ibm-plex-arabic-text",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-text.otf"
+  },
+  {
+    "id": 7788,
+    "name": "BBCNassim-EX Regular",
+    "slug": "bbcnassim-ex-regular",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bbcnassim-ex-regular.ttf"
+  },
+  {
+    "id": 7786,
+    "name": "PFNuyorkArabic-Light",
+    "slug": "pfnuyorkarabic-light",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/pfnuyorkarabic-light.ttf"
+  },
+  {
+    "id": 7793,
+    "name": "Mitra",
+    "slug": "mitra-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mitra-normal.ttf"
+  },
+  {
+    "id": 7783,
+    "name": "BBCNassim-EX Bold",
+    "slug": "bbcnassim-ex-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bbcnassim-ex-bold.ttf"
+  },
+  {
+    "id": 7782,
+    "name": "ZahraRoosta",
+    "slug": "zahraroosta",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/zahraroosta.ttf"
+  },
+  {
+    "id": 7797,
+    "name": "Hacen Tehran",
+    "slug": "hacen-tehran",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-tehran.ttf"
+  },
+  {
+    "id": 7776,
+    "name": "IRANSharpMobile",
+    "slug": "iransharpmobile",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/iransharpmobile.ttf"
+  },
+  {
+    "id": 7784,
+    "name": "Arabic UI Text Heavy",
+    "slug": "arabic-ui-text-heavy-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-heavy-1.ttf"
+  },
+  {
+    "id": 7781,
+    "name": "AlHurraTxtBold",
+    "slug": "alhurratxtbold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alhurratxtbold.ttf"
+  },
+  {
+    "id": 7775,
+    "name": "Arabic UI Text Bold",
+    "slug": "arabic-ui-text-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-bold.ttf"
+  },
+  {
+    "id": 7780,
+    "name": "B Zar",
+    "slug": "b-zar-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-zar-bold.ttf"
+  },
+  {
+    "id": 7777,
+    "name": "Watad",
+    "slug": "watad-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/watad-regular.otf"
+  },
+  {
+    "id": 7772,
+    "name": "Ordibehesht shablon",
+    "slug": "ordibehesht-shablon-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ordibehesht-shablon-bold-1.ttf"
+  },
+  {
+    "id": 7779,
+    "name": "Makkah",
+    "slug": "makkah-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/makkah-thin.ttf"
+  },
+  {
+    "id": 7770,
+    "name": "ArabicUIText",
+    "slug": "arabicuitext",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-semibold.ttf"
+  },
+  {
+    "id": 7778,
+    "name": "BBCNassim",
+    "slug": "bbcnassim-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bbcnassim-bold.ttf"
+  },
+  {
+    "id": 7771,
+    "name": "PFNuyorkArabic-Black",
+    "slug": "pfnuyorkarabic-black",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/pfnuyorkarabic-black.ttf"
+  },
+  {
+    "id": 7768,
+    "name": "AlHurraTxtreg cv",
+    "slug": "alhurratxtreg-cv",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alhurratxtreg-cv.ttf"
+  },
+  {
+    "id": 7765,
+    "name": "ar_kifk_photoshop_bold",
+    "slug": "ar_kifk_photoshop_bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ar-kifk-photoshop-bold.ttf"
+  },
+  {
+    "id": 7767,
+    "name": "Bahij Tanseek Pro",
+    "slug": "bahij-tanseek-pro",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bahij-tanseek-pro-bold.ttf"
+  },
+  {
+    "id": 7773,
+    "name": "persian-titraj-4",
+    "slug": "persian-titraj-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titraj-4-bold.ttf"
+  },
+  {
+    "id": 7764,
+    "name": "persian-titraj 1",
+    "slug": "persian-titraj-1",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titraj-4-bold.ttf"
+  },
+  {
+    "id": 7766,
+    "name": "IBM Plex Arabic",
+    "slug": "ibm-plex-arabic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-extralight-1.otf"
+  },
+  {
+    "id": 7774,
+    "name": "ArabicUIDisplay",
+    "slug": "arabicuidisplay",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-ultralight-1.ttf"
+  },
+  {
+    "id": 7762,
+    "name": "persian-titraj 2",
+    "slug": "persian-titraj-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titraj-4-bold.ttf"
+  },
+  {
+    "id": 7769,
+    "name": "Hacen Lebanon",
+    "slug": "hacen-lebanon-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-lebanon-1.ttf"
+  },
+  {
+    "id": 7763,
+    "name": "Arabic UI Display Black",
+    "slug": "arabic-ui-display-black-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-black-1.ttf"
+  },
+  {
+    "id": 7759,
+    "name": "IBM Plex Arabic Light",
+    "slug": "ibm-plex-arabic-light",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-light.otf"
+  },
+  {
+    "id": 7757,
+    "name": "Aljazeera",
+    "slug": "aljazeera",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/aljazeera.ttf"
+  },
+  {
+    "id": 7754,
+    "name": "B Titr",
+    "slug": "b-titr-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-titr-bold-1.ttf"
+  },
+  {
+    "id": 7755,
+    "name": "Sp_Mitra",
+    "slug": "sp_mitra-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sp-mitra-bold.ttf"
+  },
+  {
+    "id": 7761,
+    "name": "Hacen Liner XL",
+    "slug": "hacen-liner-xl",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-xl.ttf"
+  },
+  {
+    "id": 7756,
+    "name": "Hacen Liner Printout Lt",
+    "slug": "hacen-liner-printout-lt",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-printout-lt.ttf"
+  },
+  {
+    "id": 7751,
+    "name": "Titr Mazar",
+    "slug": "titr-mazar-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/titr-mazar-1.ttf"
+  },
+  {
+    "id": 7758,
+    "name": "Arabic UI Display Light",
+    "slug": "arabic-ui-display-light",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-light.ttf"
+  },
+  {
+    "id": 7760,
+    "name": "Peshang Des 1",
+    "slug": "peshang-des-1",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/peshang-des-1-bold.ttf"
+  },
+  {
+    "id": 7750,
+    "name": "B Mitra",
+    "slug": "b-mitra-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-mitra.ttf"
+  },
+  {
+    "id": 7746,
+    "name": "IBM Plex Arabic",
+    "slug": "ibm-plex-arabic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-extralight-1.otf"
+  },
+  {
+    "id": 7747,
+    "name": "persian-titraj 3",
+    "slug": "persian-titraj-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titraj-4-bold.ttf"
+  },
+  {
+    "id": 7743,
+    "name": "BBCNassim",
+    "slug": "bbcnassim",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bbcnassim.ttf"
+  },
+  {
+    "id": 7752,
+    "name": "ar_kifk_photoshop_hollow",
+    "slug": "ar_kifk_photoshop_hollow-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ar-kifk-photoshop-hollow-1.ttf"
+  },
+  {
+    "id": 7753,
+    "name": "Arabic UI Display Thin",
+    "slug": "arabic-ui-display-thin-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-thin-1.ttf"
+  },
+  {
+    "id": 7748,
+    "name": "IRANBlack",
+    "slug": "iranblack-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/iranblack-1.ttf"
+  },
+  {
+    "id": 7742,
+    "name": "B Roya",
+    "slug": "b-roya-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-roya-bold.ttf"
+  },
+  {
+    "id": 7745,
+    "name": "AlWatanHeadlines-Bold",
+    "slug": "alwatanheadlines-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alwatanheadlines-bold.ttf"
+  },
+  {
+    "id": 7739,
+    "name": "IBM Plex Arabic Thin",
+    "slug": "ibm-plex-arabic-thin-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-thin-1.otf"
+  },
+  {
+    "id": 7749,
+    "name": "Arabic UI Display Ultralight",
+    "slug": "arabic-ui-display-ultralight-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-ultralight-1.ttf"
+  },
+  {
+    "id": 7740,
+    "name": "Hacen Liner Print-out",
+    "slug": "hacen-liner-print-out",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-print-out-light.ttf"
+  },
+  {
+    "id": 7738,
+    "name": "B Mitra",
+    "slug": "b-mitra",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-mitra-bold.ttf"
+  },
+  {
+    "id": 7737,
+    "name": "Arabic UI Text Semibold",
+    "slug": "arabic-ui-text-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-semibold.ttf"
+  },
+  {
+    "id": 7734,
+    "name": "Nizar BBC Kurdish",
+    "slug": "nizar-bbc-kurdish-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nizar-bbc-kurdish-bold.ttf"
+  },
+  {
+    "id": 7735,
+    "name": "IBM Plex Arabic ExtraLight",
+    "slug": "ibm-plex-arabic-extralight-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-extralight-1.otf"
+  },
+  {
+    "id": 7733,
+    "name": "Zar Mazar",
+    "slug": "zar-mazar",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/zar-mazar.ttf"
+  },
+  {
+    "id": 7732,
+    "name": "IRANSharp",
+    "slug": "iransharp",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/iransharp.ttf"
+  },
+  {
+    "id": 7744,
+    "name": "Hacen Liner Printout",
+    "slug": "hacen-liner-printout",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-print-out-light.ttf"
+  },
+  {
+    "id": 7731,
+    "name": "Arabic UI Display Bold",
+    "slug": "arabic-ui-display-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-bold.ttf"
+  },
+  {
+    "id": 7741,
+    "name": "Arabic UI Display Medium",
+    "slug": "arabic-ui-display-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-medium.ttf"
+  },
+  {
+    "id": 7727,
+    "name": "MasmakBHD",
+    "slug": "masmakbhd-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/masmakbhd-bold.otf"
+  },
+  {
+    "id": 7725,
+    "name": "Arabic UI Text Medium",
+    "slug": "arabic-ui-text-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-medium.ttf"
+  },
+  {
+    "id": 7726,
+    "name": "May",
+    "slug": "may-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/may-bold-1.ttf"
+  },
+  {
+    "id": 7729,
+    "name": "Arabic UI Display Heavy",
+    "slug": "arabic-ui-display-heavy",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-display-heavy.ttf"
+  },
+  {
+    "id": 7728,
+    "name": "AlHurraTxtlight",
+    "slug": "alhurratxtlight",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alhurratxtlight.ttf"
+  },
+  {
+    "id": 7736,
+    "name": "Arabic UI Text Light",
+    "slug": "arabic-ui-text-light",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/arabic-ui-text-light.ttf"
+  },
+  {
+    "id": 7724,
+    "name": "B Roya",
+    "slug": "b-roya",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-roya.ttf"
+  },
+  {
+    "id": 7722,
+    "name": "Hacen Liner Screen Bd",
+    "slug": "hacen-liner-screen-bd",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-screen-bd.ttf"
+  },
+  {
+    "id": 7717,
+    "name": "Hacen Liner Broadcast",
+    "slug": "hacen-liner-broadcast",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-broadcast-live.ttf"
+  },
+  {
+    "id": 7730,
+    "name": "Nizar BBC Kurdish",
+    "slug": "nizar-bbc-kurdish",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nizar-bbc-kurdish-bold.ttf"
+  },
+  {
+    "id": 7716,
+    "name": "Shorooq_N1",
+    "slug": "shorooq_n1",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/shorooq-n1.ttf"
+  },
+  {
+    "id": 7719,
+    "name": "Hacen Liner Screen Wd",
+    "slug": "hacen-liner-screen-wd",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-screen-wd.ttf"
+  },
+  {
+    "id": 7721,
+    "name": "Makkah",
+    "slug": "makkah",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/makkah.ttf"
+  },
+  {
+    "id": 7723,
+    "name": "Rasheeq-Bold",
+    "slug": "rasheeq-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/rasheeq-bold.ttf"
+  },
+  {
+    "id": 7715,
+    "name": "IBM Plex Arabic Medium",
+    "slug": "ibm-plex-arabic-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/ibm-plex-arabic-medium.otf"
+  },
+  {
+    "id": 7711,
+    "name": "Sp_Mitra",
+    "slug": "sp_mitra",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sp-mitra-normal.ttf"
+  },
+  {
+    "id": 7708,
+    "name": "Zar",
+    "slug": "zar-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/siavash-mazar.ttf"
+  },
+  {
+    "id": 7714,
+    "name": "PFNuyorkArabic-Bold",
+    "slug": "pfnuyorkarabic-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/pfnuyorkarabic-bold.ttf"
+  },
+  {
+    "id": 7713,
+    "name": "Hacen Liner Screen",
+    "slug": "hacen-liner-screen",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-screen-st.ttf"
+  },
+  {
+    "id": 7710,
+    "name": "Hacen Liner Broadcast Live",
+    "slug": "hacen-liner-broadcast-live",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-broadcast-live.ttf"
+  },
+  {
+    "id": 7712,
+    "name": "AM-ZAIN ORIGINAL",
+    "slug": "am-zain-original",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/am-zain-original.ttf"
+  },
+  {
+    "id": 7720,
+    "name": "B Titr TG E",
+    "slug": "b-titr-tg-e-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/b-titr-tg-e-1.ttf"
+  },
+  {
+    "id": 7709,
+    "name": "Mj_Titr DF",
+    "slug": "mj_titr-df-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mj-titr-df-1.ttf"
+  },
+  {
+    "id": 7707,
+    "name": "A_Nefel_Botan",
+    "slug": "a_nefel_botan",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/a-nefel-botan.ttf"
+  },
+  {
+    "id": 7704,
+    "name": "persian-titraj-5",
+    "slug": "persian-titraj-5-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/persian-titraj-4-bold.ttf"
+  },
+  {
+    "id": 7705,
+    "name": "PFNuyorkArabic-ExtraBold",
+    "slug": "pfnuyorkarabic-extrabold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/pfnuyorkarabic-extrabold.ttf"
+  },
+  {
+    "id": 7702,
+    "name": "The Year of Handicrafts SemBd",
+    "slug": "the-year-of-handicrafts-sembd",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/the-year-of-handicrafts-semibold.otf"
+  },
+  {
+    "id": 7718,
+    "name": "Hacen Liner Screen St",
+    "slug": "hacen-liner-screen-st",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-screen-st.ttf"
+  },
+  {
+    "id": 7706,
+    "name": "PFNuyorkArabic-Regular",
+    "slug": "pfnuyorkarabic-regular",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/pfnuyorkarabic-regular.ttf"
+  },
+  {
+    "id": 7703,
+    "name": "Hacen Liner XXL",
+    "slug": "hacen-liner-xxl",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/hacen-liner-xxl.ttf"
+  },
+  {
+    "id": 7696,
+    "name": "Nian Thin",
+    "slug": "nian-thin-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-thin-1.ttf"
+  },
+  {
+    "id": 7701,
+    "name": "The Year of Handicrafts",
+    "slug": "the-year-of-handicrafts-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/the-year-of-handicrafts-semibold.otf"
+  },
+  {
+    "id": 7694,
+    "name": "Nian Light",
+    "slug": "nian-light-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-light-1.ttf"
+  },
+  {
+    "id": 7699,
+    "name": "The Year of Handicrafts",
+    "slug": "the-year-of-handicrafts",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/the-year-of-handicrafts-semibold.otf"
+  },
+  {
+    "id": 7692,
+    "name": "Nian ExtraLight",
+    "slug": "nian-extralight-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-extralight-1.ttf"
+  },
+  {
+    "id": 7691,
+    "name": "Nian Bold",
+    "slug": "nian-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-bold.ttf"
+  },
+  {
+    "id": 7690,
+    "name": "Nian-Black",
+    "slug": "nian-black-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-black-1.ttf"
+  },
+  {
+    "id": 7698,
+    "name": "The Year of Handicrafts Black",
+    "slug": "the-year-of-handicrafts-black-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/the-year-of-handicrafts-black-1.otf"
+  },
+  {
+    "id": 7695,
+    "name": "Nian SemiBold",
+    "slug": "nian-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-semibold.ttf"
+  },
+  {
+    "id": 7689,
+    "name": "MasmakBHD",
+    "slug": "masmakbhd",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/masmakbhd.otf"
+  },
+  {
+    "id": 7686,
+    "name": "AlarabyTV",
+    "slug": "alarabytv",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alarabytv-bold.ttf"
+  },
+  {
+    "id": 7688,
+    "name": "AlarabyTV",
+    "slug": "alarabytv-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alarabytv-regular.ttf"
+  },
+  {
+    "id": 7693,
+    "name": "Nian ExtraBold",
+    "slug": "nian-extrabold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian-extrabold.ttf"
+  },
+  {
+    "id": 7700,
+    "name": "The Year of Handicrafts Med",
+    "slug": "the-year-of-handicrafts-med",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/the-year-of-handicrafts-medium.otf"
+  },
+  {
+    "id": 7687,
+    "name": "AlarabyTV Medium",
+    "slug": "alarabytv-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/alarabytv-medium.ttf"
+  },
+  {
+    "id": 7683,
+    "name": "F37 Blanka Arabic Trial Thin",
+    "slug": "f37-blanka-arabic-trial-thin-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-thin-italic-1.otf"
+  },
+  {
+    "id": 7684,
+    "name": "F37 Blanka Arabic Trial Thin",
+    "slug": "f37-blanka-arabic-trial-thin-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-thin-italic-1.otf"
+  },
+  {
+    "id": 7697,
+    "name": "Nian",
+    "slug": "nian",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/nian.ttf"
+  },
+  {
+    "id": 7682,
+    "name": "F37 Blanka Arabic Trial SmBold",
+    "slug": "f37-blanka-arabic-trial-smbold-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-semibold.otf"
+  },
+  {
+    "id": 7678,
+    "name": "F37 Blanka Arabic Trial Medium",
+    "slug": "f37-blanka-arabic-trial-medium-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-medium-italic.otf"
+  },
+  {
+    "id": 7681,
+    "name": "F37 Blanka Arabic Trial SmBold",
+    "slug": "f37-blanka-arabic-trial-smbold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-semibold.otf"
+  },
+  {
+    "id": 7685,
+    "name": "F37 Blanka Arabic Trial ExBold",
+    "slug": "f37-blanka-arabic-trial-exbold-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extrabold-italic-1.otf"
+  },
+  {
+    "id": 7679,
+    "name": "F37 Blanka Arabic Trial",
+    "slug": "f37-blanka-arabic-trial-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extralight-italic-1.otf"
+  },
+  {
+    "id": 7676,
+    "name": "F37 Blanka Arabic Trial Light",
+    "slug": "f37-blanka-arabic-trial-light-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-light-italic-1.otf"
+  },
+  {
+    "id": 7673,
+    "name": "F37 Blanka Arabic Trial ExLight",
+    "slug": "f37-blanka-arabic-trial-exlight-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extrabold-italic-1.otf"
+  },
+  {
+    "id": 7672,
+    "name": "F37 Blanka Arabic Trial ExBold",
+    "slug": "f37-blanka-arabic-trial-exbold-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extrabold-italic-1.otf"
+  },
+  {
+    "id": 7675,
+    "name": "F37 Blanka Arabic Trial Light",
+    "slug": "f37-blanka-arabic-trial-light-3",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-light-italic-1.otf"
+  },
+  {
+    "id": 7677,
+    "name": "F37 Blanka Arabic Trial Medium",
+    "slug": "f37-blanka-arabic-trial-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-medium-italic.otf"
+  },
+  {
+    "id": 7671,
+    "name": "F37 Blanka Arabic Trial",
+    "slug": "f37-blanka-arabic-trial-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extralight-italic-1.otf"
+  },
+  {
+    "id": 7674,
+    "name": "F37 Blanka Arabic Trial ExLight",
+    "slug": "f37-blanka-arabic-trial-exlight-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extrabold-italic-1.otf"
+  },
+  {
+    "id": 7680,
+    "name": "F37 Blanka Arabic Trial",
+    "slug": "f37-blanka-arabic-trial-4",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extralight-italic-1.otf"
+  },
+  {
+    "id": 7668,
+    "name": "Sahel Light",
+    "slug": "sahel-light-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sahel-light-1.ttf"
+  },
+  {
+    "id": 7665,
+    "name": "Sahel",
+    "slug": "sahel",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sahel.ttf"
+  },
+  {
+    "id": 7661,
+    "name": "Mayson Arabic Trial",
+    "slug": "mayson-arabic-trial-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7662,
+    "name": "Mayson Arabic Trial Extrabold",
+    "slug": "mayson-arabic-trial-extrabold-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7664,
+    "name": "Mayson Arabic Trial Light",
+    "slug": "mayson-arabic-trial-light-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7670,
+    "name": "F37 Blanka Arabic Trial",
+    "slug": "f37-blanka-arabic-trial",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/f37-blanka-arabic-trial-extralight-italic-1.otf"
+  },
+  {
+    "id": 7666,
+    "name": "Sahel Black",
+    "slug": "sahel-black-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sahel-black-1.ttf"
+  },
+  {
+    "id": 7663,
+    "name": "Mayson Arabic Trial Extralight",
+    "slug": "mayson-arabic-trial-extralight-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7669,
+    "name": "Sahel SemiBold",
+    "slug": "sahel-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sahel-semibold.ttf"
+  },
+  {
+    "id": 7660,
+    "name": "Mayson Arabic Trial Thin",
+    "slug": "mayson-arabic-trial-thin-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7656,
+    "name": "Sarmady Thin Compressed Italic",
+    "slug": "sarmady-thin-compressed-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7658,
+    "name": "Mayson Arabic Trial Medium",
+    "slug": "mayson-arabic-trial-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7667,
+    "name": "Sahel",
+    "slug": "sahel-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sahel-bold.ttf"
+  },
+  {
+    "id": 7659,
+    "name": "Mayson Arabic Trial",
+    "slug": "mayson-arabic-trial",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/mayson-arabic-thin-trial-1.ttf"
+  },
+  {
+    "id": 7657,
+    "name": "Sarmady Thin Compressed",
+    "slug": "sarmady-thin-compressed-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7655,
+    "name": "Sarmady SemiBold Compressed",
+    "slug": "sarmady-semibold-compressed",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7654,
+    "name": "Sarmady SmBold Compressed It",
+    "slug": "sarmady-smbold-compressed-it",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7652,
+    "name": "Sarmady Compressed Italic",
+    "slug": "sarmady-compressed-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7649,
+    "name": "Sarmady Light Compressed",
+    "slug": "sarmady-light-compressed-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7650,
+    "name": "Sarmady Medium Compressed It",
+    "slug": "sarmady-medium-compressed-it",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7647,
+    "name": "Sarmady ExtraLight Compressed",
+    "slug": "sarmady-extralight-compressed-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7651,
+    "name": "Sarmady Medium Compressed",
+    "slug": "sarmady-medium-compressed",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7644,
+    "name": "Sarmady ExBold Compressed It",
+    "slug": "sarmady-exbold-compressed-it-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7648,
+    "name": "Sarmady Light Compressed Italic",
+    "slug": "sarmady-light-compressed-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7639,
+    "name": "Sarmady Thin Expanded",
+    "slug": "sarmady-thin-expanded-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7640,
+    "name": "Sarmady Black Compressed Italic",
+    "slug": "sarmady-black-compressed-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7643,
+    "name": "Sarmady Bold Compressed",
+    "slug": "sarmady-bold-compressed",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7642,
+    "name": "Sarmady Bold Compressed Italic",
+    "slug": "sarmady-bold-compressed-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7653,
+    "name": "Sarmady Compressed",
+    "slug": "sarmady-compressed",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-extralight-italic-2.otf"
+  },
+  {
+    "id": 7646,
+    "name": "Sarmady ExLight Compressed It",
+    "slug": "sarmady-exlight-compressed-it-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7641,
+    "name": "Sarmady Black Compressed",
+    "slug": "sarmady-black-compressed-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7636,
+    "name": "Sarmady SmBold Expanded Italic",
+    "slug": "sarmady-smbold-expanded-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7637,
+    "name": "Sarmady SemiBold Expanded",
+    "slug": "sarmady-semibold-expanded",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7633,
+    "name": "Sarmady Medium Expanded",
+    "slug": "sarmady-medium-expanded",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7632,
+    "name": "Sarmady Medium Expanded Italic",
+    "slug": "sarmady-medium-expanded-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7631,
+    "name": "Sarmady Light Expanded",
+    "slug": "sarmady-light-expanded-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7630,
+    "name": "Sarmady Light Expanded Italic",
+    "slug": "sarmady-light-expanded-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7645,
+    "name": "Sarmady ExtraBold Compressed",
+    "slug": "sarmady-extrabold-compressed-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-compressed-light-1.otf"
+  },
+  {
+    "id": 7638,
+    "name": "Sarmady Thin Expanded Italic",
+    "slug": "sarmady-thin-expanded-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7635,
+    "name": "Sarmady Expanded",
+    "slug": "sarmady-expanded",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-extralight-italic-2.otf"
+  },
+  {
+    "id": 7625,
+    "name": "Sarmady Bold Expanded",
+    "slug": "sarmady-bold-expanded",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7629,
+    "name": "Sarmady ExtraLight Expanded",
+    "slug": "sarmady-extralight-expanded-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7622,
+    "name": "Sarmady Black Expanded Italic",
+    "slug": "sarmady-black-expanded-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7634,
+    "name": "Sarmady Expanded Italic",
+    "slug": "sarmady-expanded-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7620,
+    "name": "Sarmady Thin Italic",
+    "slug": "sarmady-thin-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-thin-italic-2.otf"
+  },
+  {
+    "id": 7628,
+    "name": "Sarmady ExLight Expanded Italic",
+    "slug": "sarmady-exlight-expanded-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7621,
+    "name": "Sarmady Thin",
+    "slug": "sarmady-thin-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-thin-italic-2.otf"
+  },
+  {
+    "id": 7624,
+    "name": "Sarmady Bold Expanded Italic",
+    "slug": "sarmady-bold-expanded-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7618,
+    "name": "Sarmady SemiBold Italic",
+    "slug": "sarmady-semibold-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-semibold-italic-1.otf"
+  },
+  {
+    "id": 7614,
+    "name": "Sarmady Medium Italic",
+    "slug": "sarmady-medium-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-medium-italic-1.otf"
+  },
+  {
+    "id": 7626,
+    "name": "Sarmady ExBold Expanded Italic",
+    "slug": "sarmady-exbold-expanded-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7616,
+    "name": "Sarmady Italic",
+    "slug": "sarmady-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-regular-1.otf"
+  },
+  {
+    "id": 7615,
+    "name": "Sarmady Medium",
+    "slug": "sarmady-medium",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-medium-italic-1.otf"
+  },
+  {
+    "id": 7627,
+    "name": "Sarmady ExtraBold Expanded",
+    "slug": "sarmady-extrabold-expanded-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7619,
+    "name": "Sarmady SemiBold",
+    "slug": "sarmady-semibold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-semibold-italic-1.otf"
+  },
+  {
+    "id": 7617,
+    "name": "Sarmady",
+    "slug": "sarmady",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-regular-italic-1.otf"
+  },
+  {
+    "id": 7613,
+    "name": "Sarmady Light",
+    "slug": "sarmady-light-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-light-italic-2.otf"
+  },
+  {
+    "id": 7610,
+    "name": "Sarmady ExtraLight Italic",
+    "slug": "sarmady-extralight-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-extralight-italic-2.otf"
+  },
+  {
+    "id": 7623,
+    "name": "Sarmady Black Expanded",
+    "slug": "sarmady-black-expanded-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-expanded-bold-1.otf"
+  },
+  {
+    "id": 7606,
+    "name": "Sarmady Bold Italic",
+    "slug": "sarmady-bold-italic",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-bold-italic-1.otf"
+  },
+  {
+    "id": 7607,
+    "name": "Sarmady Bold",
+    "slug": "sarmady-bold",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-bold-italic-1.otf"
+  },
+  {
+    "id": 7611,
+    "name": "Sarmady ExtraLight",
+    "slug": "sarmady-extralight-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-extralight-italic-2.otf"
+  },
+  {
+    "id": 7604,
+    "name": "Sarmady Black Italic",
+    "slug": "sarmady-black-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-black-italic-2.otf"
+  },
+  {
+    "id": 7612,
+    "name": "Sarmady Light Italic",
+    "slug": "sarmady-light-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-light-italic-2.otf"
+  },
+  {
+    "id": 7609,
+    "name": "Sarmady ExtraBold",
+    "slug": "sarmady-extrabold-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-extrabold-italic-2.otf"
+  },
+  {
+    "id": 7608,
+    "name": "Sarmady ExtraBold Italic",
+    "slug": "sarmady-extrabold-italic-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-extrabold-italic-2.otf"
+  },
+  {
+    "id": 7605,
+    "name": "Sarmady Black",
+    "slug": "sarmady-black-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/sarmady-black-italic-2.otf"
+  },
+  {
+    "id": 7603,
+    "name": "A Mitra 2014",
+    "slug": "a-mitra-2014",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/a-mitra-2014-1.ttf"
+  },
+  {
+    "id": 7602,
+    "name": "Bahij Badiya",
+    "slug": "bahij-badiya-2",
+    "category": "أنيق",
+    "font_url": "https://arabyfont.com/wp-content/uploads/2026/05/bahij-badiya-regular-1.ttf"
+  }
+]

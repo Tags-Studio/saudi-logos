@@ -1,0 +1,151 @@
+<div class="container" style="padding-top: 2rem;">
+  <!-- Section Header -->
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-primary);">
+      مكتبة الخطوط العربية <span style="color: var(--accent-green);">Arabic Fonts</span>
+    </h1>
+    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6; font-size: 1rem;">
+      تصفح وحمّل مجموعة من الخطوط العربية الفاخرة لتصاميمك ومشاريعك الإعلانية والطباعية. قارن الأوزان والأشكال والخطوط مباشرة في المتصفح.
+    </p>
+  </div>
+
+  <!-- Search Box for Fonts -->
+  <div class="search-wrapper" style="margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 1rem;">
+    <div class="search-box-pill" style="position: relative; display: flex; align-items: center; background: #ffffff; border: 2.5px solid #99f6e4; border-radius: 9999px; padding: 0.5rem 1.5rem; box-shadow: 0 4px 20px rgba(20, 184, 166, 0.08); transition: all 0.3s ease;">
+      <!-- Search Icon on the Left -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.75rem; flex-shrink: 0;">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <!-- Input Field -->
+      <input type="text" id="fonts-search" placeholder="ابحث عن خط بالاسم العربي أو الإنجليزي... (مثال: أندلسي، كوفي، ديواني)" aria-label="البحث عن خط عربي" style="width: 100%; border: none; outline: none; background: transparent; color: #0f172a; font-family: 'PingARLT', sans-serif; font-size: 1.05rem; padding: 0.6rem 0.25rem; text-align: right;">
+    </div>
+  </div>
+
+  <!-- Category chips (Tabs) -->
+  <div class="fonts-categories-scroll" style="margin-bottom: 2rem; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.75rem; justify-content: flex-start; scrollbar-width: none;">
+    <button class="filter-chip active" data-category="all" style="background: var(--accent-green-glow); color: var(--accent-green); border: 1.5px solid var(--accent-green); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">الكل</button>
+    {{ category_chips }}
+  </div>
+
+  <!-- Status Bar -->
+  <div class="search-status-bar" style="margin-bottom: 1.5rem;">
+    <span id="fonts-count">جاري تحميل الخطوط...</span>
+    <span>الترتيب: الأحدث إضافاً</span>
+  </div>
+
+  <!-- Dynamic CSS Style Block for Font Previews -->
+  <div id="dynamic-font-styles">
+    {{ font_faces_css }}
+  </div>
+
+  <!-- Fonts Grid Container -->
+  <div class="logo-grid" id="fonts-grid" style="margin-bottom: 5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+    {{ all_fonts_cards }}
+  </div>
+</div>
+
+<style>
+  /* Custom scrollbar hiding for categories list */
+  .fonts-categories-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .filter-chip {
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  .filter-chip:hover {
+    border-color: var(--accent-green);
+    color: var(--text-primary);
+  }
+  .filter-chip.active {
+    background: var(--accent-green-glow) !important;
+    color: var(--accent-green) !important;
+    border: 1.5px solid var(--accent-green) !important;
+    font-weight: 700;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('fonts-search');
+    const grid = document.getElementById('fonts-grid');
+    const countSpan = document.getElementById('fonts-count');
+    const categoryChips = document.querySelectorAll('.filter-chip');
+    
+    if (!searchInput || !grid || !countSpan) return;
+
+    const originalCards = Array.from(grid.children);
+    let activeCategory = 'all';
+    
+    // Update count immediately
+    updateCount(originalCards.length);
+
+    // Search input listener
+    searchInput.addEventListener('input', filterFonts);
+
+    // Category chips listener
+    categoryChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        categoryChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeCategory = chip.getAttribute('data-category');
+        filterFonts();
+      });
+    });
+
+    function filterFonts() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      originalCards.forEach(card => {
+        const titleText = card.querySelector('.logo-card-title').textContent.toLowerCase();
+        const cardCategory = card.getAttribute('data-category-name');
+        
+        const matchesQuery = titleText.includes(query);
+        const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+
+        if (matchesQuery && matchesCategory) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      updateCount(visibleCount);
+
+      // Handle no results message
+      if (visibleCount === 0) {
+        if (!document.getElementById('no-fonts-results')) {
+          const noResults = document.createElement('div');
+          noResults.id = 'no-fonts-results';
+          noResults.className = 'no-results';
+          noResults.style.gridColumn = '1 / -1';
+          noResults.innerHTML = `
+            <div class="no-results-icon">✏️</div>
+            <div class="no-results-text">لم يتم العثور على خطوط</div>
+            <div class="no-results-subtext">جرب البحث بكلمة أو تصنيف آخر للوصول للخط العربي المطلّب.</div>
+          `;
+          grid.appendChild(noResults);
+        }
+      } else {
+        const noResults = document.getElementById('no-fonts-results');
+        if (noResults) {
+          noResults.remove();
+        }
+      }
+    }
+
+    function updateCount(count) {
+      countSpan.textContent = `تم العثور على ${count} خط عربي`;
+    }
+  });
+</script>
