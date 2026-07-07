@@ -141,6 +141,10 @@ def build_site():
     recent_logos_html = "".join([render_logo_card(l) for l in logos_by_date[:6]])
     home_content = home_content.replace("{{ recent_logos }}", recent_logos_html)
     
+    # Calculate dynamic total logos count rounded to the nearest hundred (e.g. 1448 -> 1400)
+    total_logos_count = (len(logos) // 100) * 100
+    home_content = home_content.replace("{{ total_logos_count }}", f"{total_logos_count:,}")
+    
     home_context = {
         "title": "شعارات السعودية - أكبر مكتبة رقمية للشعارات السعودية بدقة عالية",
         "meta_description": "تحميل شعارات الجهات الحكومية والوزارات والشركات والجامعات السعودية بدقة عالية مجاناً وبأحجام مرنة بصيغ SVG و PNG و PDF.",
