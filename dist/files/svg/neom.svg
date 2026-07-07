@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+        <!-- NEOM logo: clean geometric shapes representing N E O M -->
+        <g transform="translate(80, 130)">
+            <!-- N: green lines -->
+            <path d="M10,100 L10,10 L80,100 L80,10" fill="none" stroke="#10b981" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- E: blue lines -->
+            <path d="M175,10 L120,10 L120,100 L175,100 M120,55 L165,55" fill="none" stroke="#3b82f6" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- O: purple circle -->
+            <circle cx="230" cy="55" r="45" fill="none" stroke="#8b5cf6" stroke-width="15"/>
+            <!-- M: gold/orange -->
+            <path d="M295,100 L295,10 L325,60 L355,10 L355,100" fill="none" stroke="#f59e0b" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <text x="200" y="280" font-family="'Tajawal', sans-serif" font-weight="900" font-size="36" fill="#0f172a" text-anchor="middle">نـيــــوم NEOM</text>
+        <text x="200" y="320" font-family="'Tajawal', sans-serif" font-weight="600" font-size="16" fill="#10b981" text-anchor="middle">معيشة مستقبلية ذكية ومستدامة</text>
+    </svg>

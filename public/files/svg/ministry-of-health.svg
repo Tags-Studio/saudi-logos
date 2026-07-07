@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+        <defs>
+            <linearGradient id="health-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#10b981"/>
+                <stop offset="100%" stop-color="#047857"/>
+            </linearGradient>
+        </defs>
+        <!-- Palm Tree flanked by two caring hands/crescents -->
+        <g transform="translate(200, 160)">
+            <!-- Caring hands / crescent shield -->
+            <path d="M-80,-20 C-80,40 -20,80 0,80 C20,80 80,40 80,-20" fill="none" stroke="url(#health-green)" stroke-width="8" stroke-linecap="round"/>
+            <!-- Palm Tree -->
+            <path d="M-6,0 C-6,-10 -18,-20 -25,-25 C-15,-30 -6,-40 -3,-50 C2,-50 12,-30 22,-25 C12,-20 5,-10 5,0 Z" fill="#047857"/>
+            <rect x="-3" y="0" width="6" height="30" fill="#047857"/>
+            <!-- Small golden crescent in center -->
+            <path d="M-15,40 A 15,15 0 0,0 15,40 A 12,12 0 0,1 -15,40 Z" fill="#d97706"/>
+        </g>
+        <text x="200" y="295" font-family="'Tajawal', sans-serif" font-weight="800" font-size="28" fill="#047857" text-anchor="middle">وزارة الصحـة</text>
+        <text x="200" y="325" font-family="'Tajawal', sans-serif" font-weight="500" font-size="15" fill="#94a3b8" text-anchor="middle">Ministry of Health</text>
+    </svg>

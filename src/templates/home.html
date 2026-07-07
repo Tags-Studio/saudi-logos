@@ -1,0 +1,192 @@
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <h1>تحميل شعارات السعودية بدقة عالية <span>مجاناً</span></h1>
+    <p>أكبر مكتبة رقمية متكاملة لتحميل شعارات الجهات الحكومية والشركات والجامعات السعودية بصيغ متعددة وقابلة للتعديل والطباعة (SVG, PNG, PDF).</p>
+    
+    <div class="search-wrapper">
+      <form action="/browse" method="GET" class="search-box">
+        <input type="text" name="q" placeholder="ابحث عن شعار... (مثال: وزارة التعليم، آرامكو، الهلال)" aria-label="البحث عن شعار" required>
+        <button type="submit" class="search-btn" aria-label="بحث">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+      <div class="search-tags">
+        <span>عمليات بحث شائعة:</span>
+        <a href="/browse?q=رؤية+2030">رؤية 2030</a>
+        <a href="/browse?q=وزارة">وزارة التعليم</a>
+        <a href="/browse?q=أرامكو">أرامكو</a>
+        <a href="/browse?q=سدايا">سدايا</a>
+        <a href="/browse?q=الهلال">نادي الهلال</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <!-- Stats Grid -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>+500</h3>
+      <p>شعار رسمي عالي الدقة</p>
+    </div>
+    <div class="stat-card">
+      <h3>3</h3>
+      <p>صيغ تحميل (SVG, PNG, PDF)</p>
+    </div>
+    <div class="stat-card">
+      <h3>100%</h3>
+      <p>مجاني ومتاح دائماً للمصممين</p>
+    </div>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="section-title-wrap">
+    <h2 class="section-title">تصنيفات الشعارات</h2>
+    <a href="/browse" class="section-title-link">
+      عرض كل الأقسام
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </a>
+  </div>
+  
+  <div class="categories-grid">
+    <a href="/browse?c=government" class="category-card">
+      <div class="category-icon">🏛️</div>
+      <h3>الجهات الحكومية</h3>
+      <span>الوزارات والجهات العامة</span>
+    </a>
+    <a href="/browse?c=private" class="category-card">
+      <div class="category-icon">🏢</div>
+      <h3>الشركات والقطاع الخاص</h3>
+      <span>العلامات التجارية الكبرى</span>
+    </a>
+    <a href="/browse?c=education" class="category-card">
+      <div class="category-icon">🎓</div>
+      <h3>التعليم والجامعات</h3>
+      <span>الكليات والمؤسسات التعليمية</span>
+    </a>
+    <a href="/browse?c=sports" class="category-card">
+      <div class="category-icon">⚽</div>
+      <h3>الرياضة والأندية</h3>
+      <span>أندية الدوري السعودي والاتحادات</span>
+    </a>
+    <a href="/browse?c=vision" class="category-card">
+      <div class="category-icon">✨</div>
+      <h3>المشاريع الوطنية والرؤية</h3>
+      <span>نيوم، البحر الأحمر ومبادرات الرؤية</span>
+    </a>
+  </div>
+
+  <!-- Recent Logos Section -->
+  <div class="section-title-wrap">
+    <h2 class="section-title">أحدث الشعارات المضافة</h2>
+    <a href="/browse" class="section-title-link">
+      مشاهدة جميع الشعارات
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </a>
+  </div>
+  
+  <div class="logo-grid">
+    {{ recent_logos }}
+  </div>
+
+  <!-- Call to Action Block -->
+  <div class="cta-block">
+    <div class="cta-block-glow"></div>
+    <div class="cta-content">
+      <h2>ألم تجد الشعار الذي تبحث عنه؟</h2>
+      <p>إذا كان لديك شعار لجهة حكومية أو شركة سعودية وتريد إضافته للمكتبة لخدمة زملائك المصممين، أو تود طلب شعار مخصص لنوفرّه لك، تواصل معنا الآن.</p>
+      <a href="/request" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px;">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        اطلب أو اقترح شعاراً جديداً
+      </a>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+    <h2 class="faq-title">الأسئلة الشائعة</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>ما هي مكتبة شعارات السعودية؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          موقع شعارات السعودية هو أرشيف ومكتبة رقمية مجانية ومفتوحة تهدف لمساعدة المصممين والمطورين وصنّاع المحتوى في الحصول على الشعارات الرسمية لمختلف الجهات الحكومية والشركات والجامعات السعودية بدقة متناهية وجودة متجهة (Vector) جاهزة للتصميم والطباعة.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>هل تحميل الشعارات مجاني؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          نعم، تحميل جميع الشعارات المتوفرة على الموقع مجاني بالكامل وبدون الحاجة لإنشاء حساب أو تسجيل، ونهدف لتسهيل العمل الإبداعي ونشر المعرفة البصرية.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>ما هي الصيغ المتاحة للتحميل؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          تتوفر الشعارات بثلاث صيغ أساسية تغطي كافة الاحتياجات: صيغة SVG المتجهة (Vector) للتصميم والتحجيم بدون فقدان الجودة، وصيغة PNG ذات الخلفية الشفافة للاستخدام السريع في العروض الرقمية، وصيغة PDF عالية الدقة الجاهزة للطباعة المباشرة.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>هل الشعارات المتاحة رسمية ودقيقة؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          نحن في منصة شعارات السعودية نحرص على جلب الشعارات الرسمية من مصادرها الرسمية مباشرة والتحقق من مطابقتها لأدلة الهوية البصرية المعتمدة لكل جهة. ومع ذلك، فإن حقوق ملكية الشعارات تعود للجهات المالكة لها.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>كيف يمكنني طلب شعار غير متوفر بالموقع؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          يمكنك الانتقال إلى صفحة "اطلب شعاراً" وتعبئة نموذج الطلب باسم الجهة أو إرفاق الشعار المتاح لديك، وسيعمل فريقنا الفني على معالجته ورفعه بالصيغ المطلوبة في أسرع وقت ممكن.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>هل يمكنني استخدام هذه الشعارات لأغراض تجارية؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          الشعارات محمية بحقوق الملكية الفكرية وتعود ملكيتها للجهات ذات العلاقة. توفيرنا للشعارات يهدف للمساعدة التقنية وتسهيل الإخراج الفني فقط. يجب عليك الرجوع للجهة المالكة للحصول على التراخيص الرسمية للاستخدام التجاري.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>لماذا يفضل المصممون صيغة SVG؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          صيغة SVG (Scalable Vector Graphics) هي صيغة رسومات متجهة تعتمد على معادلات رياضية لرسم الأشكال بدلاً من البكسل، مما يعني أنه يمكنك تكبير الشعار إلى أي حجم دون أن يفقد دقته أو يصبح ضبابياً، وهو أمر بالغ الأهمية في المطبوعات الكبيرة وتصاميم الهوية الاحترافية.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>كيف يمكنني المساهمة في الموقع؟</span>
+          <span class="faq-icon">▼</span>
+        </div>
+        <div class="faq-answer">
+          تسعدنا مساهمتك! يمكنك تزويدنا بأي شعارات متوفرة لديك بصيغة SVG عبر صفحة "اطلب شعاراً"، وسنقوم بالتدقيق الفني عليها وإضافتها باسمك للمساهمة في دعم مجتمع المصممين في الوطن العربي.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

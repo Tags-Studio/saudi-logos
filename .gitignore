@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+product_sample.json
+wasmenia_sample.json

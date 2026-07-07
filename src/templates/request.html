@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="form-card">
+    <h1 class="form-title">طلب أو اقتراح شعار جديد</h1>
+    <p class="form-subtitle">إذا كنت تبحث عن شعار سعودي غير متوفر في المكتبة، أو ترغب في إرسال شعار عالي الدقة لإضافته، يرجى تعبئة النموذج أدناه.</p>
+    
+    <form id="logo-request-form" onsubmit="event.preventDefault(); alert('تم استلام طلبك بنجاح! سنقوم بمراجعته وإضافة الشعار قريباً.'); this.reset();">
+      <div class="form-group">
+        <label for="org-name" class="form-label">اسم الجهة / المنظمة (باللغة العربية): *</label>
+        <input type="text" id="org-name" class="form-control" placeholder="مثال: وزارة الشؤون البلدية والقروية والإسكان" required>
+      </div>
+
+      <div class="form-group">
+        <label for="org-name-en" class="form-label">اسم الجهة (باللغة الإنجليزية - اختياري):</label>
+        <input type="text" id="org-name-en" class="form-control" placeholder="مثال: Ministry of Municipal Rural Affairs and Housing">
+      </div>
+
+      <div class="form-group">
+        <label for="request-type" class="form-label">نوع الطلب: *</label>
+        <select id="request-type" class="form-control" required style="background: var(--bg-tertiary);">
+          <option value="request">طلب توفير شعار غير موجود</option>
+          <option value="suggest">اقتراح إضافة شعار لدي (إرفاق ملف)</option>
+          <option value="report">الإبلاغ عن مشكلة في شعار موجود</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">إرفاق الشعار (إن وجد - يفضل صيغة SVG أو PDF):</label>
+        <div class="form-file-drop" onclick="document.getElementById('file-upload').click();">
+          <div class="drop-icon">📤</div>
+          <div class="drop-text">اسحب الملف هنا أو انقر للتصفح</div>
+          <div class="drop-subtext">الصيغ المقبولة: SVG, PDF, PNG, AI, EPS (الحد الأقصى 10 ميجابايت)</div>
+          <input type="file" id="file-upload" style="display: none;">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes" class="form-label">ملاحظات أو روابط إضافية للجهة الرسمية:</label>
+        <textarea id="notes" class="form-control" rows="4" placeholder="اكتب أي معلومات إضافية تساعدنا في الحصول على النسخة الرسمية للشعار..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">إرسال الطلب الآن</button>
+    </form>
+
+    <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-color); text-align: center;">
+      <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--accent-gold);">⚡ طلب سريع وعاجل؟</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">إذا كنت مصمماً وتعمل على مشروع عاجل وتريد توفير الشعار فوراً، يمكنك التواصل معنا مباشرة عبر واتساب وسنقوم بمساعدتك على الفور.</p>
+      
+      <!-- WhatsApp CTA -->
+      <a href="https://wa.me/966500000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AA%D8%A7%D8%AC%20%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20%D8%B4%D8%B9%D8%A7%D8%B1%20%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%20%D8%B9%D8%A7%D8%AC%D9%84%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #25d366, #128c7e); box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="margin-left: 6px; vertical-align: middle;">
+          <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.949h.004c4.368 0 7.927-3.558 7.93-7.93a7.9 7.9 0 0 0-2.332-5.603zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.69-5.11c-.2-.1-1.185-.584-1.364-.649-.179-.065-.308-.1-.439.1-.13.19-.502.649-.615.778-.113.13-.226.14-.426.04-.2-.1-.843-.311-1.605-.989-.593-.53-1.002-1.182-1.118-1.38-.117-.2-.013-.307.087-.406.09-.09.2-.233.3-.35.1-.117.133-.198.2-.33.067-.133.034-.25-.017-.35-.05-.1-.438-1.056-.6-.145-.16-.39-.335-.37-.507-.37h-.362c-.172 0-.45.065-.686.3-.236.234-.9.882-.9 2.15s.928 2.5 1.058 2.66c.13.162 1.826 2.79 4.425 3.91.619.267 1.101.427 1.478.547.622.2 1.19.17 1.637.1.498-.074 1.185-.484 1.354-1.025.17-.54.17-1.002.12-1.1-.05-.09-.17-.14-.37-.24"/>
+        </svg>
+        استشارة وطلب سريع عبر واتساب
+      </a>
+    </div>
+  </div>
+</div>

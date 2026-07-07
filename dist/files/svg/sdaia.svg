@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+        <defs>
+            <linearGradient id="sdaia-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0284c7"/>
+                <stop offset="100%" stop-color="#0f766e"/>
+            </linearGradient>
+        </defs>
+        <!-- Data nodes and neural network theme -->
+        <g transform="translate(200, 160)" stroke="url(#sdaia-grad)" stroke-width="4" fill="none">
+            <polygon points="0,-70 60,-30 60,40 0,80 -60,40 -60,-30"/>
+            <line x1="0" y1="-70" x2="0" y2="80"/>
+            <line x1="-60" y1="-30" x2="60" y2="40"/>
+            <line x1="60" y1="-30" x2="-60" y2="40"/>
+            <!-- Nodes -->
+            <circle cx="0" cy="-70" r="10" fill="#0284c7" stroke="#fff" stroke-width="2"/>
+            <circle cx="60" cy="-30" r="10" fill="#0f766e" stroke="#fff" stroke-width="2"/>
+            <circle cx="60" cy="40" r="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
+            <circle cx="0" cy="80" r="10" fill="#0284c7" stroke="#fff" stroke-width="2"/>
+            <circle cx="-60" cy="40" r="10" fill="#0f766e" stroke="#fff" stroke-width="2"/>
+            <circle cx="-60" cy="-30" r="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
+            <circle cx="0" cy="5" r="15" fill="url(#sdaia-grad)" stroke="#fff" stroke-width="2"/>
+        </g>
+        <text x="200" y="305" font-family="'Tajawal', sans-serif" font-weight="900" font-size="24" fill="#0f766e" text-anchor="middle">سـدايـا SDAIA</text>
+        <text x="200" y="335" font-family="'Tajawal', sans-serif" font-weight="700" font-size="12" fill="#94a3b8" text-anchor="middle">الهيئة السعودية للبيانات والذكاء الاصطناعي</text>
+    </svg>

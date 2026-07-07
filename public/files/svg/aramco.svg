@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+        <defs>
+            <linearGradient id="aramco-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8ce8a4"/>
+                <stop offset="50%" stop-color="#00a896"/>
+                <stop offset="100%" stop-color="#028090"/>
+            </linearGradient>
+        </defs>
+        <!-- Abstract star/oil-drop graphic representing energy -->
+        <g transform="translate(200, 180)">
+            <circle cx="0" cy="0" r="80" fill="none" stroke="url(#aramco-grad)" stroke-width="12"/>
+            <!-- Starburst rays inside -->
+            <path d="M0,-80 L0,-40 M0,80 L0,40 M-80,0 L-40,0 M80,0 L40,0 M-56,-56 L-28,-28 M56,56 L28,28 M-56,56 L-28,28 M56,-56 L28,-28" stroke="url(#aramco-grad)" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="20" fill="#00a896"/>
+        </g>
+        <text x="200" y="310" font-family="'Tajawal', sans-serif" font-weight="900" font-size="38" fill="#028090" text-anchor="middle">أرامكو aramco</text>
+        <text x="200" y="340" font-family="'Tajawal', sans-serif" font-weight="500" font-size="16" fill="#94a3b8" text-anchor="middle">أرامكو السعودية / Saudi Aramco</text>
+    </svg>

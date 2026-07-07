@@ -1,0 +1,61 @@
+<div class="container" style="padding-top: 2rem;">
+  <!-- Main Search Box on Browse Page -->
+  <div class="search-wrapper" style="margin-bottom: 2rem; max-width: 100%;">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="ابحث عن شعار بالاسم العربي أو الإنجليزي أو الكلمات المفتاحية..." aria-label="البحث عن شعار">
+      <button class="search-btn" aria-label="بحث">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="browse-layout">
+    <!-- Sidebar Filters -->
+    <aside class="filter-sidebar">
+      <h3 class="filter-title">تصفية حسب التصنيف</h3>
+      <div class="filter-group">
+        <div class="filter-options">
+          <button class="filter-btn active" data-category="all">
+            <span>كل الشعارات</span>
+            <span class="filter-count">0</span>
+          </button>
+          <button class="filter-btn" data-category="government">
+            <span>الجهات الحكومية</span>
+            <span class="filter-count">0</span>
+          </button>
+          <button class="filter-btn" data-category="private">
+            <span>الشركات والخاص</span>
+            <span class="filter-count">0</span>
+          </button>
+          <button class="filter-btn" data-category="education">
+            <span>التعليم والجامعات</span>
+            <span class="filter-count">0</span>
+          </button>
+          <button class="filter-btn" data-category="sports">
+            <span>الرياضة والأندية</span>
+            <span class="filter-count">0</span>
+          </button>
+          <button class="filter-btn" data-category="vision">
+            <span>مشاريع ورؤية 2030</span>
+            <span class="filter-count">0</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Results Grid -->
+    <section class="browse-main">
+      <div class="search-status-bar">
+        <span id="result-count">جاري تحميل الشعارات...</span>
+        <span>الترتيب: الأكثر تنزيلاً</span>
+      </div>
+
+      <!-- Grid container populated dynamically by JS and fallback server-rendered list -->
+      <div class="logo-grid" id="browse-logo-grid">
+        {{ all_logos }}
+      </div>
+    </section>
+  </div>
+</div>
