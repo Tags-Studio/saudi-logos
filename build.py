@@ -5,6 +5,7 @@ import shutil
 # Paths configuration
 SRC_DIR = "src"
 DATA_FILE = os.path.join(SRC_DIR, "data", "logos.json")
+BRAND_MANUALS_FILE = os.path.join(SRC_DIR, "data", "brand_manuals.json")
 TEMPLATES_DIR = os.path.join(SRC_DIR, "templates")
 PUBLIC_DIR = "public"
 DIST_DIR = "dist"
@@ -39,7 +40,9 @@ def clean_and_setup_dist():
 
     # Also copy the data logos.json file directly to dist so JavaScript can fetch it
     shutil.copy2(DATA_FILE, os.path.join(DIST_DIR, "logos.json"))
-    print("✓ Copied logos.json database to dist/ for search availability")
+    if os.path.exists(BRAND_MANUALS_FILE):
+        shutil.copy2(BRAND_MANUALS_FILE, os.path.join(DIST_DIR, "brand_manuals.json"))
+    print("✓ Copied logos.json and brand_manuals.json databases to dist/ for search availability")
 
 def load_template(name):
     path = os.path.join(TEMPLATES_DIR, name)
@@ -78,6 +81,31 @@ def render_logo_card(logo):
     </div>
     """
 
+def render_guideline_card(gm):
+    return f"""
+    <div class="logo-card">
+      <a href="{gm['pdf_url']}" target="_blank">
+        <div class="logo-preview-box" style="height: 180px; padding: 0; background-color: #03070d; border-bottom: 1px solid var(--border-color); overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="{gm['thumbnail_url']}" alt="{gm['name_ar']}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        </div>
+      </a>
+      <div class="logo-card-info" style="padding: 1.25rem;">
+        <span class="logo-card-cat" style="background: rgba(217, 119, 6, 0.15); color: var(--accent-gold); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700;">كتاب دليل الهوية</span>
+        <a href="{gm['pdf_url']}" target="_blank" style="text-decoration: none;">
+          <h3 class="logo-card-title" style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 700; color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{gm['name_ar']}</h3>
+        </a>
+        <div class="logo-card-meta" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+          <a href="{gm['pdf_url']}" target="_blank" class="btn-secondary" style="font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 6px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.25rem; text-decoration: none; cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            تحميل الدليل (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+    """
+
 def compile_page(template_content, base_template, context):
     page = base_template
     # Replace content first
@@ -89,7 +117,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -193,6 +221,38 @@ def build_site():
     with open(os.path.join(DIST_DIR, "contact", "index.html"), "w", encoding="utf-8") as f:
         f.write(contact_rendered)
     print("✓ Contact Page built.")
+
+    # 4.5. Build Guidelines Page (guidelines.html)
+    print("Building Guidelines Page...")
+    guidelines_content = load_template("guidelines.html")
+    
+    # Load brand manuals
+    brand_manuals = []
+    if os.path.exists(BRAND_MANUALS_FILE):
+        with open(BRAND_MANUALS_FILE, "r", encoding="utf-8") as f:
+            brand_manuals = json.load(f)
+            
+    # Sort brand manuals by date added desc
+    brand_manuals_sorted = sorted(brand_manuals, key=lambda x: x.get("date_added", ""), reverse=True)
+    all_guidelines_html = "".join([render_guideline_card(gm) for gm in brand_manuals_sorted])
+    guidelines_content = guidelines_content.replace("{{ all_guidelines }}", all_guidelines_html)
+    
+    guidelines_context = {
+        "title": "أدلة الهوية البصرية الرسمية - شعارات السعودية",
+        "meta_description": "تحميل وقراءة كتب أدلة الهوية البصرية الرسمية للوزارات والجهات والشركات السعودية بصيغة PDF مباشرة.",
+        "canonical": "https://saudi-logos.vercel.app/guidelines",
+        "og_title": "أدلة الهوية البصرية الرسمية للجهات والشركات السعودية",
+        "og_description": "تصفح وتحميل كتب أدلة تصميم الهوية البصرية المعتمدة للجهات الحكومية والشركات السعودية.",
+        "active_guidelines": "active"
+    }
+    guidelines_rendered = compile_page(guidelines_content, base_template, guidelines_context)
+    with open(os.path.join(DIST_DIR, "guidelines.html"), "w", encoding="utf-8") as f:
+        f.write(guidelines_rendered)
+        
+    os.makedirs(os.path.join(DIST_DIR, "guidelines"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "guidelines", "index.html"), "w", encoding="utf-8") as f:
+        f.write(guidelines_rendered)
+    print("✓ Guidelines Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")

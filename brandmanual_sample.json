@@ -1,0 +1,200 @@
+{
+  "id": 2,
+  "title": "مجلس أبوظبي للتعليم",
+  "engtitle": "Abu Dhabi Education Council",
+  "createdAt": "2023-02-12T12:38:08.150Z",
+  "updatedAt": "2023-11-04T16:07:59.804Z",
+  "publishedAt": "2023-02-12T12:38:08.136Z",
+  "ownerName": null,
+  "ownerEngName": null,
+  "ownerLink": null,
+  "supabase_user_id": null,
+  "file": {
+    "id": 2645,
+    "name": "ADEC - Guideline.pdf",
+    "alternativeText": null,
+    "caption": null,
+    "width": null,
+    "height": null,
+    "formats": null,
+    "hash": "ADEC_Guideline_98846b9dc8",
+    "ext": ".pdf",
+    "mime": "application/pdf",
+    "size": 19162.62,
+    "url": "/uploads/ADEC_Guideline_98846b9dc8.pdf",
+    "previewUrl": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "createdAt": "2023-11-04T16:08:00.222Z",
+    "updatedAt": "2023-11-04T16:08:00.222Z"
+  },
+  "tags": [
+    {
+      "id": 7814,
+      "name": "أولا",
+      "createdAt": "2023-11-04T16:05:19.632Z",
+      "updatedAt": "2023-11-04T16:05:19.632Z",
+      "publishedAt": "2023-11-04T16:05:19.631Z"
+    },
+    {
+      "id": 59,
+      "name": "التعليم",
+      "createdAt": "2023-01-02T10:03:28.000Z",
+      "updatedAt": "2023-01-02T10:03:28.000Z",
+      "publishedAt": "2023-01-02T10:03:28.000Z"
+    },
+    {
+      "id": 119,
+      "name": "مجلس",
+      "createdAt": "2023-01-02T10:03:28.000Z",
+      "updatedAt": "2023-01-02T10:03:28.000Z",
+      "publishedAt": "2023-01-02T10:03:28.000Z"
+    },
+    {
+      "id": 126,
+      "name": "Council",
+      "createdAt": "2023-01-02T10:03:28.000Z",
+      "updatedAt": "2023-01-02T10:03:28.000Z",
+      "publishedAt": "2023-01-02T10:03:28.000Z"
+    },
+    {
+      "id": 2215,
+      "name": " أبوظبي",
+      "createdAt": "2023-02-12T12:37:44.211Z",
+      "updatedAt": "2023-02-12T12:37:44.211Z",
+      "publishedAt": "2023-02-12T12:37:44.206Z"
+    },
+    {
+      "id": 2218,
+      "name": "للتعليم",
+      "createdAt": "2023-02-12T12:37:47.100Z",
+      "updatedAt": "2023-02-12T12:37:47.100Z",
+      "publishedAt": "2023-02-12T12:37:47.098Z"
+    },
+    {
+      "id": 2220,
+      "name": "ِAbu",
+      "createdAt": "2023-02-12T12:37:48.655Z",
+      "updatedAt": "2023-02-12T12:37:48.655Z",
+      "publishedAt": "2023-02-12T12:37:48.650Z"
+    },
+    {
+      "id": 7811,
+      "name": "أبو",
+      "createdAt": "2023-11-04T16:05:15.959Z",
+      "updatedAt": "2023-11-04T16:05:15.959Z",
+      "publishedAt": "2023-11-04T16:05:15.958Z"
+    },
+    {
+      "id": 7812,
+      "name": "Dhabi",
+      "createdAt": "2023-11-04T16:05:16.718Z",
+      "updatedAt": "2023-11-04T16:05:16.718Z",
+      "publishedAt": "2023-11-04T16:05:16.716Z"
+    },
+    {
+      "id": 7813,
+      "name": "ظبي",
+      "createdAt": "2023-11-04T16:05:17.550Z",
+      "updatedAt": "2023-11-04T16:05:17.550Z",
+      "publishedAt": "2023-11-04T16:05:17.546Z"
+    },
+    {
+      "id": 58,
+      "name": "Education",
+      "createdAt": "2023-01-02T10:03:28.000Z",
+      "updatedAt": "2023-01-02T10:03:28.000Z",
+      "publishedAt": "2023-01-02T10:03:28.000Z"
+    }
+  ],
+  "logos": [
+    {
+      "id": 755,
+      "title": "مجلس أبوظبي للتعليم",
+      "engtitle": "Abu Dhabi Education Council",
+      "createdAt": "2023-02-10T11:59:03.458Z",
+      "updatedAt": "2024-08-06T00:57:53.901Z",
+      "publishedAt": "2023-02-10T11:59:03.453Z",
+      "type": null,
+      "slug": "abu-dhabi-education-council",
+      "colors": [
+        "#5F604B",
+        "#040404",
+        "#183C47",
+        "#8A2003",
+        "#B4D5F0",
+        "#9CC5C9",
+        "#FFFFFF"
+      ],
+      "is_approved": null,
+      "supabase_user_id": null
+    }
+  ],
+  "thumbnail": {
+    "id": 1153,
+    "name": "Covers-01.png",
+    "alternativeText": null,
+    "caption": null,
+    "width": 1920,
+    "height": 1080,
+    "formats": {
+      "large": {
+        "ext": ".png",
+        "url": "/uploads/large_Covers_01_a4c5dce7bf.png",
+        "hash": "large_Covers_01_a4c5dce7bf",
+        "mime": "image/png",
+        "name": "large_Covers-01.png",
+        "path": null,
+        "size": 79.3,
+        "width": 1000,
+        "height": 563
+      },
+      "small": {
+        "ext": ".png",
+        "url": "/uploads/small_Covers_01_a4c5dce7bf.png",
+        "hash": "small_Covers_01_a4c5dce7bf",
+        "mime": "image/png",
+        "name": "small_Covers-01.png",
+        "path": null,
+        "size": 30.4,
+        "width": 500,
+        "height": 281
+      },
+      "medium": {
+        "ext": ".png",
+        "url": "/uploads/medium_Covers_01_a4c5dce7bf.png",
+        "hash": "medium_Covers_01_a4c5dce7bf",
+        "mime": "image/png",
+        "name": "medium_Covers-01.png",
+        "path": null,
+        "size": 55.11,
+        "width": 750,
+        "height": 422
+      },
+      "thumbnail": {
+        "ext": ".png",
+        "url": "/uploads/thumbnail_Covers_01_a4c5dce7bf.png",
+        "hash": "thumbnail_Covers_01_a4c5dce7bf",
+        "mime": "image/png",
+        "name": "thumbnail_Covers-01.png",
+        "path": null,
+        "size": 11.92,
+        "width": 245,
+        "height": 138
+      }
+    },
+    "hash": "Covers_01_a4c5dce7bf",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 27.63,
+    "url": "/uploads/Covers_01_a4c5dce7bf.png",
+    "previewUrl": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "createdAt": "2023-02-12T12:38:09.480Z",
+    "updatedAt": "2023-02-12T12:38:09.480Z"
+  },
+  "avatar": null,
+  "engAvatar": null,
+  "companies": []
+}

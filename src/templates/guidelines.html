@@ -1,0 +1,88 @@
+<div class="container" style="padding-top: 2rem;">
+  <!-- Section Header -->
+  <div style="text-align: center; margin-bottom: 3rem;">
+    <h1 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-primary);">
+      أدلة الهوية البصرية <span style="color: var(--accent-green);">Brand Guidelines</span>
+    </h1>
+    <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.6; font-size: 1rem;">
+      تصفح وحمل كتب أدلة تصميم الهوية البصرية الرسمية للوزارات، الشركات، والأندية الرياضية بصيغة PDF مباشرة لتفاصيل الألوان والخطوط والاستخدامات المعتمدة للشعارات.
+    </p>
+  </div>
+
+  <!-- Search Box for Guidelines -->
+  <div class="search-wrapper" style="margin-bottom: 2rem; max-width: 100%;">
+    <div class="search-box">
+      <input type="text" id="guidelines-search" placeholder="ابحث عن دليل هوية بالاسم العربي أو الإنجليزي..." aria-label="البحث عن دليل هوية">
+      <button class="search-btn" aria-label="بحث">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-status-bar" style="margin-bottom: 1.5rem;">
+    <span id="guidelines-count">جاري تحميل أدلة الهوية...</span>
+    <span>الترتيب: الأحدث إضافاً</span>
+  </div>
+
+  <!-- Guidelines Cards Grid -->
+  <div class="logo-grid" id="guidelines-grid" style="margin-bottom: 5rem;">
+    {{ all_guidelines }}
+  </div>
+</div>
+
+<script>
+  // Simple client-side search for brand guidelines
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('guidelines-search');
+    const grid = document.getElementById('guidelines-grid');
+    const countSpan = document.getElementById('guidelines-count');
+    
+    if (!searchInput || !grid || !countSpan) return;
+
+    // Load guidelines database injected into a global variable or read from html
+    // We will save original children to filter locally
+    const originalCards = Array.from(grid.children);
+    countSpan.textContent = `تم العثور على ${originalCards.length} دليل هوية`;
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim().toLowerCase();
+      
+      let visibleCount = 0;
+      originalCards.forEach(card => {
+        const titleText = card.querySelector('.logo-card-title').textContent.toLowerCase();
+        // Check if query is in title
+        if (titleText.includes(query)) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countSpan.textContent = `تم العثور على ${visibleCount} دليل هوية`;
+
+      if (visibleCount === 0) {
+        // Show no results helper
+        if (!document.getElementById('no-guidelines-results')) {
+          const noResults = document.createElement('div');
+          noResults.id = 'no-guidelines-results';
+          noResults.className = 'no-results';
+          noResults.style.gridColumn = '1 / -1';
+          noResults.innerHTML = `
+            <div class="no-results-icon">🔍</div>
+            <div class="no-results-text">لم يتم العثور على نتائج</div>
+            <div class="no-results-subtext">جرب البحث بكلمات أخرى للوصول لدليل الهوية البصرية المطلوب.</div>
+          `;
+          grid.appendChild(noResults);
+        }
+      } else {
+        const noResults = document.getElementById('no-guidelines-results');
+        if (noResults) {
+          noResults.remove();
+        }
+      }
+    });
+  });
+</script>

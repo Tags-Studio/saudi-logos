@@ -1,0 +1,1570 @@
+[
+  {
+    "id": 2,
+    "name_ar": "مجلس أبوظبي للتعليم",
+    "name_en": "Abu Dhabi Education Council",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ADEC_Guideline_98846b9dc8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_a4c5dce7bf.png",
+    "date_added": "2023-02-12"
+  },
+  {
+    "id": 4,
+    "name_ar": "حكومة أبوظبي",
+    "name_en": "Government of Abu Dhabi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ADG_Guideline_97b2ad82c9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_02_5b9a1e3f82.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 5,
+    "name_ar": "قناة الجزيرة",
+    "name_en": "Al Jazeera",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/AJA_Guideline_3cc6c9c15c.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_f26933cf4d.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 6,
+    "name_ar": "مصرف البحرين المركزي",
+    "name_en": "Central Bank of Bahrain",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/CBB_Guideline_8925566de2.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_07_aab2b8cf72.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 7,
+    "name_ar": "موسم الحج 2020",
+    "name_en": "Hajj Season 2020",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/CGC_Alhajj_2020_Guideline_f0301a4662.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_08_c6adfdedba.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 8,
+    "name_ar": "جامعة الملك سعود",
+    "name_en": "King Saudi University",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/KSU_Guideline_0db6220ab9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_14_09d63b1e11.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 9,
+    "name_ar": "الإمارات تبتكر",
+    "name_en": "UAE Innovates",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/UAE_Innovates_Guideline_3fac8d64d8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_23_b74c8a6aa8.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 10,
+    "name_ar": "عام الخط العربي 2021",
+    "name_en": "Year of Arabic Calligraphy 2021",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Year_of_Arabic_Calligraphy_2021_Guidelines_77d6c368b1.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_25_1531a0f927.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 11,
+    "name_ar": "صندوق الاستثمارات العامة",
+    "name_en": "Public Investment Fund",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/PIF_Guideline_503d710f11.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_28_12086edf49.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 12,
+    "name_ar": "العلا",
+    "name_en": "Alula",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Ula_Guideline_d6f7a0bab8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_29_676e00c6ad.png",
+    "date_added": "2023-02-17"
+  },
+  {
+    "id": 13,
+    "name_ar": "وزارة الشؤون البلدية والقروية",
+    "name_en": "Ministry of Municipal and Rural Affairs",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Momra_Guideline_9e10aa7ba8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_30_1a0899d57f.png",
+    "date_added": "2023-03-04"
+  },
+  {
+    "id": 15,
+    "name_ar": "مكنون",
+    "name_en": "Maknon",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Maknon_Guideline_26ccb1c65f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_32_ab503cc33d.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 16,
+    "name_ar": "طبت",
+    "name_en": "TEBT",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/TEBT_Guideline_99f4936b01.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_33_f70ca59f9b.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 17,
+    "name_ar": "يوم التأسيس السعودي 2024",
+    "name_en": "Saudi Founding Day 2024",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Founding_Day_2024_Guideline_1e00c0bdd1.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_9db5903c96.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 18,
+    "name_ar": "موسم شتاء جازان 2021",
+    "name_en": " 2021 Jazan Winter Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/2021_Jazan_Winter_Season_Guideline_7699ae401f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_2021_Jazan_Winter_Season_17336e58b8.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 19,
+    "name_ar": "وزارة الطاقة",
+    "name_en": "Ministry of Energy",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Ministry_of_Energy_Guideline_e722f15740.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_35_96345b94cb.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 20,
+    "name_ar": "عام الشعر العربي 2023",
+    "name_en": "The Year of Arabic Poetry",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/The_Year_of_Arabic_Poetry_Guideline_98db951bb9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_4737ab405f.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 22,
+    "name_ar": "شتاء السعودية",
+    "name_en": "Winter in Saudi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Winter_in_Saudi_Guideline_b39e827ffd.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_5be696a537.png",
+    "date_added": "2023-03-06"
+  },
+  {
+    "id": 23,
+    "name_ar": "ميثاق الملك سلمان المعماري",
+    "name_en": "King Salman Charter for Architecture and Urbanism",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/KSCAU_Guideline_ac9a190884.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_4650b8f2cc.png",
+    "date_added": "2023-03-10"
+  },
+  {
+    "id": 24,
+    "name_ar": "مسك",
+    "name_en": "Misk",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Misk_Guideline_c8dc9517ca.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_2f443262c9.png",
+    "date_added": "2023-03-10"
+  },
+  {
+    "id": 26,
+    "name_ar": "مرسول",
+    "name_en": "Mrsool",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Mrsool_Guideline_ddcf13c928.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_t_613f9496db.png",
+    "date_added": "2023-03-12"
+  },
+  {
+    "id": 27,
+    "name_ar": "غرناطية",
+    "name_en": "Granadia",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Granadia_Guidelines_f83e2b4251.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_bdfa12f87a.png",
+    "date_added": "2023-03-12"
+  },
+  {
+    "id": 28,
+    "name_ar": "الاتصالات السعودية",
+    "name_en": "STC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/191217_stc_basic_V6_7eeb5bb7df.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_b8bf0f4872.png",
+    "date_added": "2023-03-13"
+  },
+  {
+    "id": 29,
+    "name_ar": "مؤتمر مستقبل منظمات التربية والثقافة والعلوم",
+    "name_en": "FESCIOF",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/FESCIOF_Guidelines_bd4157f2ef.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_0d5c7b37a6.png",
+    "date_added": "2023-03-13"
+  },
+  {
+    "id": 30,
+    "name_ar": "الهيئة العامة للترفيه",
+    "name_en": "General Entertainment Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/General_Entertainment_Authority_Guideline_820e75f392.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_edf657b24c.png",
+    "date_added": "2023-03-13"
+  },
+  {
+    "id": 31,
+    "name_ar": "موسم رمضان",
+    "name_en": "Ramadan Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Ramadan_Season_Guideline_d2db4bb3cf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Screenshot_2023_03_23_at_12_56_11_PM_400b1594be.png",
+    "date_added": "2023-03-19"
+  },
+  {
+    "id": 32,
+    "name_ar": "فعاليات العيد 2023",
+    "name_en": "Eid Events 2023",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Eid_Events_2023_Guideline_d641e4c32a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_7d6f950947.png",
+    "date_added": "2023-03-23"
+  },
+  {
+    "id": 33,
+    "name_ar": "وزارة التجارة",
+    "name_en": "Ministry of Commerce",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Ministry_of_Commerce_Guidline_ffbde19b74.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_0b36fc848f.png",
+    "date_added": "2023-04-13"
+  },
+  {
+    "id": 35,
+    "name_ar": "جامعة أم القرى",
+    "name_en": "Umm Al-Qura University",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Ummul_Qura_University_Guideline_34c77180ed.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_1d358e1da9.png",
+    "date_added": "2023-10-26"
+  },
+  {
+    "id": 37,
+    "name_ar": "جاهز",
+    "name_en": "Jahez",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/JAHEZ_Guidelines_f665b32137.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_04_dfb2475846.png",
+    "date_added": "2023-11-04"
+  },
+  {
+    "id": 39,
+    "name_ar": "اجنايت",
+    "name_en": "Ignite",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/IGNITE_GUIDELINES_v1_d1a6a468cb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_abdbb681eb.png",
+    "date_added": "2023-11-04"
+  },
+  {
+    "id": 40,
+    "name_ar": "موفي سينما",
+    "name_en": "Muvi Cinemas",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/muvi_Brand_Guidelines_ebfe10d8a7.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_07_0adf603172.png",
+    "date_added": "2023-11-04"
+  },
+  {
+    "id": 41,
+    "name_ar": "الهيئة العامة للنقل",
+    "name_en": "Transport General Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Transport_General_Authority_Guideline_9110e90ab4.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Untitled_5_33bcc6161e.png",
+    "date_added": "2023-11-04"
+  },
+  {
+    "id": 42,
+    "name_ar": "روح السعودية",
+    "name_en": "Visit Saudi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Visit_Saudi_Guideline_014ea0a926.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_e767a13392.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 43,
+    "name_ar": "جامعة زايد",
+    "name_en": "Zayed University ",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Zayed_University_Guideline_30bcc1f001.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_b68eb2ab54.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 44,
+    "name_ar": "بيئة بلا نفايات",
+    "name_en": "Environment Free Waste",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/WFE_Guideline_a4276049bf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_02_a978ca029a.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 45,
+    "name_ar": "جامعة التقنية والعلوم التطبيقية",
+    "name_en": "University of Technology and Applied Sciences",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/University_of_Technology_and_Applied_Sciences_Guideline_11f7d81c5b.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_04_c847cd232e.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 46,
+    "name_ar": "بنك الأهلي",
+    "name_en": "SNB",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SNB_Guideline_6c86bc7430.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_13_b8e5196ea1.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 47,
+    "name_ar": "ترشيد",
+    "name_en": "Tarshid",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Tarshid_Guideline_0a32ee71c7.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_11_92c2aa5c7d.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 48,
+    "name_ar": "عام القهوة السعودية 2022",
+    "name_en": "The Year of Saudi Coffee 2022",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/The_Year_of_Saudi_Coffee_2022_Guideline_e1a752466f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_07_6aef21c6f6.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 49,
+    "name_ar": "الإمارات",
+    "name_en": "The Emirates",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/The_Emirates_Guideline_8f7e6af6ff.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_09_06e5c86040.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 50,
+    "name_ar": "ذيب",
+    "name_en": "Theeb",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Theeb_Guideline_4589ae8469.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_08_a4085153aa.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 51,
+    "name_ar": "الإمارات العربية المتحدة",
+    "name_en": "United Arab Emirate",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/UAE_GOV_Guideline_a0612c6d46.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_05_ba430bed1a.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 52,
+    "name_ar": "الاتصالات السعودية",
+    "name_en": "STC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/STC_Guideline_bb72822c8f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_c287ed9d02.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 53,
+    "name_ar": "أرامكو السعودية",
+    "name_en": "Aramco",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_Aramco_Guideline_edec794a25.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_02_2fda108bd5.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 54,
+    "name_ar": "يوم العلم السعودي",
+    "name_en": "Saudi Flag Day",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_Flag_Day_Guideline_a4f2d459e0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_04_185fd4fcb7.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 55,
+    "name_ar": "اليوم الوطني السعودي 90",
+    "name_en": "Saudi National Day 90",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_National_Day_90_Guideline_3d09dee814.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_eaff1b8ad8.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 56,
+    "name_ar": "اليوم الوطني السعودي 93",
+    "name_en": "Saudi National Day 93",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_National_Day_93_Guideline_c65f2f22e4.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_d1264c2785.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 57,
+    "name_ar": "رؤية 2030",
+    "name_en": "Vision 2030",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SAUDI_VISION_2030_Guideline_4bdaefc139.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_595ce600a5.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 59,
+    "name_ar": "البنك السعودي للإستثمار",
+    "name_en": "The Saudi Investment Bank",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SAIB_Guideline_4408cf2ca8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_d4cafbefed.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 60,
+    "name_ar": "سداد",
+    "name_en": "Sadad",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SADAD_Guideline_2123a4f756.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_133f890983.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 61,
+    "name_ar": "بنك الأهلي",
+    "name_en": "NCB",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/NCB_Guideline_d5a3e41913.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_4c5d0356af.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 62,
+    "name_ar": "المركز الوطني للتخصيص",
+    "name_en": "National Center for Privatization",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/NCP_Guideline_74e0767304.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_224cc26735.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 63,
+    "name_ar": "نيوم",
+    "name_en": "Neom",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/NEOM_Guideline_741986081a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2ac73e0d21.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 64,
+    "name_ar": "نادي الهلال",
+    "name_en": "Hilal FC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Hilal_Guideline_75a9606531.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_167607ae7d.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 65,
+    "name_ar": "بنك البلاد",
+    "name_en": "AlBilad Bank",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Bilad_Guideline_49d52de9b9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_beb3c9c371.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 66,
+    "name_ar": "العودة للدراسة",
+    "name_en": "Back to School",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Back_to_School_Guideline_8856e9fa36.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_83d43c6a98.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 67,
+    "name_ar": "الهيئة العامة للطيران المدني",
+    "name_en": "GACA",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/GACA_Guideline_1bec94fb73.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_8059b89ca5.png",
+    "date_added": "2023-11-05"
+  },
+  {
+    "id": 71,
+    "name_ar": "مركز الدراسات والأبحاث القانونية",
+    "name_en": "Center Of Legal Studies & Research",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Center_of_Legal_Studies_and_Research_Guideline_cd7b241114.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_510c3028dc.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 72,
+    "name_ar": "دبي",
+    "name_en": "Dubai",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Dubai_Guideline_997ed5caf5.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_ab1c3ff46a.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 73,
+    "name_ar": "طيران الاتحاد",
+    "name_en": "Etihad Airways",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Etihad_Airlines_Guideline_5a7d17b7d6.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2fff08365b.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 74,
+    "name_ar": "الهيئة العامة للأوقاف",
+    "name_en": "General Authority for Awqaf",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/General_authority_for_Awqaf_Guideline_028a589ae2.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_e7dab883f4.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 75,
+    "name_ar": "الديوان العام للمحاسبة",
+    "name_en": "General Court of Audit",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/General_Court_of_Audit_Guideline_cacc23cac4.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_88e976ddd2.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 76,
+    "name_ar": "حكومة دبي",
+    "name_en": "Government of Dubai",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Government_of_Dubai_Guideline_5b7a64bd48.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_ddc98ce6cf.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 77,
+    "name_ar": "هاوي",
+    "name_en": "Hawi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Hawi_Guideline_686979d772.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_50150c0183.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 78,
+    "name_ar": "وزارة الموارد البشرية والتنمية الاجتماعية",
+    "name_en": "Ministry of Human Resource and Social Development",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Human_Resource_and_Social_Development_Guideline_9af8e984ca.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_6d4b371e93.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 80,
+    "name_ar": "برنامج تنمية القدرات البشرية",
+    "name_en": "Human Capability Development Program",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/HCDP_Guideline_0c0a2c0841.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_24_fd5c7a490b.png",
+    "date_added": "2023-11-06"
+  },
+  {
+    "id": 81,
+    "name_ar": "غرفة الرياض",
+    "name_en": "Riyadh Chamber",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Chamber_Guideline_8810d312cf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_11_3066137b3d.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 82,
+    "name_ar": "حدائق الملك عبدالله العالمية",
+    "name_en": "king Abdullah International Gardens",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/KAIG_Guideline_e5948e9658.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_05_6fedcf2782.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 83,
+    "name_ar": "كليات التقنية العليا",
+    "name_en": "Higher Colleges of Technology",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Higher_Colleges_of_Technology_Guideline_25ab5fe591.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_25_a93e269055.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 84,
+    "name_ar": "جامعة الأميرة نورة بنت عبدالرحمن",
+    "name_en": "Princess Nourah bint Abdulrahman University",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/PNU_Guideline_83090ac5f0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_09_f4d53ec9df.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 85,
+    "name_ar": "هاكاثون الصناعة",
+    "name_en": "Industrial Hackathon",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Industrial_Hackathon_Guideline_134bc07436.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_26_cd91106b87.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 86,
+    "name_ar": "الجامعة الإسلامية بالمدينة المنورة",
+    "name_en": "Islamic University of Medinah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/IUM_Guideline_b4ef2a4ea3.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_27_323f4feafc.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 87,
+    "name_ar": "موسم جدة",
+    "name_en": "Jeddah Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Jeddah_Season_Guideline_00ed782772.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_28_c8c626f5dc.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 88,
+    "name_ar": "جامعة جدة",
+    "name_en": "Jeddah University",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Jeddah_University_Guideline_dbea1947db.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_29_52d09c6af1.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 89,
+    "name_ar": "معهد مسك للفنون",
+    "name_en": "Misk Art Institute",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Misk_Art_Institute_Guideline_6844ce3035.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_31_7e0fea043b.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 90,
+    "name_ar": "وزارة العمل",
+    "name_en": "Ministry of Labor",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/MOL_Guideline_feefc97947.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_32_ffc76b80d9.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 91,
+    "name_ar": "صيدليات النهدي",
+    "name_en": "Nahdi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Nahdi_Guideline_1275b92503.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_33_3e67ff62a3.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 92,
+    "name_ar": "الهيئة الملكية لمدينة مكة المكرمة والمشاعر المقدسة",
+    "name_en": "Royal Commission for Makkah City & Holy Sites",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/RCMC_Guideline_67c1bda16a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_34_13ab5a1135.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 93,
+    "name_ar": "الهيئة السعودية للسياحة",
+    "name_en": "Saudi Tourism Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_Tourism_Authority_Guideline_67037c286f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_38_cab43fe673.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 94,
+    "name_ar": "سياحة السعودية",
+    "name_en": "Saudi Tourism",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_Tourism_Guideline_506f231275.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_37_86e243bcb4.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 95,
+    "name_ar": "موسم الرياض 22",
+    "name_en": "Riyadh Season 2022",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Season_2022_Guideline_0bc1646dbb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_36_61c10054de.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 96,
+    "name_ar": "موسم الشرقية",
+    "name_en": "Shariqiah Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Shariqiah_Season_Guideline_d1c94493cf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_39_d2ec40e590.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 97,
+    "name_ar": "الشارقة عاصمة عالمية للكتاب",
+    "name_en": "Sharjah World Book Capital",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Sharjah_World_Book_Capital_2019_Guideline_24ede4f767.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_40_8b514b0a27.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 98,
+    "name_ar": "كأس العالم للأندية 2023",
+    "name_en": "FIFA Club World Cup 2023",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/fcwc2023_Guideline_9d7a22bdf2.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_c5e92bf717.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 102,
+    "name_ar": "أرامكس",
+    "name_en": "Aramex",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Aramex_Guideline_book_10_07_2019_c95f6b5669.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_ca8864cc6b.png",
+    "date_added": "2023-11-07"
+  },
+  {
+    "id": 103,
+    "name_ar": "إكسبو الرياض 2030",
+    "name_en": "Riyadh Expo 2030",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Expo_2030_Guideline_33697fed2c.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_f78ab7e3ac.png",
+    "date_added": "2023-11-27"
+  },
+  {
+    "id": 104,
+    "name_ar": "برنامج تنمية القدرات البشرية",
+    "name_en": "Human Capability Development Program",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/HCDP_Guideline_a92c8e0a41.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_6559c758b6.png",
+    "date_added": "2023-12-05"
+  },
+  {
+    "id": 105,
+    "name_ar": "نادي الأهلي",
+    "name_en": "Al Ahly FC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Ahly_FC_Guideline_21e54b6b3a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Cover1_8e51bf4737.png",
+    "date_added": "2023-12-11"
+  },
+  {
+    "id": 108,
+    "name_ar": "الإقامة المميزة",
+    "name_en": "Premium Residency",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Premium_Residency_Guidelines_fe031a0e91.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_099f8909b9.png",
+    "date_added": "2023-12-19"
+  },
+  {
+    "id": 111,
+    "name_ar": "عام الإبل 2024",
+    "name_en": "The Year of The Camel 2024",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/The_Year_of_The_Camel_2024_Guideline_ea3ec1556b.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_4e10db2429.png",
+    "date_added": "2024-01-05"
+  },
+  {
+    "id": 113,
+    "name_ar": "معرض الدفاع العالمي",
+    "name_en": "World Defense Show",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/World_Defense_Show_Guideline_6e45c74dc0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_1e645234f8.png",
+    "date_added": "2024-01-15"
+  },
+  {
+    "id": 114,
+    "name_ar": "هيئة تطوير بوابة الدرعية",
+    "name_en": "Diriyah Gate Development Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/DGDA_Guideline_45e4dd0395.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_fb634f2a2b.png",
+    "date_added": "2024-01-24"
+  },
+  {
+    "id": 115,
+    "name_ar": "الاتحاد السعودي للرياضات الإلكترونية",
+    "name_en": "Saudi Esport Federation",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SEF_Guideline_477ef6c2bb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2_84e20d7883.png",
+    "date_added": "2024-01-24"
+  },
+  {
+    "id": 116,
+    "name_ar": "المؤسسة العامة للتأمينات الاجتماعية",
+    "name_en": "General Organization for Social Insurance",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Gosi_Guide_Visual_8f31383b62.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_General_Organization_for_Social_Insurance_c1e65ab289.png",
+    "date_added": "2024-07-07"
+  },
+  {
+    "id": 117,
+    "name_ar": "المسجد الحرام",
+    "name_en": "Almasjid Alharam",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Almasjid_Alharam_Brand_Basic_V2_92c28f7072.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Masjid_al_Haram_39137b6f7f.png",
+    "date_added": "2024-07-10"
+  },
+  {
+    "id": 118,
+    "name_ar": "الحرمين",
+    "name_en": "Al Haramain",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Haramain_Brand_Basic_3ff855c04a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Al_Haramain_b93d172605.png",
+    "date_added": "2024-07-10"
+  },
+  {
+    "id": 119,
+    "name_ar": "المسجد النبوي",
+    "name_en": "Al Masjid an Nabawi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Almasjid_Alnabawi_Brand_Basic_V2_5ae13c95df.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Al_Masjid_an_Nabawi_7ef404589b.png",
+    "date_added": "2024-07-10"
+  },
+  {
+    "id": 120,
+    "name_ar": "مصرف الراجحي",
+    "name_en": "Al Rajhi Bank",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Al_Rajhi_Bank_Guideline_73ae2ea639.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_03_2ed81b851e.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 121,
+    "name_ar": "المركز الوطني لقياس أداء الأجهزة العامة",
+    "name_en": "Adaa the national center for performance measurement ",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Adaa_Guideline_6e8838a139.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_02_e0918191be.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 122,
+    "name_ar": "عرب نيوز",
+    "name_en": "Arab News",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Arab_News_Guideline_7c686eb66e.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_07_7b7c022bdc.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 123,
+    "name_ar": "مجموعة بوتيك",
+    "name_en": "Boutique Group",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Boutique_Group_Guideline_6973e084bf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_08_7f4f19b07c.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 124,
+    "name_ar": "حساب المواطن",
+    "name_en": "Citizen Account",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Citizens_Account_Guideline_5640677b21.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_12_f7403f654c.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 125,
+    "name_ar": "شركة مطارات الدمام",
+    "name_en": "DACO",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/DACO_Guideline_ef3e2ba928.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_14_3828a6efd2.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 126,
+    "name_ar": "أعمالي",
+    "name_en": "AAMALY",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Aamaly_Guideline_c11fe276e7.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_01_eaf57c12bd.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 127,
+    "name_ar": "موسم صيف عسير",
+    "name_en": "Asser Summer Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Aseer_Season_Guideline_f7e777fb2d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_15_15_42b30e5e56.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 128,
+    "name_ar": "ايوا",
+    "name_en": "eyewa",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Eyewa_Guideline_1283467ae7.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_19_b1ddbd55a2.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 129,
+    "name_ar": "الهيئة العامة للزكاة والدخل",
+    "name_en": "General Authority of zakat & tax",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/GAZT_Guideline_33a1651f40.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_22_7c64d534d3.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 130,
+    "name_ar": "المؤتمر التقني العالمي",
+    "name_en": "Leap",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/LEAP_Guideline_7e54420cb0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_25_52faeef23b.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 131,
+    "name_ar": "الاتحاد السعودي للأمن السيبراني والبرمجة والدرونز",
+    "name_en": "Saudi Federation for Cybersecurity Programming and Drones",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/safcsp_identity_0e5fc56182.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Cover_ece5d734a2.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 132,
+    "name_ar": "المجلس الصحي السعودي",
+    "name_en": "Saudi Health Council",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_Health_Council_Guideline_ded35b112f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_04_7c1a7e236d.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 133,
+    "name_ar": "الشركة السعودية للكهرباء",
+    "name_en": "Saudi electricity company",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SEC_Guideline_6340d57a8d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_07_f4ac82c6f7.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 134,
+    "name_ar": "شاهقة",
+    "name_en": "Shaheqa",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Shaheqa_Guideline_5beb959e2a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_08_a757145993.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 135,
+    "name_ar": "مركز تفسير للدراسات القرآنية",
+    "name_en": "Tafsir Center for Quranic Studies",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Tafsir_Guideline_pdf_c6f6ac1719.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_11_0341572a8b.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 136,
+    "name_ar": "الإمارات",
+    "name_en": "The emirates ",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/The_Emirates_Guideline_cd1143ed4e.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_13_c53daf7047.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 137,
+    "name_ar": "ذاخر مكة",
+    "name_en": "Thakher Makkah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Thakher_Makkah_Guideline_9e21f66d80.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_12_9c211e19e0.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 138,
+    "name_ar": "فيا رياض",
+    "name_en": "Via Riyadh",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/VIA_Riyadh_Guideline_b997a603fc.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers2_04_999a045ff1.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 139,
+    "name_ar": "تو يو",
+    "name_en": "To you",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/To_You_Guideline_4cdd38ab4e.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers2_03_ff18823b42.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 140,
+    "name_ar": "هيئة الزكاة والضريبة والجمارك",
+    "name_en": "Zakat, Tax and Customs Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ZATCA_External_Manual_27_Sep_22_fae7b7bb86.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers2_08_4c370cba74.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 141,
+    "name_ar": "ثقة",
+    "name_en": "thiqah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Thiqah_Guideline_ad66e6a3da.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers1_14_826b3873fa.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 142,
+    "name_ar": "نماء",
+    "name_en": "Namaa",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Nimae_Guideline_4601b7edc9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_07_df311280e4.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 143,
+    "name_ar": "مراس",
+    "name_en": "Meras",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Meras_Guideline_282c5e423d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_031c41e8a7.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 144,
+    "name_ar": "النهدي",
+    "name_en": "Nahdi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Nahdi_Guideline_c6c85fb268.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_06_47d88f86cd.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 145,
+    "name_ar": "رياض بوليفارد",
+    "name_en": "RUH BLVD",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Boulevard_Guideline_f15565613a.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_11_65e87f8ebc.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 146,
+    "name_ar": "مطارات الرياض",
+    "name_en": "Riyadh Airports",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Airports_Guideline_a5e442d1fe.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_10_ab767c3757.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 147,
+    "name_ar": "رياض سفاري",
+    "name_en": "Riyadh Safari",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Safari_Guideline_71432e085c.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_13_38fe7a175c.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 148,
+    "name_ar": "حافلات الرياض",
+    "name_en": "Riyadh Bus",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Public_Transport_Guideline_5ed9c8b91e.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_12_0067e16f2f.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 149,
+    "name_ar": "موسم الرياض",
+    "name_en": "Riyadh Season",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Season_2021_Guideline_5790cb7318.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_14_d2ffa9296d.png",
+    "date_added": "2024-07-16"
+  },
+  {
+    "id": 150,
+    "name_ar": "كأس العالم",
+    "name_en": "World Cup - Saudi Arabia 2034",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Saudi_2034_Guidelines_a4a9956169.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_2b91139eb6.png",
+    "date_added": "2024-07-29"
+  },
+  {
+    "id": 151,
+    "name_ar": "العودة للدراسة",
+    "name_en": "Back to school",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Back_to_school_Guidelines_V02_d35a5bbc04.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_0fbb51a601.png",
+    "date_added": "2024-08-18"
+  },
+  {
+    "id": 152,
+    "name_ar": "اليوم الوطني السعودي 94",
+    "name_en": "Saudi National Day 94",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ND_94_Guidelines_06d61a50e5.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_national_day_01_362a58f72e.png",
+    "date_added": "2024-08-22"
+  },
+  {
+    "id": 153,
+    "name_ar": "الهيئة العامة للأوقاف",
+    "name_en": "General Authority for Awqaf",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Brand_Identity_Manual_1_404e3938a1.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_51276705c0.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 154,
+    "name_ar": "بنك مسقط",
+    "name_en": "Bank Muscat",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/14bdc4a1_53d3_4651_a4d7_85b51df328b4_9dd7f111b5.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_02_49f87449cd.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 155,
+    "name_ar": "تكامل",
+    "name_en": "Takamol",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/2023_Takamol_Guieline_86bbdb4062.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_06_1d56b2b80f.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 156,
+    "name_ar": "اسياد",
+    "name_en": "Asyad",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ASYAD_Guidelines_2021_899155f493.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_04_7314d25cb2.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 157,
+    "name_ar": "سيتي سنتر",
+    "name_en": "City center",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/MAF_Brand_Guidlines_1_169c6daa1f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_03_bb04af3eac.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 158,
+    "name_ar": "مركز مشاريع البنية التحتية بمنطقة الرياض",
+    "name_en": "Riyadh infrastructure projects center",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_Infrastructure_Project_Center_Brand_guideline_95d15ac582.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_05_ef49dbfc02.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 159,
+    "name_ar": "أمانة منطقة القصيم",
+    "name_en": "Qassim Municipality",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Identity_Guideline_Qassim_Muncipality_02_ae00bc312d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers7_01_4cdb7bd710.jpg",
+    "date_added": "2024-09-23"
+  },
+  {
+    "id": 160,
+    "name_ar": "وزارة الصحة سلطنة عمان",
+    "name_en": "Omani ministry of health",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/moh_brand_identity_eb6a3acd91.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_06bbf49a52.png",
+    "date_added": "2025-01-13"
+  },
+  {
+    "id": 161,
+    "name_ar": "مؤسسة الملك عبدالعزيز ورجاله للموهبة والإبداع موهبة",
+    "name_en": "King abdulaziz and his companions foundation for giftedness and creativity mawhiba",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/brandguidelinecombined_44dd4c9220.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_dfbae9d887.png",
+    "date_added": "2025-01-13"
+  },
+  {
+    "id": 162,
+    "name_ar": "هيئة الحكومة الرقمية",
+    "name_en": "Digital government authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/230331_DGA_Brand_Manual_ddeb7d8e80.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_ab5ed7e314.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 163,
+    "name_ar": "ويبوك",
+    "name_en": "webook",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/BRAND_GUIDELINE_1_1_1_e877c25b29.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_6118793cca.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 164,
+    "name_ar": "أمانة منطقة الرياض",
+    "name_en": "Riyadh Region Municipality",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Brand_Guideline_amant_mntqt_alryad_79b2227e93.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_5a86f889d4.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 165,
+    "name_ar": "الهيئة العامة لتنظيم الإعلام",
+    "name_en": "General authority of media regulation",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/GAMR_Brand_Identity_Manual_01_0eb233ed9d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_5212b8db58.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 166,
+    "name_ar": "المؤسسة العامة لتحلية المياه المالحة",
+    "name_en": "Saline Water Conversion Corporation SWCC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Identity_Guideline_SWCC_a1ecff2fb1.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_44_85ae8e8035.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 167,
+    "name_ar": "استثمر في السعودية",
+    "name_en": "Invest Saudi",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/INVEST_SAUDI_GUIDEBOOK_compressed_430cfb9413.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_45_7c7525211f.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 168,
+    "name_ar": "الهيئة السعودية للملكية الفكرية",
+    "name_en": "saudi authority for intellectual property",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Guideline_SAIP_b2f6b5e7bb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_43_979356efac.png",
+    "date_added": "2025-01-22"
+  },
+  {
+    "id": 169,
+    "name_ar": "هيئة المحتوى المحلي والمشتريات الحكومية",
+    "name_en": "Local Content and Government Procurement Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/LCGPA_Guideline_2021_a89902d8cc.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_47_c0b34d496b.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 170,
+    "name_ar": "قمة ميتاجيت",
+    "name_en": "metagate Summit",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Meta_Gate_Summit_Brand_Guidelines_ea5f622c3c.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_48_6ad30c31b8.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 171,
+    "name_ar": "وزارة الثقافة",
+    "name_en": "Ministry of Culture",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/MOC_GUIDELINES_040219_5bf4ee2b07.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_9040347568.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 172,
+    "name_ar": "المسار الرياضي",
+    "name_en": "Sports Boulevard",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SBF_Brand_Guideline_08173ebf4f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_6de01356e5.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 173,
+    "name_ar": "المركز السعودي للتحكيم",
+    "name_en": "Saudi arbitration center",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SCCA_Brand_Guideline_55c970f651.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_f24f9f3fa1.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 174,
+    "name_ar": "وزارة الرياضة",
+    "name_en": "Ministry of sport",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/MOS_Guidelines_ERROR_OPENING_958d924a42.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_52_5d56ea5b15.png",
+    "date_added": "2025-01-26"
+  },
+  {
+    "id": 175,
+    "name_ar": "فعاليات العيد 2025",
+    "name_en": "Eid Events 2025",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Eid_Fitr_2025_d71dcc8d53.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_01_5ce8edb4db.jpg",
+    "date_added": "2025-03-02"
+  },
+  {
+    "id": 176,
+    "name_ar": "الهيئة الملكية لمدينة الرياض",
+    "name_en": "Royal Commission For Riyadh City",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/02_RCRC_Visual_Guidlines_496d89ebc0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_100_8133c4dbbf.jpg",
+    "date_added": "2025-04-09"
+  },
+  {
+    "id": 177,
+    "name_ar": "مدينة الملك عبدالعزيز للعلوم والتقنية",
+    "name_en": "King Abdulaziz City for Science and Technology (KACST) ",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/1630_7709fd34c4.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_100_936131fe3a.jpg",
+    "date_added": "2025-04-09"
+  },
+  {
+    "id": 178,
+    "name_ar": "وزارة المالية",
+    "name_en": "ministry of finance",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/180326_Mo_F_Brand_Basic_03_515359bbcb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_100_5498a7db8e.jpg",
+    "date_added": "2025-04-09"
+  },
+  {
+    "id": 179,
+    "name_ar": "الاتصالات السعودية",
+    "name_en": "STC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/191217_stc_basic_V6_4944738ea3.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_100_c6d7a773de.jpg",
+    "date_added": "2025-04-09"
+  },
+  {
+    "id": 180,
+    "name_ar": "روابي القابضة",
+    "name_en": "Rawabi Holding",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/1713944259_rawabi_guidelines_2024_v17_365489eb79.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_100_2df0ceda7b.jpg",
+    "date_added": "2025-04-09"
+  },
+  {
+    "id": 181,
+    "name_ar": "أرامكس",
+    "name_en": "aramex",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Aramex_Guideline_book_10_07_2019_f778481173.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_100_6058540d22.jpg",
+    "date_added": "2025-04-13"
+  },
+  {
+    "id": 182,
+    "name_ar": "بي_لابس",
+    "name_en": "b_labs",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/b_labs_Brand_Identity_Vol_07_61849792e8.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_100_80a5e2c651.jpg",
+    "date_added": "2025-04-13"
+  },
+  {
+    "id": 183,
+    "name_ar": "مصرف أبوظبي الإسلامي",
+    "name_en": "abu dhabi islamic bank",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/ADIB_Refreshed_Brand_Guidelines_cc0cffc583.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_100_980020f341.jpg",
+    "date_added": "2025-04-13"
+  },
+  {
+    "id": 184,
+    "name_ar": "قناة الجزيرة",
+    "name_en": "Al jazeera",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/AJA_Guideline_fc5e4c706c.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_100_f0e91f1a1f.jpg",
+    "date_added": "2025-04-13"
+  },
+  {
+    "id": 185,
+    "name_ar": "علم",
+    "name_en": "elm",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Elm_Brand_Guideline_241126_v5_9a5de9d641.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_100_a4932a3a4b.jpg",
+    "date_added": "2025-04-13"
+  },
+  {
+    "id": 186,
+    "name_ar": "كاليدو",
+    "name_en": "calido",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Calido_2_presentation_92b005630b.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_91536af8c7.png",
+    "date_added": "2025-04-18"
+  },
+  {
+    "id": 187,
+    "name_ar": "عصير الضاحية",
+    "name_en": "Dhahia juice",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Copy_of_DJ_Guidelines2019_1_a19d91def3.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_e3eb3141b3.png",
+    "date_added": "2025-04-18"
+  },
+  {
+    "id": 188,
+    "name_ar": "ديل",
+    "name_en": "Deel",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Deel_Guidelines_Vol_01_611bb22300.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_57747b6de6.png",
+    "date_added": "2025-04-18"
+  },
+  {
+    "id": 189,
+    "name_ar": "فيندا برو",
+    "name_en": "Fynda pro",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Fynda_ba2d3607b4.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_92d1fe9337.png",
+    "date_added": "2025-04-18"
+  },
+  {
+    "id": 190,
+    "name_ar": "الدرعية",
+    "name_en": "diriyah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Diriyah_Brand_Guidelines_e66b973fc5.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_ad206160eb.png",
+    "date_added": "2025-04-18"
+  },
+  {
+    "id": 191,
+    "name_ar": "هيئة المساحة الجيولوجية السعودية",
+    "name_en": "Saudi Geological Survey",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Guideline_copy_d008d7b688.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_8d89a014ca.png",
+    "date_added": "2025-04-20"
+  },
+  {
+    "id": 192,
+    "name_ar": "حلول",
+    "name_en": "Hulul",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Hulul_Branding_Presentation_Pimula_2013cf26bb.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_e70d91e024.png",
+    "date_added": "2025-04-20"
+  },
+  {
+    "id": 193,
+    "name_ar": "جميل لرياضة المحركات",
+    "name_en": "jameel motorsport",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Jameel_Motorsport_Identity_Guidelines_2024_V3_2_9d58e433fe.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_9f6c8f594c.png",
+    "date_added": "2025-04-20"
+  },
+  {
+    "id": 194,
+    "name_ar": "كاراميلا",
+    "name_en": "karamella",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Karamella_Graphic_Identity_FULL_db7dafc49d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_b050fde6f1.png",
+    "date_added": "2025-04-20"
+  },
+  {
+    "id": 195,
+    "name_ar": "منتدى المحتوى المحلي",
+    "name_en": "Local Content Forum",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/LCF_mini_Guideline_V2_7a293d1e00.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_ecc5e4a825.png",
+    "date_added": "2025-04-20"
+  },
+  {
+    "id": 196,
+    "name_ar": "تقييم",
+    "name_en": "Taqeem",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/logo_file_da68b52648.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_100_4405a1301e.jpg",
+    "date_added": "2025-04-22"
+  },
+  {
+    "id": 197,
+    "name_ar": "مدى",
+    "name_en": "Mada",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/mada_guideline_921507bcc6.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_100_834e76e334.jpg",
+    "date_added": "2025-04-22"
+  },
+  {
+    "id": 198,
+    "name_ar": "مرازم",
+    "name_en": "marazim",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Marazim_Guidelines_16d19a647f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_100_ede16f8935.jpg",
+    "date_added": "2025-04-22"
+  },
+  {
+    "id": 199,
+    "name_ar": "مزايا",
+    "name_en": "mazaya",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Mazaya_Brand_Guide_20c34d7d08.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_100_91954acef5.jpg",
+    "date_added": "2025-04-22"
+  },
+  {
+    "id": 200,
+    "name_ar": "مرسول",
+    "name_en": "mrsool",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Mrsool_Guideline_6c201f8138.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_100_d83375f138.jpg",
+    "date_added": "2025-04-22"
+  },
+  {
+    "id": 201,
+    "name_ar": "مجموعة مبتكرون المتحدة",
+    "name_en": "mobtakeron united group",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Mobtakeron_Visual_Identity_0e166e52cc.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_35_630ced5fc7.png",
+    "date_added": "2025-04-30"
+  },
+  {
+    "id": 202,
+    "name_ar": "نورث ستوديوز",
+    "name_en": "North Studios",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/NORTH_BRAND_IDENTITY_1_d9c5a0b338.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_39_8ff1d708ce.png",
+    "date_added": "2025-04-30"
+  },
+  {
+    "id": 203,
+    "name_ar": "مبادرة السعودية الخضراء",
+    "name_en": "Saudi green initiative",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SGI_Brand_Guidelines_2024_397a3a52d0.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_42_12aa6d723a.png",
+    "date_added": "2025-04-30"
+  },
+  {
+    "id": 204,
+    "name_ar": "ساندبوكس",
+    "name_en": "sandbox",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Sandbox_Festival_Master_visual_2023_ffed4cb4d9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_41_1bd7f22747.png",
+    "date_added": "2025-04-30"
+  },
+  {
+    "id": 205,
+    "name_ar": "العمارة السعودية",
+    "name_en": "Saudi architecture",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SA_Guidelines_Final_01_3d4fda589f.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Artboard_40_510ae2ccd6.png",
+    "date_added": "2025-04-30"
+  },
+  {
+    "id": 206,
+    "name_ar": "اليوم الوطني السعودي 95",
+    "name_en": "Saudi National Day 95",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SND_95_Guidelines_6_15b8b492e1.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_SND_95_Guidelines_6_b5546b2536.png",
+    "date_added": "2025-08-04"
+  },
+  {
+    "id": 207,
+    "name_ar": "الرياض مدينة مبدعة في التصميم",
+    "name_en": "Riyadh Creative City in Design",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Riyadh_City_Guideline_9bad3195b7.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Riyadh_Creative_City_in_Design_bed4bc7ce4.png",
+    "date_added": "2025-10-30"
+  },
+  {
+    "id": 208,
+    "name_ar": "NHC",
+    "name_en": "NHC",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/NHC_Guidelines_3399ea380b.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Cover_fe35006d38.jpg",
+    "date_added": "2025-11-02"
+  },
+  {
+    "id": 209,
+    "name_ar": "وزارة الحج والعمرة",
+    "name_en": "Ministry of Hajj and Umrah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/dlyl_alhwyt_albsryt_6c26e4adc3.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_55b8354728.png",
+    "date_added": "2025-11-03"
+  },
+  {
+    "id": 210,
+    "name_ar": "كيتا",
+    "name_en": "Keeta",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/Keeta_Guidelines_2024_09_b3bd2d5aaf.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Keeta_Guidelines_e9825686ae.png",
+    "date_added": "2025-11-05"
+  },
+  {
+    "id": 211,
+    "name_ar": "الهيئة العامة للعقار",
+    "name_en": "real estate general authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/rega_guide_f1b919fd05.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_rega_guide_e3d3ca54fe.png",
+    "date_added": "2025-11-11"
+  },
+  {
+    "id": 212,
+    "name_ar": "وزارة النقل والخدمات اللوجستية",
+    "name_en": "Ministry of Transport and logistic Serviecs",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/alhwyt_8facd5728d.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_r_8218f2925f.png",
+    "date_added": "2025-11-30"
+  },
+  {
+    "id": 213,
+    "name_ar": "هيئة تطوير المنطقة الشرقية",
+    "name_en": "Sharqia Development Authority",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SDA_Logo_guideline_67a17df9bc.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_23_4f2c39a3b6.png",
+    "date_added": "2026-01-12"
+  },
+  {
+    "id": 214,
+    "name_ar": "إن للعلاقات العامة والاتصال",
+    "name_en": "n Communication Solutions Company",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/CS_Brand_Guidelines_09f3d84459.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Coversn_c5ee115ab2.png",
+    "date_added": "2026-02-09"
+  },
+  {
+    "id": 215,
+    "name_ar": "البنك المركزي السعودي",
+    "name_en": "Saudi Central Bank",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/SAMA_brand_guidelines_bf610cf88e.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Covers_143_9e6ce313a8.png",
+    "date_added": "2026-05-01"
+  },
+  {
+    "id": 216,
+    "name_ar": "حياكم الله",
+    "name_en": "Hayyakum Allah",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/aldlyl_alirshady_llhwyt_altrhybyt_fa9085d7f9.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_Coverss_07065b7b94.jpg",
+    "date_added": "2026-05-14"
+  },
+  {
+    "id": 218,
+    "name_ar": "قدام",
+    "name_en": "giddam",
+    "pdf_url": "https://strapi.wasmenia.com/uploads/601a4833e74e9853d6fcb5ab876923335041a97e523ff3b1810e7954e7ff14ab_c9ab2b7141.pdf",
+    "thumbnail_url": "https://strapi.wasmenia.com/uploads/medium_giddam_6d5388fc0a.png",
+    "date_added": "2026-06-11"
+  }
+]
