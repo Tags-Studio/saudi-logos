@@ -85,15 +85,17 @@
     <h1>تحميل شعارات السعودية بدقة عالية <span>مجاناً</span></h1>
     <p>أكبر مكتبة رقمية متكاملة لتحميل شعارات الجهات الحكومية والشركات والجامعات السعودية بصيغ متعددة وقابلة للتعديل والطباعة (SVG, PNG, PDF).</p>
     
-    <div class="search-wrapper">
+    <div class="search-wrapper" style="position: relative;">
       <form action="/browse" method="GET" class="search-box">
-        <input type="text" name="q" placeholder="ابحث عن شعار... (مثال: وزارة التعليم، آرامكو، الهلال)" aria-label="البحث عن شعار" required>
+        <input type="text" id="home-search-input" name="q" placeholder="ابحث عن شعار... (مثال: وزارة التعليم، آرامكو، الهلال)" aria-label="البحث عن شعار" required autocomplete="off">
         <button type="submit" class="search-btn" aria-label="بحث">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </button>
       </form>
+      <!-- Suggestions Dropdown -->
+      <div id="search-suggestions" class="search-suggestions-dropdown" style="display: none; position: absolute; top: 100%; right: 0; left: 0; background: var(--glass-bg); backdrop-filter: blur(12px); border: 1px solid var(--border-color); border-radius: 12px; margin-top: 0.5rem; z-index: 1000; box-shadow: var(--glass-shadow); max-height: 300px; overflow-y: auto;"></div>
       <div class="search-tags">
         <span>عمليات بحث شائعة:</span>
         <a href="/browse?q=رؤية+2030">رؤية 2030</a>

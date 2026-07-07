@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackgroundToggle();
   initSearch();
   initToast();
+  initHomeAutocomplete();
 });
 
 // --- Theme Management ---
@@ -435,3 +436,80 @@ window.submitUpdateViaWhatsapp = function(nameAr) {
   // Open in new window
   window.open(whatsappUrl, '_blank');
 };
+
+// --- Home Page Autocomplete suggestions dropdown ---
+function initHomeAutocomplete() {
+  const input = document.getElementById('home-search-input');
+  const dropdown = document.getElementById('search-suggestions');
+  if (!input || !dropdown) return;
+
+  let allLogos = [];
+  fetch('/logos.json')
+    .then(r => r.json())
+    .then(data => {
+      allLogos = data;
+    })
+    .catch(err => console.error('Failed to load autocomplete DB:', err));
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    if (!query) {
+      dropdown.style.display = 'none';
+      return;
+    }
+
+    // Filter matching logos by Arabic name, English name, or tags
+    const matches = allLogos.filter(logo => {
+      return (
+        logo.name_ar.toLowerCase().includes(query) ||
+        (logo.name_en && logo.name_en.toLowerCase().includes(query)) ||
+        (logo.tags && logo.tags.some(t => t.toLowerCase().includes(query)))
+      );
+    }).slice(0, 6);
+
+    if (matches.length === 0) {
+      dropdown.innerHTML = `
+        <div style="padding: 1rem; text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+          لا توجد شعارات مطابقة للبحث
+        </div>
+      `;
+    } else {
+      dropdown.innerHTML = matches.map(logo => {
+        let catText = 'شعار';
+        if (logo.category === 'government') catText = 'جهة حكومية';
+        else if (logo.category === 'private') catText = 'شركة / قطاع خاص';
+        else if (logo.category === 'education') catText = 'تعليم وجامعات';
+        else if (logo.category === 'sports') catText = 'نادي / رياضة';
+        else if (logo.category === 'vision') catText = 'مشاريع ورؤية 2030';
+        
+        return `
+          <a href="/logos/${logo.slug}" class="suggestion-item">
+            <div style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: white; border-radius: 6px; padding: 0.25rem; margin-left: 1rem; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+              <img src="${logo.svg_path}" alt="${logo.name_ar}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+            <div style="flex-grow: 1; text-align: right;">
+              <div style="font-weight: 500; color: var(--text-primary); font-size: 0.95rem;">${logo.name_ar}</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.15rem;">${catText}</div>
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    dropdown.style.display = 'block';
+  });
+
+  // Close dropdown on click outside
+  document.addEventListener('click', (e) => {
+    if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.style.display = 'none';
+    }
+  });
+
+  // Show dropdown on focus if input has text
+  input.addEventListener('focus', () => {
+    if (input.value.trim()) {
+      dropdown.style.display = 'block';
+    }
+  });
+}
