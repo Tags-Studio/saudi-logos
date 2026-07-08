@@ -331,7 +331,7 @@ def build_site():
         css = f"""
         @font-face {{
           font-family: "preview-font-{f['id']}";
-          src: url("{f['font_url']}") format("truetype");
+          src: url("{f['font_url']}");
           font-display: swap;
         }}
         """
