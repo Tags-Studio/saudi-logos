@@ -141,7 +141,7 @@ def render_font_card(f):
           </h3>
         </div>
         <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color);">
-          <a href="{f['font_url']}" download="{f['slug']}.ttf" class="btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.25rem; text-decoration: none; cursor: pointer; background: linear-gradient(135deg, var(--accent-green), var(--accent-green-hover)); color: white; font-weight: 700;">
+          <a href="{f['font_url']}" download="{f['slug']}{'.otf' if f['font_url'].endswith('.otf') else '.ttf'}" class="btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.25rem; text-decoration: none; cursor: pointer; background: linear-gradient(135deg, var(--accent-green), var(--accent-green-hover)); color: white; font-weight: 700;">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
@@ -328,10 +328,11 @@ def build_site():
     # Render @font-face style block declarations
     font_faces_css = []
     for f in fonts_db_sorted:
+        fmt = 'format("opentype")' if f['font_url'].endswith('.otf') else 'format("truetype")'
         css = f"""
         @font-face {{
           font-family: "preview-font-{f['id']}";
-          src: url("{f['font_url']}");
+          src: url("{f['font_url']}") {fmt};
           font-display: swap;
         }}
         """
