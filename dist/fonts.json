@@ -1,143 +1,598 @@
 [
   {
-    "id": 7789,
-    "name": "Hacen Liner Broadcast HD",
-    "slug": "hacen-liner-broadcast-hd",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-broadcast-hd.ttf"
-  },
-  {
-    "id": 7792,
-    "name": "Mitra",
-    "slug": "mitra",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/mitra.ttf"
-  },
-  {
-    "id": 7796,
-    "name": "AlHurraTxtreg",
-    "slug": "alhurratxtreg",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/alhurratxtreg.ttf"
-  },
-  {
-    "id": 7794,
-    "name": "Persian-Titr DF ** 1",
-    "slug": "persian-titr-df-1",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titr-df-1.ttf"
-  },
-  {
-    "id": 7791,
-    "name": "Hacen Liner Print-out Light",
-    "slug": "hacen-liner-print-out-light",
+    "id": 3617,
+    "name": "B Tehran",
+    "slug": "b-tehran-2",
     "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-print-out-light.ttf"
+    "font_url": "/assets/fonts/arabyfont/b-tehran-2.ttf"
   },
   {
-    "id": 7785,
-    "name": "Mitra Bold Mazar",
-    "slug": "mitra-bold-mazar",
+    "id": 3616,
+    "name": "Sp_Compset",
+    "slug": "sp_compset-2",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/sp_compset-2.ttf"
+  },
+  {
+    "id": 3615,
+    "name": "Ferdosi Mazar",
+    "slug": "ferdosi-mazar",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/ferdosi-mazar.ttf"
+  },
+  {
+    "id": 3608,
+    "name": "Lotus",
+    "slug": "lotus-2",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/lotus-2.ttf"
+  },
+  {
+    "id": 3611,
+    "name": "N-Ketab",
+    "slug": "n-ketab-3",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/n-ketab-3.ttf"
+  },
+  {
+    "id": 3614,
+    "name": "Palatino LT Arabic",
+    "slug": "palatino-lt-arabic",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/palatino-lt-arabic.ttf"
+  },
+  {
+    "id": 3613,
+    "name": "Lotus Mazar",
+    "slug": "lotus-mazar",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/lotus-mazar.ttf"
+  },
+  {
+    "id": 3610,
+    "name": "Sp_Badr",
+    "slug": "sp_badr-2",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/sp_badr-2.ttf"
+  },
+  {
+    "id": 3612,
+    "name": "Badr Mazar",
+    "slug": "badr-mazar",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/badr-mazar.ttf"
+  },
+  {
+    "id": 3609,
+    "name": "Bahij Uthman Taha",
+    "slug": "bahij-uthman-taha",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/bahij-uthman-taha.ttf"
+  },
+  {
+    "id": 6059,
+    "name": "Damas",
+    "slug": "damas",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/damas.ttf"
+  },
+  {
+    "id": 6061,
+    "name": "THARWATEMARARUQAALIGHT2",
+    "slug": "tharwatemararuqaalight2-2",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/tharwatemararuqaalight2-2.ttf"
+  },
+  {
+    "id": 6057,
+    "name": "Hebah Font",
+    "slug": "hebah-font",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/hebah-font.ttf"
+  },
+  {
+    "id": 6060,
+    "name": "THARWATEMARARUQAAhollow",
+    "slug": "tharwatemararuqaahollow-2",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/tharwatemararuqaahollow-2.ttf"
+  },
+  {
+    "id": 3607,
+    "name": "Traditional Arabic",
+    "slug": "traditional-arabic-2",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/traditional-arabic-2.otf"
+  },
+  {
+    "id": 6052,
+    "name": "Rekaa",
+    "slug": "rekaa",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/rekaa.ttf"
+  },
+  {
+    "id": 6054,
+    "name": "B Sepideh",
+    "slug": "b-sepideh",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/b-sepideh.ttf"
+  },
+  {
+    "id": 3606,
+    "name": "B Compset",
+    "slug": "b-compset-2",
+    "category": "نسخ",
+    "font_url": "/assets/fonts/arabyfont/b-compset-2.ttf"
+  },
+  {
+    "id": 6055,
+    "name": "LaylaRuqaa",
+    "slug": "laylaruqaa",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/laylaruqaa.ttf"
+  },
+  {
+    "id": 6056,
+    "name": "XM Vahid",
+    "slug": "xm-vahid-5",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/xm-vahid-5.ttf"
+  },
+  {
+    "id": 6058,
+    "name": "XM Vahid",
+    "slug": "xm-vahid-6",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/xm-vahid-6.ttf"
+  },
+  {
+    "id": 6051,
+    "name": "B Sepideh Outline",
+    "slug": "b-sepideh-outline-2",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/b-sepideh-outline-2.ttf"
+  },
+  {
+    "id": 6053,
+    "name": "B Vahid",
+    "slug": "b-vahid",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/b-vahid.ttf"
+  },
+  {
+    "id": 6050,
+    "name": "XM Vahid",
+    "slug": "xm-vahid-4",
+    "category": "رقعة",
+    "font_url": "/assets/fonts/arabyfont/xm-vahid-4.ttf"
+  },
+  {
+    "id": 1717,
+    "name": "AGA Andalus أندلس",
+    "slug": "aga-andalus-%d8%a3%d9%86%d8%af%d9%84%d8%b3",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/aga-andalus-%d8%a3%d9%86%d8%af%d9%84%d8%b3.ttf"
+  },
+  {
+    "id": 1715,
+    "name": "arabswell_2",
+    "slug": "arabswell_2-2",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/arabswell_2-2.ttf"
+  },
+  {
+    "id": 1716,
+    "name": "djadli_OTFmaghribidjadid",
+    "slug": "djadli_otfmaghribidjadid",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/djadli_otfmaghribidjadid.ttf"
+  },
+  {
+    "id": 1714,
+    "name": "Hudhud AR Heavy",
+    "slug": "hudhud-ar-heavy",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/hudhud-ar-heavy.otf"
+  },
+  {
+    "id": 1711,
+    "name": "AGA Kyrawan V.2 قيروان",
+    "slug": "aga-kyrawan-v-2-%d9%82%d9%8a%d8%b1%d9%88%d8%a7%d9%86",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/aga-kyrawan-v-2-%d9%82%d9%8a%d8%b1%d9%88%d8%a7%d9%86.ttf"
+  },
+  {
+    "id": 1719,
+    "name": "B Niayesh",
+    "slug": "b-niayesh",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/b-niayesh.ttf"
+  },
+  {
+    "id": 1713,
+    "name": "Samir_Khouaja_Maghribi",
+    "slug": "samir_khouaja_maghribi",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/samir_khouaja_maghribi.ttf"
+  },
+  {
+    "id": 1710,
+    "name": "MRT_Nissabouri",
+    "slug": "mrt_nissabouri",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/mrt_nissabouri.ttf"
+  },
+  {
+    "id": 1712,
+    "name": "Hudhud AR Light",
+    "slug": "hudhud-ar-light",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/hudhud-ar-light.otf"
+  },
+  {
+    "id": 6956,
+    "name": "B Davat",
+    "slug": "b-davat",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/b-davat.ttf"
+  },
+  {
+    "id": 1708,
+    "name": "ae_Kayrawan",
+    "slug": "ae_kayrawan",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/ae_kayrawan.ttf"
+  },
+  {
+    "id": 1709,
+    "name": "Hudhud AR Extra Light",
+    "slug": "hudhud-ar-extra-light",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/hudhud-ar-extra-light.otf"
+  },
+  {
+    "id": 1718,
+    "name": "B Hakim Ghazali",
+    "slug": "b-hakim-ghazali",
+    "category": "مغربي",
+    "font_url": "/assets/fonts/arabyfont/b-hakim-ghazali.ttf"
+  },
+  {
+    "id": 6954,
+    "name": "Jassmin Typo",
+    "slug": "jassmin-typo-2",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/jassmin-typo-2.ttf"
+  },
+  {
+    "id": 6955,
+    "name": "DecoType Thuluth II",
+    "slug": "decotype-thuluth-ii-2",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/decotype-thuluth-ii-2.ttf"
+  },
+  {
+    "id": 6952,
+    "name": "Thuluth Alsmt7017",
+    "slug": "thuluth-alsmt7017",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/thuluth-alsmt7017.ttf"
+  },
+  {
+    "id": 6953,
+    "name": "Khat-e-Sulas Shipped",
+    "slug": "khat-e-sulas-shipped",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/khat-e-sulas-shipped.ttf"
+  },
+  {
+    "id": 6951,
+    "name": "Arabic Ejaza",
+    "slug": "arabic-ejaza",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/arabic-ejaza.ttf"
+  },
+  {
+    "id": 6950,
+    "name": "DecoType Thuluth",
+    "slug": "decotype-thuluth",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/decotype-thuluth.ttf"
+  },
+  {
+    "id": 6948,
+    "name": "Tholoth",
+    "slug": "tholoth",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/tholoth.ttf"
+  },
+  {
+    "id": 6945,
+    "name": "ae_Tholoth",
+    "slug": "ae_tholoth",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/ae_tholoth.ttf"
+  },
+  {
+    "id": 6125,
+    "name": "Divani Mazar",
+    "slug": "divani-mazar",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/divani-mazar.ttf"
+  },
+  {
+    "id": 6124,
+    "name": "hawi_t_Diwany",
+    "slug": "hawi_t_diwany",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/hawi_t_diwany.ttf"
+  },
+  {
+    "id": 6946,
+    "name": "LaylaThuluth",
+    "slug": "laylathuluth",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/laylathuluth.ttf"
+  },
+  {
+    "id": 6123,
+    "name": "THARWAT EMARA DEWANI",
+    "slug": "tharwat-emara-dewani",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/tharwat-emara-dewani.otf"
+  },
+  {
+    "id": 6949,
+    "name": "A Suls",
+    "slug": "a-suls",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/a-suls.ttf"
+  },
+  {
+    "id": 6122,
+    "name": "AZ Topaz",
+    "slug": "az-topaz",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/az-topaz.ttf"
+  },
+  {
+    "id": 6121,
+    "name": "Diwani Simple Outline",
+    "slug": "diwani-simple-outline-3",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/diwani-simple-outline-3.ttf"
+  },
+  {
+    "id": 6947,
+    "name": "AMoshref-Thulth",
+    "slug": "amoshref-thulth",
+    "category": "ثلث",
+    "font_url": "/assets/fonts/arabyfont/amoshref-thulth.ttf"
+  },
+  {
+    "id": 6119,
+    "name": "UL Amjad",
+    "slug": "ul-amjad",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/ul-amjad.ttf"
+  },
+  {
+    "id": 6117,
+    "name": "Diwani Letter",
+    "slug": "diwani-letter",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/diwani-letter.ttf"
+  },
+  {
+    "id": 6115,
+    "name": "B Fantezy",
+    "slug": "b-fantezy",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/b-fantezy.ttf"
+  },
+  {
+    "id": 6116,
+    "name": "ayman24",
+    "slug": "ayman24",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/ayman24.ttf"
+  },
+  {
+    "id": 6118,
+    "name": "Diwani Outline Shaded",
+    "slug": "diwani-outline-shaded",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/diwani-outline-shaded.ttf"
+  },
+  {
+    "id": 3037,
+    "name": "Islamic Palestine",
+    "slug": "islamic-palestine",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/islamic-palestine.ttf"
+  },
+  {
+    "id": 6114,
+    "name": "Diwani Simple Outline 2",
+    "slug": "diwani-simple-outline-2-2",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/diwani-simple-outline-2-2.ttf"
+  },
+  {
+    "id": 6120,
+    "name": "Diwani Simple Striped",
+    "slug": "diwani-simple-striped-2",
+    "category": "ديوان",
+    "font_url": "/assets/fonts/arabyfont/diwani-simple-striped-2.ttf"
+  },
+  {
+    "id": 3036,
+    "name": "GE Heritage Two",
+    "slug": "ge-heritage-two-3",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/ge-heritage-two-3.ttf"
+  },
+  {
+    "id": 3034,
+    "name": "AL-Gemah-Yaqwt2",
+    "slug": "al-gemah-yaqwt2",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/al-gemah-yaqwt2.ttf"
+  },
+  {
+    "id": 3032,
+    "name": "ae_AlBattar",
+    "slug": "ae_albattar",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/ae_albattar.ttf"
+  },
+  {
+    "id": 3035,
+    "name": "GE MB Najm Medium",
+    "slug": "ge-mb-najm-medium-2",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/ge-mb-najm-medium-2.ttf"
+  },
+  {
+    "id": 3030,
+    "name": "Kufyan Arabic Medium",
+    "slug": "kufyan-arabic-medium",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/kufyan-arabic-medium.ttf"
+  },
+  {
+    "id": 3031,
+    "name": "Old Antic Decorative",
+    "slug": "old-antic-decorative-2",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/old-antic-decorative-2.ttf"
+  },
+  {
+    "id": 3029,
+    "name": "madeena roads",
+    "slug": "madeena-roads",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/madeena-roads.otf"
+  },
+  {
+    "id": 3033,
+    "name": "AlBattar",
+    "slug": "albattar",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/albattar.ttf"
+  },
+  {
+    "id": 3027,
+    "name": "kufi v1",
+    "slug": "kufi-v1-2",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/kufi-v1-2.ttf"
+  },
+  {
+    "id": 3028,
+    "name": "Kufyan Arabic Thin",
+    "slug": "kufyan-arabic-thin",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/kufyan-arabic-thin.ttf"
+  },
+  {
+    "id": 3834,
+    "name": "Hacen Typographer Heavy",
+    "slug": "hacen-typographer-heavy",
     "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/mitra-bold-mazar.ttf"
+    "font_url": "/assets/fonts/arabyfont/hacen-typographer-heavy.ttf"
+  },
+  {
+    "id": 3833,
+    "name": "Karbalaei",
+    "slug": "karbalaei",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/karbalaei.ttf"
+  },
+  {
+    "id": 3835,
+    "name": "PT Bold Mirror",
+    "slug": "pt-bold-mirror",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/pt-bold-mirror.ttf"
+  },
+  {
+    "id": 3026,
+    "name": "DG Tofan Al Aqsa",
+    "slug": "dg-tofan-al-aqsa",
+    "category": "كوفي",
+    "font_url": "/assets/fonts/arabyfont/dg-tofan-al-aqsa.ttf"
+  },
+  {
+    "id": 3832,
+    "name": "B Jadid",
+    "slug": "b-jadid",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/b-jadid.ttf"
+  },
+  {
+    "id": 3831,
+    "name": "Sp_Titr",
+    "slug": "sp_titr",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/sp_titr.ttf"
+  },
+  {
+    "id": 3830,
+    "name": "Sp_Karim",
+    "slug": "sp_karim-2",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/sp_karim-2.ttf"
+  },
+  {
+    "id": 3829,
+    "name": "(AH) Manal Light",
+    "slug": "ah-manal-light",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/ah-manal-light.ttf"
+  },
+  {
+    "id": 3827,
+    "name": "Sp_Zar",
+    "slug": "sp_zar",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/sp_zar.ttf"
+  },
+  {
+    "id": 3828,
+    "name": "Nazanin LT Light",
+    "slug": "nazanin-lt-light",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/nazanin-lt-light.ttf"
+  },
+  {
+    "id": 3825,
+    "name": "Lateef ExtraLight",
+    "slug": "lateef-extralight",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/lateef-extralight.ttf"
+  },
+  {
+    "id": 3826,
+    "name": "Mudir Mazar",
+    "slug": "mudir-mazar",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/mudir-mazar.ttf"
   },
   {
     "id": 7798,
     "name": "Titr",
     "slug": "titr-2",
-    "category": "عصري",
+    "category": "أنيق",
     "font_url": "/assets/fonts/arabyfont/titr-2.ttf"
-  },
-  {
-    "id": 7801,
-    "name": "Siavash Mazar",
-    "slug": "siavash-mazar",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/siavash-mazar.ttf"
   },
   {
     "id": 7799,
     "name": "Arabic UI Display Semibold",
     "slug": "arabic-ui-display-semibold",
-    "category": "عصري",
+    "category": "أنيق",
     "font_url": "/assets/fonts/arabyfont/arabic-ui-display-semibold.ttf"
-  },
-  {
-    "id": 7787,
-    "name": "ar_kifk_photoshop",
-    "slug": "ar_kifk_photoshop",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/ar_kifk_photoshop.ttf"
-  },
-  {
-    "id": 7790,
-    "name": "IBM Plex Arabic Text",
-    "slug": "ibm-plex-arabic-text",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-text.otf"
-  },
-  {
-    "id": 7793,
-    "name": "Mitra",
-    "slug": "mitra-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/mitra-2.ttf"
-  },
-  {
-    "id": 7783,
-    "name": "BBCNassim-EX Bold",
-    "slug": "bbcnassim-ex-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/bbcnassim-ex-bold.ttf"
-  },
-  {
-    "id": 7782,
-    "name": "ZahraRoosta",
-    "slug": "zahraroosta",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/zahraroosta.ttf"
-  },
-  {
-    "id": 7786,
-    "name": "PFNuyorkArabic-Light",
-    "slug": "pfnuyorkarabic-light",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/pfnuyorkarabic-light.ttf"
-  },
-  {
-    "id": 7800,
-    "name": "Bahij Tanseek Pro",
-    "slug": "bahij-tanseek-pro-2",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/bahij-tanseek-pro-2.ttf"
-  },
-  {
-    "id": 7788,
-    "name": "BBCNassim-EX Regular",
-    "slug": "bbcnassim-ex-regular",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/bbcnassim-ex-regular.ttf"
-  },
-  {
-    "id": 7776,
-    "name": "IRANSharpMobile",
-    "slug": "iransharpmobile",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/iransharpmobile.ttf"
-  },
-  {
-    "id": 7781,
-    "name": "AlHurraTxtBold",
-    "slug": "alhurratxtbold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/alhurratxtbold.ttf"
-  },
-  {
-    "id": 7784,
-    "name": "Arabic UI Text Heavy",
-    "slug": "arabic-ui-text-heavy-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-text-heavy-2.ttf"
   },
   {
     "id": 7797,
@@ -147,1256 +602,332 @@
     "font_url": "/assets/fonts/arabyfont/hacen-tehran.ttf"
   },
   {
+    "id": 7796,
+    "name": "AlHurraTxtreg",
+    "slug": "alhurratxtreg",
+    "category": "أنيق",
+    "font_url": "/assets/fonts/arabyfont/alhurratxtreg.ttf"
+  },
+  {
+    "id": 7801,
+    "name": "Siavash Mazar",
+    "slug": "siavash-mazar",
+    "category": "أنيق",
+    "font_url": "/assets/fonts/arabyfont/siavash-mazar.ttf"
+  },
+  {
     "id": 7795,
     "name": "IBM Plex Arabic SemiBold",
     "slug": "ibm-plex-arabic-semibold",
-    "category": "عصري",
+    "category": "أنيق",
     "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-semibold.ttf"
   },
   {
-    "id": 7780,
-    "name": "B Zar",
-    "slug": "b-zar-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/b-zar-2.ttf"
-  },
-  {
-    "id": 7775,
-    "name": "Arabic UI Text Bold",
-    "slug": "arabic-ui-text-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-text-bold.ttf"
-  },
-  {
-    "id": 7777,
-    "name": "Watad",
-    "slug": "watad-2",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/watad-2.otf"
-  },
-  {
-    "id": 7779,
-    "name": "Makkah",
-    "slug": "makkah-2",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/makkah-2.ttf"
-  },
-  {
-    "id": 7772,
-    "name": "Ordibehesht shablon",
-    "slug": "ordibehesht-shablon-2",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/ordibehesht-shablon-2.ttf"
-  },
-  {
-    "id": 7768,
-    "name": "AlHurraTxtreg cv",
-    "slug": "alhurratxtreg-cv",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/alhurratxtreg-cv.ttf"
-  },
-  {
-    "id": 7770,
-    "name": "ArabicUIText",
-    "slug": "arabicuitext",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/arabicuitext.ttf"
-  },
-  {
-    "id": 7765,
-    "name": "ar_kifk_photoshop_bold",
-    "slug": "ar_kifk_photoshop_bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ar_kifk_photoshop_bold.ttf"
-  },
-  {
-    "id": 7778,
-    "name": "BBCNassim",
-    "slug": "bbcnassim-2",
+    "id": 7794,
+    "name": "Persian-Titr DF ** 1",
+    "slug": "persian-titr-df-1",
     "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/bbcnassim-2.ttf"
+    "font_url": "/assets/fonts/arabyfont/persian-titr-df-1.ttf"
   },
   {
-    "id": 7773,
-    "name": "persian-titraj-4",
-    "slug": "persian-titraj-4",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titraj-4.ttf"
-  },
-  {
-    "id": 7766,
-    "name": "IBM Plex Arabic",
-    "slug": "ibm-plex-arabic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-2.otf"
-  },
-  {
-    "id": 7774,
-    "name": "ArabicUIDisplay",
-    "slug": "arabicuidisplay",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/arabicuidisplay.ttf"
-  },
-  {
-    "id": 7762,
-    "name": "persian-titraj 2",
-    "slug": "persian-titraj-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titraj-2.ttf"
-  },
-  {
-    "id": 7771,
-    "name": "PFNuyorkArabic-Black",
-    "slug": "pfnuyorkarabic-black",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/pfnuyorkarabic-black.ttf"
-  },
-  {
-    "id": 7764,
-    "name": "persian-titraj 1",
-    "slug": "persian-titraj-1",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titraj-1.ttf"
-  },
-  {
-    "id": 7759,
-    "name": "IBM Plex Arabic Light",
-    "slug": "ibm-plex-arabic-light",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-light.otf"
-  },
-  {
-    "id": 7763,
-    "name": "Arabic UI Display Black",
-    "slug": "arabic-ui-display-black-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-black-2.ttf"
-  },
-  {
-    "id": 7757,
-    "name": "Aljazeera",
-    "slug": "aljazeera",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/aljazeera.ttf"
-  },
-  {
-    "id": 7754,
-    "name": "B Titr",
-    "slug": "b-titr-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/b-titr-2.ttf"
-  },
-  {
-    "id": 7769,
-    "name": "Hacen Lebanon",
-    "slug": "hacen-lebanon-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/hacen-lebanon-2.ttf"
-  },
-  {
-    "id": 7755,
-    "name": "Sp_Mitra",
-    "slug": "sp_mitra-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sp_mitra-2.ttf"
-  },
-  {
-    "id": 7761,
-    "name": "Hacen Liner XL",
-    "slug": "hacen-liner-xl",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-xl.ttf"
-  },
-  {
-    "id": 7756,
-    "name": "Hacen Liner Printout Lt",
-    "slug": "hacen-liner-printout-lt",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-printout-lt.ttf"
-  },
-  {
-    "id": 7760,
-    "name": "Peshang Des 1",
-    "slug": "peshang-des-1",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/peshang-des-1.ttf"
-  },
-  {
-    "id": 7758,
-    "name": "Arabic UI Display Light",
-    "slug": "arabic-ui-display-light",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-light.ttf"
-  },
-  {
-    "id": 7750,
-    "name": "B Mitra",
-    "slug": "b-mitra-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/b-mitra-2.ttf"
-  },
-  {
-    "id": 7747,
-    "name": "persian-titraj 3",
-    "slug": "persian-titraj-3",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titraj-3.ttf"
-  },
-  {
-    "id": 7743,
-    "name": "BBCNassim",
-    "slug": "bbcnassim",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/bbcnassim.ttf"
-  },
-  {
-    "id": 7742,
-    "name": "B Roya",
-    "slug": "b-roya-2",
+    "id": 7793,
+    "name": "Mitra",
+    "slug": "mitra-2",
     "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/b-roya-2.ttf"
+    "font_url": "/assets/fonts/arabyfont/mitra-2.ttf"
   },
   {
-    "id": 7767,
+    "id": 7792,
+    "name": "Mitra",
+    "slug": "mitra",
+    "category": "أنيق",
+    "font_url": "/assets/fonts/arabyfont/mitra.ttf"
+  },
+  {
+    "id": 7405,
+    "name": "N-Mashin Tahrir",
+    "slug": "n-mashin-tahrir-2",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/n-mashin-tahrir-2.ttf"
+  },
+  {
+    "id": 7406,
+    "name": "ali",
+    "slug": "ali-2",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/ali-2.ttf"
+  },
+  {
+    "id": 7404,
+    "name": "DimaExpo",
+    "slug": "dimaexpo",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/dimaexpo.ttf"
+  },
+  {
+    "id": 7403,
+    "name": "N-Danesh",
+    "slug": "n-danesh-4",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/n-danesh-4.ttf"
+  },
+  {
+    "id": 7791,
+    "name": "Hacen Liner Print-out Light",
+    "slug": "hacen-liner-print-out-light",
+    "category": "أنيق",
+    "font_url": "/assets/fonts/arabyfont/hacen-liner-print-out-light.ttf"
+  },
+  {
+    "id": 3824,
+    "name": "AlSharkTitle Black",
+    "slug": "alsharktitle-black",
+    "category": "عصري",
+    "font_url": "/assets/fonts/arabyfont/alsharktitle-black.ttf"
+  },
+  {
+    "id": 7800,
     "name": "Bahij Tanseek Pro",
-    "slug": "bahij-tanseek-pro",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/bahij-tanseek-pro.ttf"
-  },
-  {
-    "id": 7752,
-    "name": "ar_kifk_photoshop_hollow",
-    "slug": "ar_kifk_photoshop_hollow-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/ar_kifk_photoshop_hollow-2.ttf"
-  },
-  {
-    "id": 7745,
-    "name": "AlWatanHeadlines-Bold",
-    "slug": "alwatanheadlines-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/alwatanheadlines-bold.ttf"
-  },
-  {
-    "id": 7748,
-    "name": "IRANBlack",
-    "slug": "iranblack-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/iranblack-2.ttf"
-  },
-  {
-    "id": 7751,
-    "name": "Titr Mazar",
-    "slug": "titr-mazar-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/titr-mazar-2.ttf"
-  },
-  {
-    "id": 7739,
-    "name": "IBM Plex Arabic Thin",
-    "slug": "ibm-plex-arabic-thin-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-thin-2.otf"
-  },
-  {
-    "id": 7746,
-    "name": "IBM Plex Arabic",
-    "slug": "ibm-plex-arabic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic.otf"
-  },
-  {
-    "id": 7738,
-    "name": "B Mitra",
-    "slug": "b-mitra",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/b-mitra.ttf"
-  },
-  {
-    "id": 7740,
-    "name": "Hacen Liner Print-out",
-    "slug": "hacen-liner-print-out",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-print-out.ttf"
-  },
-  {
-    "id": 7735,
-    "name": "IBM Plex Arabic ExtraLight",
-    "slug": "ibm-plex-arabic-extralight-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-extralight-2.otf"
-  },
-  {
-    "id": 7753,
-    "name": "Arabic UI Display Thin",
-    "slug": "arabic-ui-display-thin-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-thin-2.ttf"
-  },
-  {
-    "id": 7744,
-    "name": "Hacen Liner Printout",
-    "slug": "hacen-liner-printout",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-printout.ttf"
-  },
-  {
-    "id": 7732,
-    "name": "IRANSharp",
-    "slug": "iransharp",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/iransharp.ttf"
-  },
-  {
-    "id": 7727,
-    "name": "MasmakBHD",
-    "slug": "masmakbhd-2",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/masmakbhd-2.otf"
-  },
-  {
-    "id": 7731,
-    "name": "Arabic UI Display Bold",
-    "slug": "arabic-ui-display-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-bold.ttf"
-  },
-  {
-    "id": 7737,
-    "name": "Arabic UI Text Semibold",
-    "slug": "arabic-ui-text-semibold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-text-semibold.ttf"
-  },
-  {
-    "id": 7733,
-    "name": "Zar Mazar",
-    "slug": "zar-mazar",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/zar-mazar.ttf"
-  },
-  {
-    "id": 7734,
-    "name": "Nizar BBC Kurdish",
-    "slug": "nizar-bbc-kurdish-2",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/nizar-bbc-kurdish-2.ttf"
-  },
-  {
-    "id": 7741,
-    "name": "Arabic UI Display Medium",
-    "slug": "arabic-ui-display-medium",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-medium.ttf"
-  },
-  {
-    "id": 7726,
-    "name": "May",
-    "slug": "may-2",
+    "slug": "bahij-tanseek-pro-2",
     "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/may-2.ttf"
+    "font_url": "/assets/fonts/arabyfont/bahij-tanseek-pro-2.ttf"
   },
   {
-    "id": 7749,
-    "name": "Arabic UI Display Ultralight",
-    "slug": "arabic-ui-display-ultralight-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-ultralight-2.ttf"
-  },
-  {
-    "id": 7728,
-    "name": "AlHurraTxtlight",
-    "slug": "alhurratxtlight",
+    "id": 7402,
+    "name": "N-Danesh",
+    "slug": "n-danesh-3",
     "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/alhurratxtlight.ttf"
+    "font_url": "/assets/fonts/arabyfont/n-danesh-3.ttf"
   },
   {
-    "id": 7725,
-    "name": "Arabic UI Text Medium",
-    "slug": "arabic-ui-text-medium",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-text-medium.ttf"
-  },
-  {
-    "id": 7724,
-    "name": "B Roya",
-    "slug": "b-roya",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/b-roya.ttf"
-  },
-  {
-    "id": 7729,
-    "name": "Arabic UI Display Heavy",
-    "slug": "arabic-ui-display-heavy",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-display-heavy.ttf"
-  },
-  {
-    "id": 7722,
-    "name": "Hacen Liner Screen Bd",
-    "slug": "hacen-liner-screen-bd",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-screen-bd.ttf"
-  },
-  {
-    "id": 7717,
-    "name": "Hacen Liner Broadcast",
-    "slug": "hacen-liner-broadcast",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-broadcast.ttf"
-  },
-  {
-    "id": 7716,
-    "name": "Shorooq_N1",
-    "slug": "shorooq_n1",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/shorooq_n1.ttf"
-  },
-  {
-    "id": 7719,
-    "name": "Hacen Liner Screen Wd",
-    "slug": "hacen-liner-screen-wd",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-screen-wd.ttf"
-  },
-  {
-    "id": 7736,
-    "name": "Arabic UI Text Light",
-    "slug": "arabic-ui-text-light",
+    "id": 7790,
+    "name": "IBM Plex Arabic Text",
+    "slug": "ibm-plex-arabic-text",
     "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/arabic-ui-text-light.ttf"
+    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-text.otf"
   },
   {
-    "id": 7721,
-    "name": "Makkah",
-    "slug": "makkah",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/makkah.ttf"
-  },
-  {
-    "id": 7730,
-    "name": "Nizar BBC Kurdish",
-    "slug": "nizar-bbc-kurdish",
+    "id": 7401,
+    "name": "Mada ExtraBold",
+    "slug": "mada-extrabold",
     "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/nizar-bbc-kurdish.ttf"
+    "font_url": "/assets/fonts/arabyfont/mada-extrabold.ttf"
   },
   {
-    "id": 7723,
-    "name": "Rasheeq-Bold",
-    "slug": "rasheeq-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/rasheeq-bold.ttf"
+    "id": 7399,
+    "name": "TS Rotger Bold",
+    "slug": "ts-rotger-bold",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/ts-rotger-bold.otf"
   },
   {
-    "id": 7715,
-    "name": "IBM Plex Arabic Medium",
-    "slug": "ibm-plex-arabic-medium",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/ibm-plex-arabic-medium.otf"
+    "id": 7397,
+    "name": "N-Danesh",
+    "slug": "n-danesh-2",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/n-danesh-2.ttf"
   },
   {
-    "id": 7710,
-    "name": "Hacen Liner Broadcast Live",
-    "slug": "hacen-liner-broadcast-live",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-broadcast-live.ttf"
+    "id": 7400,
+    "name": "Badiefont-Dima",
+    "slug": "badiefont-dima",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/badiefont-dima.ttf"
   },
   {
-    "id": 7712,
-    "name": "AM-ZAIN ORIGINAL",
-    "slug": "am-zain-original",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/am-zain-original.ttf"
+    "id": 7398,
+    "name": "ae_AlMothnna",
+    "slug": "ae_almothnna",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/ae_almothnna.ttf"
   },
   {
-    "id": 7720,
-    "name": "B Titr TG E",
-    "slug": "b-titr-tg-e-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/b-titr-tg-e-2.ttf"
+    "id": 7395,
+    "name": "Mada Medium",
+    "slug": "mada-medium",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/mada-medium.ttf"
   },
   {
-    "id": 7713,
-    "name": "Hacen Liner Screen",
-    "slug": "hacen-liner-screen",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-screen.ttf"
+    "id": 7396,
+    "name": "XM Yekan",
+    "slug": "xm-yekan-4",
+    "category": "تبسيط",
+    "font_url": "/assets/fonts/arabyfont/xm-yekan-4.ttf"
   },
   {
-    "id": 7709,
-    "name": "Mj_Titr DF",
-    "slug": "mj_titr-df-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/mj_titr-df-2.ttf"
+    "id": 3975,
+    "name": "XB Yas",
+    "slug": "xb-yas-4",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/xb-yas-4.ttf"
   },
   {
-    "id": 7704,
-    "name": "persian-titraj-5",
-    "slug": "persian-titraj-5-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/persian-titraj-5-2.ttf"
+    "id": 3974,
+    "name": "B Mashhad",
+    "slug": "b-mashhad-4",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/b-mashhad-4.ttf"
   },
   {
-    "id": 7707,
-    "name": "A_Nefel_Botan",
-    "slug": "a_nefel_botan",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/a_nefel_botan.ttf"
+    "id": 3972,
+    "name": "KacstOneFixed",
+    "slug": "kacstonefixed",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/kacstonefixed.ttf"
   },
   {
-    "id": 7708,
+    "id": 3973,
+    "name": "UKIJ Tuz Kitab",
+    "slug": "ukij-tuz-kitab-2",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/ukij-tuz-kitab-2.ttf"
+  },
+  {
+    "id": 3970,
+    "name": "ثابت",
+    "slug": "%d8%ab%d8%a7%d8%a8%d8%aa-4",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/%d8%ab%d8%a7%d8%a8%d8%aa-4.ttf"
+  },
+  {
+    "id": 3968,
+    "name": "Geeza Pro",
+    "slug": "geeza-pro",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/geeza-pro.ttf"
+  },
+  {
+    "id": 3969,
     "name": "Zar",
-    "slug": "zar-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/zar-2.ttf"
-  },
-  {
-    "id": 7711,
-    "name": "Sp_Mitra",
-    "slug": "sp_mitra",
+    "slug": "zar",
     "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/sp_mitra.ttf"
+    "font_url": "/assets/fonts/arabyfont/zar.ttf"
   },
   {
-    "id": 7702,
-    "name": "The Year of Handicrafts SemBd",
-    "slug": "the-year-of-handicrafts-sembd",
+    "id": 3966,
+    "name": "AdvertisingMedium",
+    "slug": "advertisingmedium",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/advertisingmedium.ttf"
+  },
+  {
+    "id": 3967,
+    "name": "B Mashhad",
+    "slug": "b-mashhad-3",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/b-mashhad-3.ttf"
+  },
+  {
+    "id": 3965,
+    "name": "Simplified Arabic",
+    "slug": "simplified-arabic-2",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/simplified-arabic-2.ttf"
+  },
+  {
+    "id": 3971,
+    "name": "IRlotus",
+    "slug": "irlotus",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/irlotus.ttf"
+  },
+  {
+    "id": 3964,
+    "name": "KacstOne",
+    "slug": "kacstone-2",
+    "category": "شائع",
+    "font_url": "/assets/fonts/arabyfont/kacstone-2.ttf"
+  },
+  {
+    "id": 742,
+    "name": "Kamran",
+    "slug": "kamran-2",
     "category": "يدوي",
-    "font_url": "/assets/fonts/arabyfont/the-year-of-handicrafts-sembd.otf"
+    "font_url": "/assets/fonts/arabyfont/kamran-2.ttf"
   },
   {
-    "id": 7718,
-    "name": "Hacen Liner Screen St",
-    "slug": "hacen-liner-screen-st",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-screen-st.ttf"
-  },
-  {
-    "id": 7696,
-    "name": "Nian Thin",
-    "slug": "nian-thin-2",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/nian-thin-2.ttf"
-  },
-  {
-    "id": 7705,
-    "name": "PFNuyorkArabic-ExtraBold",
-    "slug": "pfnuyorkarabic-extrabold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/pfnuyorkarabic-extrabold.ttf"
-  },
-  {
-    "id": 7714,
-    "name": "PFNuyorkArabic-Bold",
-    "slug": "pfnuyorkarabic-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/pfnuyorkarabic-bold.ttf"
-  },
-  {
-    "id": 7694,
-    "name": "Nian Light",
-    "slug": "nian-light-2",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/nian-light-2.ttf"
-  },
-  {
-    "id": 7692,
-    "name": "Nian ExtraLight",
-    "slug": "nian-extralight-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/nian-extralight-2.ttf"
-  },
-  {
-    "id": 7701,
-    "name": "The Year of Handicrafts",
-    "slug": "the-year-of-handicrafts-2",
+    "id": 743,
+    "name": "Ghalam1",
+    "slug": "ghalam1",
     "category": "يدوي",
-    "font_url": "/assets/fonts/arabyfont/the-year-of-handicrafts-2.otf"
+    "font_url": "/assets/fonts/arabyfont/ghalam1.ttf"
   },
   {
-    "id": 7703,
-    "name": "Hacen Liner XXL",
-    "slug": "hacen-liner-xxl",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/hacen-liner-xxl.ttf"
-  },
-  {
-    "id": 7691,
-    "name": "Nian Bold",
-    "slug": "nian-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/nian-bold.ttf"
-  },
-  {
-    "id": 7690,
-    "name": "Nian-Black",
-    "slug": "nian-black-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/nian-black-2.ttf"
-  },
-  {
-    "id": 7699,
-    "name": "The Year of Handicrafts",
-    "slug": "the-year-of-handicrafts",
+    "id": 740,
+    "name": "ae_Arab",
+    "slug": "ae_arab",
     "category": "يدوي",
-    "font_url": "/assets/fonts/arabyfont/the-year-of-handicrafts.otf"
+    "font_url": "/assets/fonts/arabyfont/ae_arab.ttf"
   },
   {
-    "id": 7706,
-    "name": "PFNuyorkArabic-Regular",
-    "slug": "pfnuyorkarabic-regular",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/pfnuyorkarabic-regular.ttf"
-  },
-  {
-    "id": 7686,
-    "name": "AlarabyTV",
-    "slug": "alarabytv",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/alarabytv.ttf"
-  },
-  {
-    "id": 7695,
-    "name": "Nian SemiBold",
-    "slug": "nian-semibold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/nian-semibold.ttf"
-  },
-  {
-    "id": 7689,
-    "name": "MasmakBHD",
-    "slug": "masmakbhd",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/masmakbhd.otf"
-  },
-  {
-    "id": 7688,
-    "name": "AlarabyTV",
-    "slug": "alarabytv-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/alarabytv-2.ttf"
-  },
-  {
-    "id": 7698,
-    "name": "The Year of Handicrafts Black",
-    "slug": "the-year-of-handicrafts-black-2",
+    "id": 738,
+    "name": "kheot_ar_photoshop_bold",
+    "slug": "kheot_ar_photoshop_bold",
     "category": "يدوي",
-    "font_url": "/assets/fonts/arabyfont/the-year-of-handicrafts-black-2.otf"
+    "font_url": "/assets/fonts/arabyfont/kheot_ar_photoshop_bold.ttf"
   },
   {
-    "id": 7693,
-    "name": "Nian ExtraBold",
-    "slug": "nian-extrabold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/nian-extrabold.ttf"
-  },
-  {
-    "id": 7687,
-    "name": "AlarabyTV Medium",
-    "slug": "alarabytv-medium",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/alarabytv-medium.ttf"
-  },
-  {
-    "id": 7683,
-    "name": "F37 Blanka Arabic Trial Thin",
-    "slug": "f37-blanka-arabic-trial-thin-3",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-thin-3.otf"
-  },
-  {
-    "id": 7684,
-    "name": "F37 Blanka Arabic Trial Thin",
-    "slug": "f37-blanka-arabic-trial-thin-4",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-thin-4.otf"
-  },
-  {
-    "id": 7682,
-    "name": "F37 Blanka Arabic Trial SmBold",
-    "slug": "f37-blanka-arabic-trial-smbold-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-smbold-2.otf"
-  },
-  {
-    "id": 7697,
-    "name": "Nian",
-    "slug": "nian",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/nian.ttf"
-  },
-  {
-    "id": 7678,
-    "name": "F37 Blanka Arabic Trial Medium",
-    "slug": "f37-blanka-arabic-trial-medium-2",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-medium-2.otf"
-  },
-  {
-    "id": 7681,
-    "name": "F37 Blanka Arabic Trial SmBold",
-    "slug": "f37-blanka-arabic-trial-smbold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-smbold.otf"
-  },
-  {
-    "id": 7685,
-    "name": "F37 Blanka Arabic Trial ExBold",
-    "slug": "f37-blanka-arabic-trial-exbold-4",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-exbold-4.otf"
-  },
-  {
-    "id": 7679,
-    "name": "F37 Blanka Arabic Trial",
-    "slug": "f37-blanka-arabic-trial-3",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-3.otf"
-  },
-  {
-    "id": 7676,
-    "name": "F37 Blanka Arabic Trial Light",
-    "slug": "f37-blanka-arabic-trial-light-4",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-light-4.otf"
-  },
-  {
-    "id": 7672,
-    "name": "F37 Blanka Arabic Trial ExBold",
-    "slug": "f37-blanka-arabic-trial-exbold-3",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-exbold-3.otf"
-  },
-  {
-    "id": 7673,
-    "name": "F37 Blanka Arabic Trial ExLight",
-    "slug": "f37-blanka-arabic-trial-exlight-3",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-exlight-3.otf"
-  },
-  {
-    "id": 7700,
-    "name": "The Year of Handicrafts Med",
-    "slug": "the-year-of-handicrafts-med",
+    "id": 739,
+    "name": "Digi Maryam",
+    "slug": "digi-maryam",
     "category": "يدوي",
-    "font_url": "/assets/fonts/arabyfont/the-year-of-handicrafts-med.otf"
+    "font_url": "/assets/fonts/arabyfont/digi-maryam.ttf"
   },
   {
-    "id": 7675,
-    "name": "F37 Blanka Arabic Trial Light",
-    "slug": "f37-blanka-arabic-trial-light-3",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-light-3.otf"
+    "id": 737,
+    "name": "SHAHRIAR",
+    "slug": "shahriar",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/shahriar.ttf"
   },
   {
-    "id": 7677,
-    "name": "F37 Blanka Arabic Trial Medium",
-    "slug": "f37-blanka-arabic-trial-medium",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-medium.otf"
+    "id": 735,
+    "name": "A Salama",
+    "slug": "a-salama",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/a-salama.ttf"
   },
   {
-    "id": 7680,
-    "name": "F37 Blanka Arabic Trial",
-    "slug": "f37-blanka-arabic-trial-4",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-4.otf"
+    "id": 736,
+    "name": "H_Esfahan",
+    "slug": "h_esfahan",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/h_esfahan.ttf"
   },
   {
-    "id": 7671,
-    "name": "F37 Blanka Arabic Trial",
-    "slug": "f37-blanka-arabic-trial-2",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-2.otf"
+    "id": 734,
+    "name": "Alnaqaaa S",
+    "slug": "alnaqaaa-s-2",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/alnaqaaa-s-2.ttf"
   },
   {
-    "id": 7674,
-    "name": "F37 Blanka Arabic Trial ExLight",
-    "slug": "f37-blanka-arabic-trial-exlight-4",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial-exlight-4.otf"
+    "id": 733,
+    "name": "Dima",
+    "slug": "dima",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/dima.ttf"
   },
   {
-    "id": 7668,
-    "name": "Sahel Light",
-    "slug": "sahel-light-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sahel-light-2.ttf"
+    "id": 741,
+    "name": "Harmattan",
+    "slug": "harmattan-2",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/harmattan-2.ttf"
   },
   {
-    "id": 7665,
-    "name": "Sahel",
-    "slug": "sahel",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sahel.ttf"
+    "id": 7891,
+    "name": "Icons font for 117 postage stamps icons",
+    "slug": "icons-font-for-117-postage-stamps-icons",
+    "category": "غير مصنف",
+    "font_url": "/assets/fonts/arabyfont/icons-font-for-117-postage-stamps-icons.ttf"
   },
   {
-    "id": 7662,
-    "name": "Mayson Arabic Trial Extrabold",
-    "slug": "mayson-arabic-trial-extrabold-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-extrabold-2.ttf"
-  },
-  {
-    "id": 7670,
-    "name": "F37 Blanka Arabic Trial",
-    "slug": "f37-blanka-arabic-trial",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/f37-blanka-arabic-trial.otf"
-  },
-  {
-    "id": 7666,
-    "name": "Sahel Black",
-    "slug": "sahel-black-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sahel-black-2.ttf"
-  },
-  {
-    "id": 7664,
-    "name": "Mayson Arabic Trial Light",
-    "slug": "mayson-arabic-trial-light-2",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-light-2.ttf"
-  },
-  {
-    "id": 7661,
-    "name": "Mayson Arabic Trial",
-    "slug": "mayson-arabic-trial-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-2.ttf"
-  },
-  {
-    "id": 7669,
-    "name": "Sahel SemiBold",
-    "slug": "sahel-semibold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sahel-semibold.ttf"
-  },
-  {
-    "id": 7656,
-    "name": "Sarmady Thin Compressed Italic",
-    "slug": "sarmady-thin-compressed-italic-2",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-compressed-italic-2.otf"
-  },
-  {
-    "id": 7660,
-    "name": "Mayson Arabic Trial Thin",
-    "slug": "mayson-arabic-trial-thin-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-thin-2.ttf"
-  },
-  {
-    "id": 7657,
-    "name": "Sarmady Thin Compressed",
-    "slug": "sarmady-thin-compressed-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-compressed-2.otf"
-  },
-  {
-    "id": 7667,
-    "name": "Sahel",
-    "slug": "sahel-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sahel-2.ttf"
-  },
-  {
-    "id": 7659,
-    "name": "Mayson Arabic Trial",
-    "slug": "mayson-arabic-trial",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial.ttf"
-  },
-  {
-    "id": 7655,
-    "name": "Sarmady SemiBold Compressed",
-    "slug": "sarmady-semibold-compressed",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-semibold-compressed.otf"
-  },
-  {
-    "id": 7652,
-    "name": "Sarmady Compressed Italic",
-    "slug": "sarmady-compressed-italic",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/sarmady-compressed-italic.otf"
-  },
-  {
-    "id": 7654,
-    "name": "Sarmady SmBold Compressed It",
-    "slug": "sarmady-smbold-compressed-it",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-smbold-compressed-it.otf"
-  },
-  {
-    "id": 7649,
-    "name": "Sarmady Light Compressed",
-    "slug": "sarmady-light-compressed-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-compressed-2.otf"
-  },
-  {
-    "id": 7650,
-    "name": "Sarmady Medium Compressed It",
-    "slug": "sarmady-medium-compressed-it",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium-compressed-it.otf"
-  },
-  {
-    "id": 7658,
-    "name": "Mayson Arabic Trial Medium",
-    "slug": "mayson-arabic-trial-medium",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-medium.ttf"
-  },
-  {
-    "id": 7663,
-    "name": "Mayson Arabic Trial Extralight",
-    "slug": "mayson-arabic-trial-extralight-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/mayson-arabic-trial-extralight-2.ttf"
-  },
-  {
-    "id": 7651,
-    "name": "Sarmady Medium Compressed",
-    "slug": "sarmady-medium-compressed",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium-compressed.otf"
-  },
-  {
-    "id": 7647,
-    "name": "Sarmady ExtraLight Compressed",
-    "slug": "sarmady-extralight-compressed-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extralight-compressed-2.otf"
-  },
-  {
-    "id": 7648,
-    "name": "Sarmady Light Compressed Italic",
-    "slug": "sarmady-light-compressed-italic-2",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-compressed-italic-2.otf"
-  },
-  {
-    "id": 7640,
-    "name": "Sarmady Black Compressed Italic",
-    "slug": "sarmady-black-compressed-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-compressed-italic-2.otf"
-  },
-  {
-    "id": 7643,
-    "name": "Sarmady Bold Compressed",
-    "slug": "sarmady-bold-compressed",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold-compressed.otf"
-  },
-  {
-    "id": 7642,
-    "name": "Sarmady Bold Compressed Italic",
-    "slug": "sarmady-bold-compressed-italic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold-compressed-italic.otf"
-  },
-  {
-    "id": 7639,
-    "name": "Sarmady Thin Expanded",
-    "slug": "sarmady-thin-expanded-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-expanded-2.otf"
-  },
-  {
-    "id": 7653,
-    "name": "Sarmady Compressed",
-    "slug": "sarmady-compressed",
-    "category": "ديوان",
-    "font_url": "/assets/fonts/arabyfont/sarmady-compressed.otf"
-  },
-  {
-    "id": 7644,
-    "name": "Sarmady ExBold Compressed It",
-    "slug": "sarmady-exbold-compressed-it-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-exbold-compressed-it-2.otf"
-  },
-  {
-    "id": 7646,
-    "name": "Sarmady ExLight Compressed It",
-    "slug": "sarmady-exlight-compressed-it-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/sarmady-exlight-compressed-it-2.otf"
-  },
-  {
-    "id": 7636,
-    "name": "Sarmady SmBold Expanded Italic",
-    "slug": "sarmady-smbold-expanded-italic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-smbold-expanded-italic.otf"
-  },
-  {
-    "id": 7641,
-    "name": "Sarmady Black Compressed",
-    "slug": "sarmady-black-compressed-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-compressed-2.otf"
-  },
-  {
-    "id": 7637,
-    "name": "Sarmady SemiBold Expanded",
-    "slug": "sarmady-semibold-expanded",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-semibold-expanded.otf"
-  },
-  {
-    "id": 7632,
-    "name": "Sarmady Medium Expanded Italic",
-    "slug": "sarmady-medium-expanded-italic",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium-expanded-italic.otf"
-  },
-  {
-    "id": 7633,
-    "name": "Sarmady Medium Expanded",
-    "slug": "sarmady-medium-expanded",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium-expanded.otf"
-  },
-  {
-    "id": 7631,
-    "name": "Sarmady Light Expanded",
-    "slug": "sarmady-light-expanded-2",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-expanded-2.otf"
-  },
-  {
-    "id": 7630,
-    "name": "Sarmady Light Expanded Italic",
-    "slug": "sarmady-light-expanded-italic-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-expanded-italic-2.otf"
-  },
-  {
-    "id": 7645,
-    "name": "Sarmady ExtraBold Compressed",
-    "slug": "sarmady-extrabold-compressed-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extrabold-compressed-2.otf"
-  },
-  {
-    "id": 7625,
-    "name": "Sarmady Bold Expanded",
-    "slug": "sarmady-bold-expanded",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold-expanded.otf"
-  },
-  {
-    "id": 7635,
-    "name": "Sarmady Expanded",
-    "slug": "sarmady-expanded",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/sarmady-expanded.otf"
-  },
-  {
-    "id": 7638,
-    "name": "Sarmady Thin Expanded Italic",
-    "slug": "sarmady-thin-expanded-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-expanded-italic-2.otf"
-  },
-  {
-    "id": 7629,
-    "name": "Sarmady ExtraLight Expanded",
-    "slug": "sarmady-extralight-expanded-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extralight-expanded-2.otf"
-  },
-  {
-    "id": 7622,
-    "name": "Sarmady Black Expanded Italic",
-    "slug": "sarmady-black-expanded-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-expanded-italic-2.otf"
-  },
-  {
-    "id": 7634,
-    "name": "Sarmady Expanded Italic",
-    "slug": "sarmady-expanded-italic",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/sarmady-expanded-italic.otf"
-  },
-  {
-    "id": 7620,
-    "name": "Sarmady Thin Italic",
-    "slug": "sarmady-thin-italic-2",
-    "category": "كوفي",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-italic-2.otf"
-  },
-  {
-    "id": 7628,
-    "name": "Sarmady ExLight Expanded Italic",
-    "slug": "sarmady-exlight-expanded-italic-2",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/sarmady-exlight-expanded-italic-2.otf"
-  },
-  {
-    "id": 7621,
-    "name": "Sarmady Thin",
-    "slug": "sarmady-thin-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/sarmady-thin-2.otf"
-  },
-  {
-    "id": 7618,
-    "name": "Sarmady SemiBold Italic",
-    "slug": "sarmady-semibold-italic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-semibold-italic.otf"
-  },
-  {
-    "id": 7624,
-    "name": "Sarmady Bold Expanded Italic",
-    "slug": "sarmady-bold-expanded-italic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold-expanded-italic.otf"
-  },
-  {
-    "id": 7614,
-    "name": "Sarmady Medium Italic",
-    "slug": "sarmady-medium-italic",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium-italic.otf"
-  },
-  {
-    "id": 7626,
-    "name": "Sarmady ExBold Expanded Italic",
-    "slug": "sarmady-exbold-expanded-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-exbold-expanded-italic-2.otf"
-  },
-  {
-    "id": 7616,
-    "name": "Sarmady Italic",
-    "slug": "sarmady-italic",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sarmady-italic.otf"
-  },
-  {
-    "id": 7615,
-    "name": "Sarmady Medium",
-    "slug": "sarmady-medium",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/sarmady-medium.otf"
-  },
-  {
-    "id": 7627,
-    "name": "Sarmady ExtraBold Expanded",
-    "slug": "sarmady-extrabold-expanded-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extrabold-expanded-2.otf"
-  },
-  {
-    "id": 7619,
-    "name": "Sarmady SemiBold",
-    "slug": "sarmady-semibold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-semibold.otf"
-  },
-  {
-    "id": 7617,
-    "name": "Sarmady",
-    "slug": "sarmady",
-    "category": "ثلث",
-    "font_url": "/assets/fonts/arabyfont/sarmady.otf"
-  },
-  {
-    "id": 7610,
-    "name": "Sarmady ExtraLight Italic",
-    "slug": "sarmady-extralight-italic-2",
-    "category": "رقعة",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extralight-italic-2.otf"
-  },
-  {
-    "id": 7623,
-    "name": "Sarmady Black Expanded",
-    "slug": "sarmady-black-expanded-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-expanded-2.otf"
-  },
-  {
-    "id": 7607,
-    "name": "Sarmady Bold",
-    "slug": "sarmady-bold",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold.otf"
-  },
-  {
-    "id": 7611,
-    "name": "Sarmady ExtraLight",
-    "slug": "sarmady-extralight-2",
-    "category": "أنيق",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extralight-2.otf"
-  },
-  {
-    "id": 7609,
-    "name": "Sarmady ExtraBold",
-    "slug": "sarmady-extrabold-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extrabold-2.otf"
-  },
-  {
-    "id": 7613,
-    "name": "Sarmady Light",
-    "slug": "sarmady-light-2",
-    "category": "تبسيط",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-2.otf"
-  },
-  {
-    "id": 7603,
-    "name": "A Mitra 2014",
-    "slug": "a-mitra-2014",
-    "category": "شائع",
-    "font_url": "/assets/fonts/arabyfont/a-mitra-2014.ttf"
-  },
-  {
-    "id": 7612,
-    "name": "Sarmady Light Italic",
-    "slug": "sarmady-light-italic-2",
-    "category": "نسخ",
-    "font_url": "/assets/fonts/arabyfont/sarmady-light-italic-2.otf"
-  },
-  {
-    "id": 7605,
-    "name": "Sarmady Black",
-    "slug": "sarmady-black-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-2.otf"
-  },
-  {
-    "id": 7608,
-    "name": "Sarmady ExtraBold Italic",
-    "slug": "sarmady-extrabold-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-extrabold-italic-2.otf"
-  },
-  {
-    "id": 7606,
-    "name": "Sarmady Bold Italic",
-    "slug": "sarmady-bold-italic",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-bold-italic.otf"
-  },
-  {
-    "id": 7604,
-    "name": "Sarmady Black Italic",
-    "slug": "sarmady-black-italic-2",
-    "category": "عصري",
-    "font_url": "/assets/fonts/arabyfont/sarmady-black-italic-2.otf"
-  },
-  {
-    "id": 7602,
-    "name": "Bahij Badiya",
-    "slug": "bahij-badiya-2",
-    "category": "مغربي",
-    "font_url": "/assets/fonts/arabyfont/bahij-badiya-2.ttf"
+    "id": 732,
+    "name": "(A) Arslan Wessam A",
+    "slug": "a-arslan-wessam-a",
+    "category": "يدوي",
+    "font_url": "/assets/fonts/arabyfont/a-arslan-wessam-a.ttf"
   }
 ]
