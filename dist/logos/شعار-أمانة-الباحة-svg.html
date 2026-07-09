@@ -160,6 +160,22 @@
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
             </svg>
           </button>
+
+          <!-- Add to bag button -->
+          <button class="download-item" id="detail-fav-btn" onclick="toggleFavorite('شعار-أمانة-الباحة-svg', 'أمانة الباحة', 'https://salogos.b-cdn.net/logos/svg/1774895560310-yck9pit7.svg')" style="width: 100%; border: 1px solid var(--border-color); cursor: pointer; text-align: right; background: var(--bg-tertiary);">
+            <div class="download-meta">
+              <div class="file-type-icon icon-bag" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">BAG</div>
+              <div class="download-details">
+                <span class="download-title" id="detail-fav-title">إضافة إلى حقيبة المصمم</span>
+                <span class="download-desc" id="detail-fav-desc">أضف الشعار إلى حقيبتك لتحميل مجموعة شعارات دفعة واحدة</span>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #06b6d4;">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -184,6 +200,21 @@
             <span class="spec-value" style="font-size: 0.85rem; font-weight: normal; color: var(--text-secondary); line-height: 1.4;">حقوق ملكية هذا الشعار تعود بالكامل للجهة أو الشركة الرسمية المالكة له. يتم توفير هذا الملف في موقع شعارات السعودية لتسهيل المهام الفنية والتصميمية فقط وليس لأي غرض تجاري دون إذن.</span>
           </div>
         </div>
+      </div>
+
+      <!-- Dynamic Color Palette Card (Feature 2) -->
+      <div class="spec-card" id="color-palette-card" style="margin-top: 1.5rem; display: none;">
+        <h3 class="spec-title">🎨 لوحة ألوان الشعار (Color Palette)</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">اضغط على أي لون لنسخ كود الهكس (HEX) مباشرة لاستخدامه في تصميمك.</p>
+        <div id="palette-colors-container" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem;">
+          <!-- Dynamically populated -->
+        </div>
+        <button class="btn-secondary" id="download-colors-css" style="width: 100%; font-size: 0.8rem; padding: 0.5rem; border-radius: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 0.25rem; background: var(--bg-tertiary);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+          نسخ لوحة الألوان كـ CSS
+        </button>
       </div>
 
       <!-- Card Generator Card -->
@@ -245,6 +276,11 @@
   <div class="logo-grid" style="margin-bottom: 5rem;">
     
     <div class="logo-card">
+      <button class="fav-btn" data-slug="شعار-نيورابيبي-المراعي-svg" onclick="event.preventDefault(); event.stopPropagation(); toggleFavorite('شعار-نيورابيبي-المراعي-svg', 'نيورابيبي المراعي', 'https://salogos.b-cdn.net/logos/svg/1774895905326-kzxajlcd.svg')" title="إضافة للحقيبة">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </button>
       <a href="/logos/شعار-نيورابيبي-المراعي-svg">
         <div class="logo-preview-box">
           <img src="https://salogos.b-cdn.net/logos/svg/1774895905326-kzxajlcd.svg" alt="نيورابيبي المراعي" class="logo-preview-img" loading="lazy">
@@ -272,6 +308,11 @@
     </div>
     
     <div class="logo-card">
+      <button class="fav-btn" data-slug="شعار-مركز-الدراسات-والبحوث-القانونية-c" onclick="event.preventDefault(); event.stopPropagation(); toggleFavorite('شعار-مركز-الدراسات-والبحوث-القانونية-c', 'مركز الدراسات والبحوث القانونية', 'https://salogos.b-cdn.net/logos/svg/1774932422908-mjs821pm.svg')" title="إضافة للحقيبة">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </button>
       <a href="/logos/شعار-مركز-الدراسات-والبحوث-القانونية-c">
         <div class="logo-preview-box">
           <img src="https://salogos.b-cdn.net/logos/svg/1774932422908-mjs821pm.svg" alt="مركز الدراسات والبحوث القانونية" class="logo-preview-img" loading="lazy">
@@ -299,6 +340,11 @@
     </div>
     
     <div class="logo-card">
+      <button class="fav-btn" data-slug="logo-836" onclick="event.preventDefault(); event.stopPropagation(); toggleFavorite('logo-836', 'شركة تمرة المالية بدقة عالية svg', 'https://salogos.b-cdn.net/logos/svg/1775460142145-og48so25.svg')" title="إضافة للحقيبة">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </button>
       <a href="/logos/logo-836">
         <div class="logo-preview-box">
           <img src="https://salogos.b-cdn.net/logos/svg/1775460142145-og48so25.svg" alt="شركة تمرة المالية بدقة عالية svg" class="logo-preview-img" loading="lazy">
@@ -327,6 +373,156 @@
     
   </div>
 </div>
+
+<script>
+  // Dynamic color extraction logic
+  async function extractLogoColors(svgUrl) {
+    try {
+      const response = await fetch(svgUrl);
+      const text = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, 'image/svg+xml');
+      
+      const colors = new Set();
+      
+      // Parse elements with fill/stroke attributes
+      const elements = doc.querySelectorAll('[fill], [stroke]');
+      elements.forEach(el => {
+        const fill = el.getAttribute('fill');
+        const stroke = el.getAttribute('stroke');
+        
+        [fill, stroke].forEach(color => {
+          if (!color) return;
+          const cleanColor = color.trim().toLowerCase();
+          
+          // Skip none, transparent, white, black, or parent inheritance
+          if (cleanColor.startsWith('#')) {
+            if (cleanColor === '#ffffff' || cleanColor === '#fff' || cleanColor === '#000000' || cleanColor === '#000') return;
+            if (cleanColor.length === 4) {
+              const r = cleanColor[1];
+              const g = cleanColor[2];
+              const b = cleanColor[3];
+              colors.add(`#${r}${r}${g}${g}${b}${b}`);
+            } else if (cleanColor.length === 7) {
+              colors.add(cleanColor);
+            }
+          } else if (cleanColor.startsWith('rgb')) {
+            const match = cleanColor.match(/\d+/g);
+            if (match && match.length >= 3) {
+              const r = parseInt(match[0]);
+              const g = parseInt(match[1]);
+              const b = parseInt(match[2]);
+              if ((r === 255 && g === 255 && b === 255) || (r === 0 && g === 0 && b === 0)) return;
+              const hex = "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+              colors.add(hex);
+            }
+          }
+        });
+      });
+      
+      // Parse elements styling with inline style fill/stroke
+      const styledElements = doc.querySelectorAll('[style]');
+      styledElements.forEach(el => {
+        const style = el.getAttribute('style');
+        const fillMatch = style.match(/fill\s*:\s*([^;]+)/i);
+        const strokeMatch = style.match(/stroke\s*:\s*([^;]+)/i);
+        [fillMatch, strokeMatch].forEach(match => {
+          if (match && match[1]) {
+            const color = match[1].trim().toLowerCase();
+            if (color.startsWith('#')) {
+              if (color === '#ffffff' || color === '#fff' || color === '#000000' || color === '#000') return;
+              if (color.length === 4) {
+                const r = color[1];
+                const g = color[2];
+                const b = color[3];
+                colors.add(`#${r}${r}${g}${g}${b}${b}`);
+              } else if (color.length === 7) {
+                colors.add(color);
+              }
+            }
+          }
+        });
+      });
+      
+      return Array.from(colors).slice(0, 6); // Limit to top 6 brand colors
+    } catch (e) {
+      console.error("Error extracting colors: ", e);
+      return [];
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Color Palette Extraction
+    const svgPath = "https://salogos.b-cdn.net/logos/svg/1774895560310-yck9pit7.svg";
+    if (svgPath) {
+      extractLogoColors(svgPath).then(colors => {
+        if (colors.length > 0) {
+          const card = document.getElementById('color-palette-card');
+          const container = document.getElementById('palette-colors-container');
+          if (card && container) {
+            container.innerHTML = colors.map(color => `
+              <div class="color-swatch-item" onclick="copyColorToClipboard('${color}', this)" style="display: flex; flex-direction: column; align-items: center; gap: 0.35rem; cursor: pointer; flex-grow: 1; min-width: 60px;">
+                <div style="background-color: ${color}; width: 100%; height: 45px; border-radius: 8px; border: 1.5px solid var(--border-color); box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'"></div>
+                <span style="font-family: monospace; font-size: 0.75rem; color: var(--text-secondary); font-weight: 700;">${color.toUpperCase()}</span>
+              </div>
+            `).join('');
+            card.style.display = 'block';
+            
+            // Setup CSS Copy
+            const cssBtn = document.getElementById('download-colors-css');
+            if (cssBtn) {
+              cssBtn.onclick = () => {
+                const cssText = colors.map((c, i) => `  --brand-color-${i+1}: ${c};`).join('\n');
+                const cssBlock = `:root {\n${cssText}\n}`;
+                navigator.clipboard.writeText(cssBlock).then(() => {
+                  window.showToast("تم نسخ لوحة الألوان كـ CSS بنجاح!");
+                });
+              };
+            }
+          }
+        }
+      });
+    }
+
+    // 2. Add-to-bag detail button state sync
+    const favBtn = document.getElementById('detail-fav-btn');
+    const favTitle = document.getElementById('detail-fav-title');
+    const favDesc = document.getElementById('detail-fav-desc');
+    const slug = "شعار-أمانة-الباحة-svg";
+
+    function syncFavButtonState() {
+      if (!favBtn || !favTitle || !favDesc) return;
+      if (window.isInBag && window.isInBag(slug)) {
+        favBtn.style.borderColor = 'var(--accent-green)';
+        favBtn.style.background = 'rgba(16, 185, 129, 0.05)';
+        favTitle.textContent = 'شعار مضاف في الحقيبة 👜';
+        favTitle.style.color = 'var(--accent-green)';
+        favDesc.textContent = 'اضغط للإزالة من حقيبة المصمم وتجميعاتك';
+      } else {
+        favBtn.style.borderColor = 'var(--border-color)';
+        favBtn.style.background = 'var(--bg-tertiary)';
+        favTitle.textContent = 'إضافة إلى حقيبة المصمم';
+        favTitle.style.color = 'var(--text-primary)';
+        favDesc.textContent = 'أضف الشعار إلى حقيبتك لتحميل مجموعة شعارات دفعة واحدة';
+      }
+    }
+
+    // Periodically sync button state
+    syncFavButtonState();
+    setInterval(syncFavButtonState, 500);
+  });
+
+  function copyColorToClipboard(color, element) {
+    navigator.clipboard.writeText(color).then(() => {
+      window.showToast(`تم نسخ اللون ${color.toUpperCase()} بنجاح!`);
+      const swatch = element.querySelector('div');
+      if (swatch) {
+        swatch.style.transform = 'scale(0.9)';
+        setTimeout(() => { swatch.style.transform = 'scale(1.08)'; }, 150);
+      }
+    });
+  }
+</script>
 
   </main>
 
@@ -364,12 +560,477 @@
             <li><a href="https://vercel.com" target="_blank">مستضاف على Vercel</a></li>
           </ul>
         </div>
+  <!-- ================================================================= -->
+  <!-- 👜 Designer's Bag Floating Button & Drawer (Feature 5) -->
+  <!-- ================================================================= -->
+  
+  <!-- Floating Trigger Button -->
+  <button id="designer-bag-trigger" class="designer-bag-float-btn" aria-label="حقيبة الشعارات">
+    <div class="bag-icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span id="bag-count-badge" class="bag-badge">0</span>
+    </div>
+    <span class="bag-btn-text">حقيبة المصمم</span>
+  </button>
+
+  <!-- Sidebar Drawer Backdrop -->
+  <div id="designer-bag-backdrop" class="designer-bag-overlay-backdrop"></div>
+
+  <!-- Sidebar Drawer Container -->
+  <div id="designer-bag-drawer" class="designer-bag-sidebar-drawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.3rem;">👜</span>
+        <h3 style="margin: 0;">حقيبة المصمم (تجميع الشعارات)</h3>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 مكتبة شعارات السعودية. جميع الحقوق محفوظة ومملوكة لأصحاب الشعارات الرسمية.</p>
+      <button id="close-bag-drawer" class="close-drawer-btn" aria-label="إغلاق">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="drawer-body">
+      <div id="bag-empty-state" class="drawer-empty-state">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">📂</div>
+        <p style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">حقيبتك فارغة حالياً</p>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem; line-height: 1.5;">اضغط على أيقونة الحفظ 🔖 الموجودة على كروت الشعارات لتجميعها هنا وتحميلها دفعة واحدة.</p>
+      </div>
+      <div id="bag-items-list" class="drawer-items-list" style="display: none;">
+        <!-- Items are rendered dynamically -->
       </div>
     </div>
-  </footer>
+    
+    <div class="drawer-footer" id="bag-drawer-footer" style="display: none;">
+      <div class="batch-actions" style="display: flex; flex-direction: column; gap: 0.75rem; width: 100%;">
+        <button id="download-all-svg" class="btn-primary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem; font-weight: 700; border-radius: 8px; cursor: pointer; border: none; color: white;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          تحميل جميع الشعارات المختارة (SVG)
+        </button>
+        <button id="clear-all-bag" class="btn-secondary" style="width: 100%; padding: 0.6rem; font-size: 0.85rem; border-radius: 8px; cursor: pointer;">
+          إفراغ الحقيبة بالكامل
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Designer Bag Floating Button Styling */
+    .designer-bag-float-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-green);
+      color: var(--text-primary);
+      padding: 0.75rem 1.25rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'PingARLT', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .designer-bag-float-btn:hover {
+      background: var(--accent-green);
+      color: white;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 15px 30px var(--accent-green-glow);
+    }
+    .bag-icon-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bag-badge {
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      background: var(--accent-gold);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.1rem 0.35rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--bg-secondary);
+      min-width: 18px;
+      text-align: center;
+      line-height: 1;
+    }
+    .designer-bag-float-btn:hover .bag-badge {
+      border-color: var(--accent-green);
+    }
+    
+    /* Drawer Overlay Styling */
+    .designer-bag-overlay-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .designer-bag-overlay-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .designer-bag-sidebar-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px; /* Hidden offscreen right */
+      width: 400px;
+      max-width: 90vw;
+      height: 100%;
+      background: var(--bg-secondary);
+      border-left: 1px solid var(--border-color);
+      box-shadow: -10px 0 30px rgba(0,0,0,0.25);
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'PingARLT', sans-serif;
+    }
+    .designer-bag-sidebar-drawer.active {
+      right: 0;
+    }
+    
+    .drawer-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-primary);
+    }
+    .drawer-header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .close-drawer-btn {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+    .close-drawer-btn:hover {
+      background: var(--border-color);
+      color: var(--text-primary);
+    }
+    
+    .drawer-body {
+      padding: 1.25rem;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+    .drawer-empty-state {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .drawer-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .bag-item-card {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      gap: 0.75rem;
+      position: relative;
+    }
+    .bag-item-thumb {
+      width: 45px;
+      height: 45px;
+      background: white;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem;
+      flex-shrink: 0;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .bag-item-thumb img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .bag-item-info {
+      flex-grow: 1;
+      overflow: hidden;
+      text-align: right;
+    }
+    .bag-item-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .remove-bag-item-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.25rem;
+      border-radius: 50%;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .remove-bag-item-btn:hover {
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+    }
+    
+    .drawer-footer {
+      padding: 1.25rem;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-primary);
+    }
+
+    /* Card Fav Icon Button Styling */
+    .fav-btn {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem; /* left aligned in RTL cards */
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1.5px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      color: #64748b;
+      padding: 0;
+    }
+    body.light-theme .fav-btn {
+      background: var(--bg-card);
+    }
+    .fav-btn:hover {
+      transform: scale(1.1);
+      border-color: var(--accent-green);
+      color: var(--accent-green);
+    }
+    .fav-btn.active {
+      background: var(--accent-green) !important;
+      border-color: var(--accent-green) !important;
+      color: white !important;
+    }
+    
+    /* Make sure card is relative for positioning */
+    .logo-card {
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      .designer-bag-float-btn {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+      }
+      .designer-bag-sidebar-drawer {
+        width: 330px;
+      }
+    }
+  </style>
+
+  <script>
+    // --- Designer's Bag (Collection) Management ---
+    (function() {
+      // Load favorites from local storage
+      let favorites = [];
+      try {
+        favorites = JSON.parse(localStorage.getItem('fav_logos') || '[]');
+      } catch (e) {
+        favorites = [];
+      }
+
+      window.getFavorites = () => favorites;
+
+      window.toggleFavorite = function(slug, name, svgPath) {
+        const index = favorites.findIndex(f => f.slug === slug);
+        if (index > -1) {
+          favorites.splice(index, 1);
+          window.showToast(`تم إزالة شعار "${name}" من حقيبة المصمم.`);
+        } else {
+          favorites.push({ slug, name, svgPath });
+          window.showToast(`تم إضافة شعار "${name}" إلى حقيبة المصمم!`);
+        }
+        localStorage.setItem('fav_logos', JSON.stringify(favorites));
+        updateBagUI();
+        updateCardButtons();
+      };
+
+      window.isInBag = function(slug) {
+        return favorites.some(f => f.slug === slug);
+      };
+
+      function updateBagUI() {
+        const badge = document.getElementById('bag-count-badge');
+        const emptyState = document.getElementById('bag-empty-state');
+        const listContainer = document.getElementById('bag-items-list');
+        const footer = document.getElementById('bag-drawer-footer');
+        
+        if (badge) badge.textContent = favorites.length;
+
+        if (favorites.length === 0) {
+          if (emptyState) emptyState.style.display = 'flex';
+          if (listContainer) listContainer.style.display = 'none';
+          if (footer) footer.style.display = 'none';
+        } else {
+          if (emptyState) emptyState.style.display = 'none';
+          if (listContainer) {
+            listContainer.style.display = 'flex';
+            listContainer.innerHTML = favorites.map(item => `
+              <div class="bag-item-card">
+                <div class="bag-item-thumb">
+                  <img src="${item.svgPath}" alt="${item.name}" loading="lazy">
+                </div>
+                <div class="bag-item-info">
+                  <div class="bag-item-name">${item.name}</div>
+                </div>
+                <button class="remove-bag-item-btn" onclick="toggleFavorite('${item.slug}', '${item.name.replace(/'/g, "\\'")}', '${item.svgPath}')" title="إزالة">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+            `).join('');
+          }
+          if (footer) footer.style.display = 'block';
+        }
+      }
+
+      function updateCardButtons() {
+        // Find all fav buttons in the document and update active class
+        document.querySelectorAll('.fav-btn').forEach(btn => {
+          const slug = btn.getAttribute('data-slug');
+          if (window.isInBag(slug)) {
+            btn.classList.add('active');
+            btn.innerHTML = `
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+            `;
+          } else {
+            btn.classList.remove('active');
+            btn.innerHTML = `
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+            `;
+          }
+        });
+      }
+
+      // Initialize UI on page load
+      document.addEventListener('DOMContentLoaded', () => {
+        updateBagUI();
+        
+        // Setup drawer triggers
+        const trigger = document.getElementById('designer-bag-trigger');
+        const drawer = document.getElementById('designer-bag-drawer');
+        const backdrop = document.getElementById('designer-bag-backdrop');
+        const closeBtn = document.getElementById('close-bag-drawer');
+        const clearBtn = document.getElementById('clear-all-bag');
+        const downloadBtn = document.getElementById('download-all-svg');
+
+        if (trigger && drawer && backdrop && closeBtn) {
+          const openDrawer = () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+          };
+          const closeDrawer = () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+          };
+
+          trigger.addEventListener('click', openDrawer);
+          closeBtn.addEventListener('click', closeDrawer);
+          backdrop.addEventListener('click', closeDrawer);
+        }
+
+        if (clearBtn) {
+          clearBtn.addEventListener('click', () => {
+            if (confirm('هل أنت متأكد من إفراغ حقيبة المصمم بالكامل؟')) {
+              favorites = [];
+              localStorage.setItem('fav_logos', JSON.stringify(favorites));
+              updateBagUI();
+              updateCardButtons();
+              window.showToast('تم إفراغ حقيبة المصمم بالكامل.');
+            }
+          });
+        }
+
+        if (downloadBtn) {
+          downloadBtn.addEventListener('click', async () => {
+            if (favorites.length === 0) return;
+            window.showToast(`جاري تحميل ${favorites.length} شعار بشكل تسلسلي...`);
+            
+            // Loop through all collected items and trigger download with small delay
+            for (let i = 0; i < favorites.length; i++) {
+              const item = favorites[i];
+              const a = document.createElement('a');
+              a.href = item.svgPath;
+              // Clean filename
+              a.download = `Saudi-Logos-${item.slug}.svg`;
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              
+              // 350ms delay to avoid browser blocking multiple downloads
+              await new Promise(r => setTimeout(r, 350));
+            }
+            window.showToast('اكتمل تحميل جميع الملفات المحددة!');
+          });
+        }
+
+        // Periodically check/bind dynamic elements (since browse page renders dynamically)
+        setInterval(updateCardButtons, 600);
+      });
+    })();
+  </script>
 
   <!-- Main JS file -->
   <script src="/assets/js/search.js"></script>

@@ -234,8 +234,15 @@ function filterAndRenderLogos() {
     'vision': 'مشاريع ورؤية'
   };
 
-  browseGrid.innerHTML = filtered.map(logo => `
+  browseGrid.innerHTML = filtered.map(logo => {
+    const escapedName = logo.name_ar.replace(/'/g, "\\'");
+    return `
     <div class="logo-card">
+      <button class="fav-btn" data-slug="${logo.slug}" onclick="event.preventDefault(); event.stopPropagation(); toggleFavorite('${logo.slug}', '${escapedName}', '${logo.svg_path}')" title="إضافة للحقيبة">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </button>
       <a href="/logos/${logo.slug}">
         <div class="logo-preview-box">
           <img src="${logo.svg_path}" alt="${logo.name_ar}" class="logo-preview-img" loading="lazy">
@@ -261,7 +268,8 @@ function filterAndRenderLogos() {
         </div>
       </div>
     </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 // --- Toast Notifications for download simulation ---

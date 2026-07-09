@@ -21,6 +21,24 @@
     </div>
   </div>
 
+  <!-- Font Sandbox Control Panel (Feature 1) -->
+  <div class="font-sandbox-panel" style="background: var(--bg-secondary); border: 1.5px solid var(--border-color); border-radius: 16px; padding: 1.25rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--glass-shadow); position: relative;">
+    <div style="font-size: 0.85rem; font-weight: 800; color: var(--accent-green); text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 0.4rem;">
+      <span>✨ لوحة التجربة الحية للخطوط (Interactive Sandbox)</span>
+    </div>
+    <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; width: 100%;">
+      <!-- Custom Text Input -->
+      <div style="flex: 2; min-width: 280px; position: relative;">
+        <input type="text" id="font-preview-text" placeholder="اكتب نصاً مخصصاً لتجربة الخطوط... (مثال: الهوية البصرية لمركز طبي)" style="width: 100%; border: 1.5px solid var(--border-color); border-radius: 10px; background: var(--bg-primary); color: var(--text-primary); padding: 0.65rem 1rem; font-family: 'PingARLT', sans-serif; font-size: 0.95rem; outline: none; transition: all 0.2s ease;">
+      </div>
+      <!-- Font Size Slider -->
+      <div style="flex: 1; min-width: 220px; display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-size: 0.85rem; color: var(--text-secondary); min-width: 80px; font-weight: 700; text-align: right;">الحجم: <span id="font-size-val">24px</span></span>
+        <input type="range" id="font-size-slider" min="14" max="64" value="24" style="flex-grow: 1; height: 6px; border-radius: 999px; background: var(--border-color); outline: none; -webkit-appearance: none; cursor: pointer; border: none; padding: 0;">
+      </div>
+    </div>
+  </div>
+
   <!-- Category chips (Tabs) -->
   <div class="scroll-container-wrapper" style="position: relative; display: flex; align-items: center; margin-bottom: 1.5rem; width: 100%;">
     <button class="scroll-nav-btn right-btn" onclick="scrollContainer('categories-scroll', 'right')" aria-label="التمرير لليمين">
@@ -191,6 +209,22 @@
     box-shadow: 0 0 8px #06b6d4;
   }
 
+  /* Custom Styling for range slider */
+  #font-size-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: none;
+  }
+  #font-size-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px var(--accent-green-glow);
+  }
+
   /* Horizontal Scroll Navigation Arrows styling */
   .scroll-container-wrapper {
     position: relative;
@@ -327,6 +361,36 @@
     let activeCategory = 'all';
     let activeFamily = 'all';
     let currentPage = 1;
+    let customPreviewText = '';
+    let customPreviewSize = '24';
+
+    // Font Sandbox controls binding
+    const fontPreviewInput = document.getElementById('font-preview-text');
+    const fontSizeSlider = document.getElementById('font-size-slider');
+    const fontSizeVal = document.getElementById('font-size-val');
+
+    if (fontPreviewInput && fontSizeSlider && fontSizeVal) {
+      fontPreviewInput.addEventListener('input', () => {
+        customPreviewText = fontPreviewInput.value.trim();
+        updateAllPreviews();
+      });
+
+      fontSizeSlider.addEventListener('input', () => {
+        customPreviewSize = fontSizeSlider.value;
+        fontSizeVal.textContent = `${customPreviewSize}px`;
+        updateAllPreviews();
+      });
+    }
+
+    function updateAllPreviews() {
+      const textToUse = customPreviewText || 'الخط العربي... أصالة تنبض بالجمال.';
+      const sizeToUse = `${customPreviewSize}px`;
+      
+      document.querySelectorAll('.font-preview-text').forEach(el => {
+        el.textContent = textToUse;
+        el.style.fontSize = sizeToUse;
+      });
+    }
     const pageSize = 24; // 24 fonts per batch
 
     // Create a Load More button container
@@ -486,10 +550,13 @@
         const ext = f.font_url.includes('.otf') ? '.otf' : '.ttf';
         const downloadName = `${f.slug}${ext}`;
 
+        const textToUse = customPreviewText || 'الخط العربي... أصالة تنبض بالجمال.';
+        const sizeToUse = `${customPreviewSize}px`;
+
         card.innerHTML = `
           <div class="logo-preview-box" style="padding: 1.5rem; height: 160px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); position: relative; overflow: hidden;">
-            <div class="font-preview-text" style="font-family: 'preview-font-${f.id}', sans-serif; font-size: 1.5rem; color: var(--text-primary); text-align: center; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" dir="rtl">
-              الخط العربي... أصالة تنبض بالجمال.
+            <div class="font-preview-text" style="font-family: 'preview-font-${f.id}', sans-serif; font-size: ${sizeToUse}; color: var(--text-primary); text-align: center; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" dir="rtl">
+              ${textToUse}
             </div>
           </div>
           <div class="logo-card-info" style="padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
