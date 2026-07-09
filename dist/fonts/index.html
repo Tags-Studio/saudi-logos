@@ -323,6 +323,20 @@
       display: none !important;
     }
   }
+
+  /* Desktop Drag-to-Scroll styles */
+  .fonts-categories-scroll {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .fonts-categories-scroll.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto !important; /* disable smooth scroll during manual drag */
+  }
+  .fonts-categories-scroll.dragging .filter-chip {
+    pointer-events: none; /* prevent click triggering while dragging */
+  }
 </style>
 
 <script>
@@ -336,6 +350,40 @@
     container.scrollBy({ left: amount, behavior: 'smooth' });
   };
 
+  // Helper function to enable click-and-drag scrolling on desktop
+  function initDragToScroll(slider) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('dragging');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    
+    slider.addEventListener('mouseleave', () => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('dragging');
+    });
+    
+    slider.addEventListener('mouseup', () => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('dragging');
+    });
+    
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1.5; // scroll speed multiplier
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('fonts-search');
     const grid = document.getElementById('fonts-grid');
@@ -345,6 +393,12 @@
     const dynamicStyles = document.getElementById('dynamic-font-styles');
     
     if (!searchInput || !grid || !countSpan || !dynamicStyles) return;
+
+    // Initialize drag-to-scroll for categories scrollbar
+    const categoriesScroll = document.getElementById('categories-scroll');
+    if (categoriesScroll) {
+      initDragToScroll(categoriesScroll);
+    }
 
     // Load fonts data
     const fontsDataElement = document.getElementById('fonts-json-data');
