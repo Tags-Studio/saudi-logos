@@ -129,47 +129,60 @@
       <span>📂 مجموعات وعائلات الخطوط الشهيرة (Collections)</span>
     </div>
     
-    <div class="scroll-container-wrapper" style="position: relative; display: flex; align-items: center; width: 100%;">
-      <button class="scroll-nav-btn right-btn" onclick="scrollContainer('families-scroll', 'right')" aria-label="التمرير لليمين">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"/>
-        </svg>
+    <div class="font-families-wrap" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-start; width: 100%;">
+      <button class="family-chip active" data-family="all">
+        <span class="family-dot"></span> الكل
       </button>
-
-      <div id="families-scroll" class="font-families-scroll" style="width: 100%; overflow-x: auto; white-space: nowrap; padding: 0.25rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.65rem; justify-content: flex-start; scrollbar-width: none;">
-        <button class="family-chip active" data-family="all">
-          <span class="family-dot"></span> الكل
-        </button>
-        <button class="family-chip" data-family="madani">
-          <span class="family-dot"></span> عائلة مدني (Madani)
-        </button>
-        <button class="family-chip" data-family="hacen">
-          <span class="family-dot"></span> عائلة حاسن (Hacen)
-        </button>
-        <button class="family-chip" data-family="ge">
-          <span class="family-dot"></span> عائلة جي إي (GE)
-        </button>
-        <button class="family-chip" data-family="ibm">
-          <span class="family-dot"></span> عائلة آي بي إم (IBM Plex)
-        </button>
-        <button class="family-chip" data-family="thmanyah">
-          <span class="family-dot"></span> عائلة ثمانية (Thmanyah)
-        </button>
-        <button class="family-chip" data-family="ukij">
-          <span class="family-dot"></span> عائلة يوكيج (UKIJ)
-        </button>
-        <button class="family-chip" data-family="digi">
-          <span class="family-dot"></span> عائلة ديجي (Digi)
-        </button>
-        <button class="family-chip" data-family="ts">
-          <span class="family-dot"></span> عائلة تاج (TS Fonts)
-        </button>
-      </div>
-
-      <button class="scroll-nav-btn left-btn" onclick="scrollContainer('families-scroll', 'left')" aria-label="التمرير لليسار">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"/>
-        </svg>
+      <button class="family-chip" data-family="madani">
+        <span class="family-dot"></span> عائلة مدني (Madani)
+      </button>
+      <button class="family-chip" data-family="hacen">
+        <span class="family-dot"></span> عائلة حاسن (Hacen)
+      </button>
+      <button class="family-chip" data-family="cairo">
+        <span class="family-dot"></span> عائلة كيرو (Cairo)
+      </button>
+      <button class="family-chip" data-family="bahij">
+        <span class="family-dot"></span> عائلة بهيج (Bahij)
+      </button>
+      <button class="family-chip" data-family="sultan">
+        <span class="family-dot"></span> عائلة سلطان (Sultan)
+      </button>
+      <button class="family-chip" data-family="noto">
+        <span class="family-dot"></span> عائلة نوتو (Noto)
+      </button>
+      <button class="family-chip" data-family="adobe">
+        <span class="family-dot"></span> عائلة أدوبي (Adobe)
+      </button>
+      <button class="family-chip" data-family="ge">
+        <span class="family-dot"></span> عائلة جي إي (GE)
+      </button>
+      <button class="family-chip" data-family="ibm">
+        <span class="family-dot"></span> عائلة آي بي إم (IBM Plex)
+      </button>
+      <button class="family-chip" data-family="thmanyah">
+        <span class="family-dot"></span> عائلة ثمانية (Thmanyah)
+      </button>
+      <button class="family-chip" data-family="jazeera">
+        <span class="family-dot"></span> عائلة الجزيرة (Jazeera)
+      </button>
+      <button class="family-chip" data-family="expo">
+        <span class="family-dot"></span> عائلة إكسبو (Expo)
+      </button>
+      <button class="family-chip" data-family="zain">
+        <span class="family-dot"></span> عائلة زين (Zain)
+      </button>
+      <button class="family-chip" data-family="decotype">
+        <span class="family-dot"></span> عائلة ديكوتايب (DecoType)
+      </button>
+      <button class="family-chip" data-family="ukij">
+        <span class="family-dot"></span> عائلة يوكيج (UKIJ)
+      </button>
+      <button class="family-chip" data-family="digi">
+        <span class="family-dot"></span> عائلة ديجي (Digi)
+      </button>
+      <button class="family-chip" data-family="ts">
+        <span class="family-dot"></span> عائلة تاج (TS Fonts)
       </button>
     </div>
   </div>
@@ -417,12 +430,30 @@
             matchesFamily = nameLower.includes('madani') || nameLower.includes('مدني') || slugLower.includes('madani');
           } else if (activeFamily === 'hacen') {
             matchesFamily = nameLower.includes('hacen') || nameLower.includes('حاسن') || slugLower.includes('hacen');
+          } else if (activeFamily === 'cairo') {
+            matchesFamily = nameLower.includes('cairo') || nameLower.includes('كيرو') || slugLower.includes('cairo');
+          } else if (activeFamily === 'bahij') {
+            matchesFamily = nameLower.includes('bahij') || nameLower.includes('بهيج') || slugLower.includes('bahij');
+          } else if (activeFamily === 'sultan') {
+            matchesFamily = nameLower.includes('sultan') || nameLower.includes('سلطان') || slugLower.includes('sultan');
+          } else if (activeFamily === 'noto') {
+            matchesFamily = nameLower.includes('noto') || slugLower.includes('noto');
+          } else if (activeFamily === 'adobe') {
+            matchesFamily = nameLower.includes('adobe') || slugLower.includes('adobe');
           } else if (activeFamily === 'ge') {
             matchesFamily = slugLower.startsWith('ge-') || slugLower.startsWith('ge_') || nameLower.startsWith('ge ') || nameLower.startsWith('ge-');
           } else if (activeFamily === 'ibm') {
             matchesFamily = nameLower.includes('ibm') || slugLower.includes('ibm');
           } else if (activeFamily === 'thmanyah') {
             matchesFamily = nameLower.includes('thmanyah') || slugLower.includes('thmanyah');
+          } else if (activeFamily === 'jazeera') {
+            matchesFamily = nameLower.includes('jazeera') || nameLower.includes('الجزيرة') || slugLower.includes('jazeera');
+          } else if (activeFamily === 'expo') {
+            matchesFamily = nameLower.includes('expo') || slugLower.includes('expo');
+          } else if (activeFamily === 'zain') {
+            matchesFamily = nameLower.includes('zain') || nameLower.includes('زين') || slugLower.includes('zain');
+          } else if (activeFamily === 'decotype') {
+            matchesFamily = nameLower.includes('decotype') || nameLower.includes('ديكوتايب') || slugLower.includes('decotype');
           } else if (activeFamily === 'ukij') {
             matchesFamily = nameLower.includes('ukij') || slugLower.includes('ukij');
           } else if (activeFamily === 'digi') {
