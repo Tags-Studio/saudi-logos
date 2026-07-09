@@ -325,24 +325,9 @@ def build_site():
     ])
     fonts_content = fonts_content.replace("{{ category_chips }}", category_chips_html)
     
-    # Render @font-face style block declarations
-    font_faces_css = []
-    for f in fonts_db_sorted:
-        fmt = 'format("opentype")' if f['font_url'].endswith('.otf') else 'format("truetype")'
-        css = f"""
-        @font-face {{
-          font-family: "preview-font-{f['id']}";
-          src: url("{f['font_url']}") {fmt};
-          font-display: swap;
-        }}
-        """
-        font_faces_css.append(css)
-    font_faces_css_str = "\n".join(font_faces_css)
-    fonts_content = fonts_content.replace("{{ font_faces_css }}", font_faces_css_str)
-    
-    # Render all font cards
-    all_fonts_cards_html = "".join([render_font_card(f) for f in fonts_db_sorted])
-    fonts_content = fonts_content.replace("{{ all_fonts_cards }}", all_fonts_cards_html)
+    # Serialize fonts_db_sorted to JSON to inject in template
+    fonts_json_str = json.dumps(fonts_db_sorted, ensure_ascii=False)
+    fonts_content = fonts_content.replace("{{ fonts_json }}", fonts_json_str)
     
     fonts_context = {
         "title": "مكتبة الخطوط العربية المجانية - شعارات السعودية",

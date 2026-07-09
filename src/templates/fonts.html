@@ -34,15 +34,17 @@
   </div>
 
   <!-- Dynamic CSS Style Block for Font Previews -->
-  <style id="dynamic-font-styles">
-    {{ font_faces_css }}
-  </style>
+  <style id="dynamic-font-styles"></style>
 
   <!-- Fonts Grid Container -->
-  <div class="logo-grid" id="fonts-grid" style="margin-bottom: 5rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-    {{ all_fonts_cards }}
+  <div class="logo-grid" id="fonts-grid" style="margin-bottom: 2rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+    <!-- Rendered dynamically -->
   </div>
 </div>
+
+<script id="fonts-json-data" type="application/json">
+  {{ fonts_json }}
+</script>
 
 <style>
   /* Custom scrollbar hiding for categories list */
@@ -79,73 +81,157 @@
     const grid = document.getElementById('fonts-grid');
     const countSpan = document.getElementById('fonts-count');
     const categoryChips = document.querySelectorAll('.filter-chip');
+    const dynamicStyles = document.getElementById('dynamic-font-styles');
     
-    if (!searchInput || !grid || !countSpan) return;
+    if (!searchInput || !grid || !countSpan || !dynamicStyles) return;
 
-    const originalCards = Array.from(grid.children);
+    // Load fonts data
+    const fontsDataElement = document.getElementById('fonts-json-data');
+    if (!fontsDataElement) return;
+    const allFonts = JSON.parse(fontsDataElement.textContent);
+    
+    let filteredFonts = [...allFonts];
     let activeCategory = 'all';
-    
-    // Update count immediately
-    updateCount(originalCards.length);
+    let currentPage = 1;
+    const pageSize = 24; // 24 fonts per batch
 
-    // Search input listener
-    searchInput.addEventListener('input', filterFonts);
+    // Create a Load More button container
+    const loadMoreContainer = document.createElement('div');
+    loadMoreContainer.style.textAlign = 'center';
+    loadMoreContainer.style.marginTop = '2rem';
+    loadMoreContainer.style.marginBottom = '4rem';
+    grid.parentElement.appendChild(loadMoreContainer);
 
-    // Category chips listener
+    const loadMoreBtn = document.createElement('button');
+    loadMoreBtn.className = 'btn-primary';
+    loadMoreBtn.textContent = 'أظهر المزيد من الخطوط';
+    loadMoreBtn.style.padding = '0.75rem 2rem';
+    loadMoreBtn.style.borderRadius = '9999px';
+    loadMoreBtn.style.fontWeight = '700';
+    loadMoreBtn.style.cursor = 'pointer';
+    loadMoreBtn.style.border = 'none';
+    loadMoreBtn.style.background = 'linear-gradient(135deg, var(--accent-green), var(--accent-green-hover))';
+    loadMoreBtn.style.color = '#ffffff';
+    loadMoreBtn.style.display = 'none';
+    loadMoreContainer.appendChild(loadMoreBtn);
+
+    loadMoreBtn.addEventListener('click', () => {
+      currentPage++;
+      renderNextBatch();
+    });
+
+    // Setup event listeners
+    searchInput.addEventListener('input', () => {
+      currentPage = 1;
+      filterFonts();
+    });
+
     categoryChips.forEach(chip => {
       chip.addEventListener('click', () => {
         categoryChips.forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         activeCategory = chip.getAttribute('data-category');
+        currentPage = 1;
         filterFonts();
       });
     });
 
+    // Initial render
+    filterFonts();
+
     function filterFonts() {
       const query = searchInput.value.trim().toLowerCase();
-      let visibleCount = 0;
-
-      originalCards.forEach(card => {
-        const titleText = card.querySelector('.logo-card-title').textContent.toLowerCase();
-        const cardCategory = card.getAttribute('data-category-name');
-        
-        const matchesQuery = titleText.includes(query);
-        const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
-
-        if (matchesQuery && matchesCategory) {
-          card.style.display = '';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
+      
+      filteredFonts = allFonts.filter(f => {
+        const nameMatches = f.name && f.name.toLowerCase().includes(query);
+        const slugMatches = f.slug && f.slug.toLowerCase().includes(query);
+        const matchesQuery = nameMatches || slugMatches;
+        const matchesCategory = activeCategory === 'all' || f.category === activeCategory;
+        return matchesQuery && matchesCategory;
       });
 
-      updateCount(visibleCount);
-
-      // Handle no results message
-      if (visibleCount === 0) {
-        if (!document.getElementById('no-fonts-results')) {
-          const noResults = document.createElement('div');
-          noResults.id = 'no-fonts-results';
-          noResults.className = 'no-results';
-          noResults.style.gridColumn = '1 / -1';
-          noResults.innerHTML = `
+      countSpan.textContent = `تم العثور على ${filteredFonts.length} خط عربي`;
+      grid.innerHTML = '';
+      
+      // Clear dynamic styles when refiltering
+      dynamicStyles.innerHTML = '';
+      
+      if (filteredFonts.length === 0) {
+        grid.innerHTML = `
+          <div class="no-results" id="no-fonts-results" style="grid-column: 1 / -1; width: 100%;">
             <div class="no-results-icon">✏️</div>
             <div class="no-results-text">لم يتم العثور على خطوط</div>
-            <div class="no-results-subtext">جرب البحث بكلمة أو تصنيف آخر للوصول للخط العربي المطلّب.</div>
-          `;
-          grid.appendChild(noResults);
-        }
+            <div class="no-results-subtext">جرب البحث بكلمة أو تصنيف آخر للوصول للخط العربي المطلوب.</div>
+          </div>
+        `;
+        loadMoreBtn.style.display = 'none';
       } else {
-        const noResults = document.getElementById('no-fonts-results');
-        if (noResults) {
-          noResults.remove();
-        }
+        renderNextBatch();
       }
     }
 
-    function updateCount(count) {
-      countSpan.textContent = `تم العثور على ${count} خط عربي`;
+    function renderNextBatch() {
+      const start = (currentPage - 1) * pageSize;
+      const end = Math.min(start + pageSize, filteredFonts.length);
+      const batch = filteredFonts.slice(start, end);
+
+      // Generate dynamic CSS rules for this batch
+      let newCssRules = '';
+      batch.forEach(f => {
+        const fmt = f.font_url.endsWith('.otf') ? 'format("opentype")' : 'format("truetype")';
+        newCssRules += `
+          @font-face {
+            font-family: "preview-font-${f.id}";
+            src: url("${f.font_url}") ${fmt};
+            font-display: swap;
+          }
+        `;
+      });
+      dynamicStyles.appendChild(document.createTextNode(newCssRules));
+
+      // Append cards
+      batch.forEach(f => {
+        const card = document.createElement('div');
+        card.className = 'logo-card';
+        card.setAttribute('data-category-name', f.category);
+        
+        const ext = f.font_url.includes('.otf') ? '.otf' : '.ttf';
+        const downloadName = `${f.slug}${ext}`;
+
+        card.innerHTML = `
+          <div class="logo-preview-box" style="padding: 1.5rem; height: 160px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); position: relative; overflow: hidden;">
+            <div class="font-preview-text" style="font-family: 'preview-font-${f.id}', sans-serif; font-size: 1.5rem; color: var(--text-primary); text-align: center; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" dir="rtl">
+              الخط العربي... أصالة تنبض بالجمال.
+            </div>
+          </div>
+          <div class="logo-card-info" style="padding: 1rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="logo-card-cat" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-green); font-size: 0.75rem; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700; display: inline-block;">
+                🖋️ ${f.category}
+              </span>
+              <h3 class="logo-card-title" style="margin-top: 0.5rem; font-size: 1rem; font-weight: 700; color: var(--text-primary); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                ${f.name}
+              </h3>
+            </div>
+            <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color);">
+              <a href="${f.font_url}" download="${downloadName}" class="btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem; border-radius: 8px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.25rem; text-decoration: none; cursor: pointer; background: linear-gradient(135deg, var(--accent-green), var(--accent-green-hover)); color: white; font-weight: 700;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                تحميل الخط
+              </a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Show/hide Load More button
+      if (end < filteredFonts.length) {
+        loadMoreBtn.style.display = 'inline-block';
+      } else {
+        loadMoreBtn.style.display = 'none';
+      }
     }
   });
 </script>
