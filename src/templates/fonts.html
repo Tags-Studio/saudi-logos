@@ -22,9 +22,23 @@
   </div>
 
   <!-- Category chips (Tabs) -->
-  <div class="fonts-categories-scroll" style="margin-bottom: 1.5rem; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.75rem; justify-content: flex-start; scrollbar-width: none;">
-    <button class="filter-chip active" data-category="all" style="background: var(--accent-green-glow); color: var(--accent-green); border: 1.5px solid var(--accent-green); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">الكل</button>
-    {{ category_chips }}
+  <div class="scroll-container-wrapper" style="position: relative; display: flex; align-items: center; margin-bottom: 1.5rem; width: 100%;">
+    <button class="scroll-nav-btn right-btn" onclick="scrollContainer('categories-scroll', 'right')" aria-label="التمرير لليمين">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+    
+    <div id="categories-scroll" class="fonts-categories-scroll" style="width: 100%; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.75rem; justify-content: flex-start; scrollbar-width: none;">
+      <button class="filter-chip active" data-category="all" style="background: var(--accent-green-glow); color: var(--accent-green); border: 1.5px solid var(--accent-green); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">الكل</button>
+      {{ category_chips }}
+    </div>
+
+    <button class="scroll-nav-btn left-btn" onclick="scrollContainer('categories-scroll', 'left')" aria-label="التمرير لليسار">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
   </div>
 
   <!-- Famous Font Families (Collections) -->
@@ -32,33 +46,48 @@
     <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-secondary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">
       <span>📂 مجموعات وعائلات الخطوط الشهيرة (Collections)</span>
     </div>
-    <div class="font-families-scroll" style="overflow-x: auto; white-space: nowrap; padding: 0.25rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.65rem; justify-content: flex-start; scrollbar-width: none;">
-      <button class="family-chip active" data-family="all">
-        <span class="family-dot"></span> الكل
+    
+    <div class="scroll-container-wrapper" style="position: relative; display: flex; align-items: center; width: 100%;">
+      <button class="scroll-nav-btn right-btn" onclick="scrollContainer('families-scroll', 'right')" aria-label="التمرير لليمين">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
       </button>
-      <button class="family-chip" data-family="madani">
-        <span class="family-dot"></span> عائلة مدني (Madani)
-      </button>
-      <button class="family-chip" data-family="hacen">
-        <span class="family-dot"></span> عائلة حاسن (Hacen)
-      </button>
-      <button class="family-chip" data-family="ge">
-        <span class="family-dot"></span> عائلة جي إي (GE)
-      </button>
-      <button class="family-chip" data-family="ibm">
-        <span class="family-dot"></span> عائلة آي بي إم (IBM Plex)
-      </button>
-      <button class="family-chip" data-family="thmanyah">
-        <span class="family-dot"></span> عائلة ثمانية (Thmanyah)
-      </button>
-      <button class="family-chip" data-family="ukij">
-        <span class="family-dot"></span> عائلة يوكيج (UKIJ)
-      </button>
-      <button class="family-chip" data-family="digi">
-        <span class="family-dot"></span> عائلة ديجي (Digi)
-      </button>
-      <button class="family-chip" data-family="ts">
-        <span class="family-dot"></span> عائلة تاج (TS Fonts)
+
+      <div id="families-scroll" class="font-families-scroll" style="width: 100%; overflow-x: auto; white-space: nowrap; padding: 0.25rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.65rem; justify-content: flex-start; scrollbar-width: none;">
+        <button class="family-chip active" data-family="all">
+          <span class="family-dot"></span> الكل
+        </button>
+        <button class="family-chip" data-family="madani">
+          <span class="family-dot"></span> عائلة مدني (Madani)
+        </button>
+        <button class="family-chip" data-family="hacen">
+          <span class="family-dot"></span> عائلة حاسن (Hacen)
+        </button>
+        <button class="family-chip" data-family="ge">
+          <span class="family-dot"></span> عائلة جي إي (GE)
+        </button>
+        <button class="family-chip" data-family="ibm">
+          <span class="family-dot"></span> عائلة آي بي إم (IBM Plex)
+        </button>
+        <button class="family-chip" data-family="thmanyah">
+          <span class="family-dot"></span> عائلة ثمانية (Thmanyah)
+        </button>
+        <button class="family-chip" data-family="ukij">
+          <span class="family-dot"></span> عائلة يوكيج (UKIJ)
+        </button>
+        <button class="family-chip" data-family="digi">
+          <span class="family-dot"></span> عائلة ديجي (Digi)
+        </button>
+        <button class="family-chip" data-family="ts">
+          <span class="family-dot"></span> عائلة تاج (TS Fonts)
+        </button>
+      </div>
+
+      <button class="scroll-nav-btn left-btn" onclick="scrollContainer('families-scroll', 'left')" aria-label="التمرير لليسار">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
       </button>
     </div>
   </div>
@@ -148,9 +177,70 @@
     background: #06b6d4 !important;
     box-shadow: 0 0 8px #06b6d4;
   }
+
+  /* Horizontal Scroll Navigation Arrows styling */
+  .scroll-container-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .scroll-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-color);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+    opacity: 0;
+    pointer-events: none; /* Hidden by default, shown on desktop hover */
+  }
+  .scroll-container-wrapper:hover .scroll-nav-btn {
+    opacity: 0.9;
+    pointer-events: auto;
+  }
+  .scroll-nav-btn:hover {
+    opacity: 1 !important;
+    background: var(--border-color);
+    transform: translateY(-50%) scale(1.05);
+  }
+  .scroll-nav-btn:hover svg {
+    stroke: var(--text-primary);
+  }
+  .scroll-nav-btn.right-btn {
+    right: -17px;
+  }
+  .scroll-nav-btn.left-btn {
+    left: -17px;
+  }
+
+  @media (max-width: 1024px) {
+    /* Touch swipe is native on mobile/tablet, hide navigation arrows */
+    .scroll-nav-btn {
+      display: none !important;
+    }
+  }
 </style>
 
 <script>
+  // Global horizontal scroll navigation function
+  window.scrollContainer = function(id, direction) {
+    const container = document.getElementById(id);
+    if (!container) return;
+    const scrollAmount = 300;
+    // In RTL layouts, scroll direction is reversed
+    const amount = direction === 'left' ? -scrollAmount : scrollAmount;
+    container.scrollBy({ left: amount, behavior: 'smooth' });
+  };
+
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('fonts-search');
     const grid = document.getElementById('fonts-grid');
