@@ -104,9 +104,45 @@
   </div>
 
   <!-- Category chips (Tabs) -->
-  <div class="fonts-categories-scroll" style="margin-bottom: 2rem; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.75rem; justify-content: flex-start; scrollbar-width: none;">
+  <div class="fonts-categories-scroll" style="margin-bottom: 1.5rem; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.75rem; justify-content: flex-start; scrollbar-width: none;">
     <button class="filter-chip active" data-category="all" style="background: var(--accent-green-glow); color: var(--accent-green); border: 1.5px solid var(--accent-green); padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">الكل</button>
     <button class="filter-chip" data-category="أحادي المسافة">أحادي المسافة</button><button class="filter-chip" data-category="أنيق">أنيق</button><button class="filter-chip" data-category="تبسيط">تبسيط</button><button class="filter-chip" data-category="تربوي">تربوي</button><button class="filter-chip" data-category="تقنية">تقنية</button><button class="filter-chip" data-category="توريق">توريق</button><button class="filter-chip" data-category="ثلاثي الأبعاد">ثلاثي الأبعاد</button><button class="filter-chip" data-category="ثلث">ثلث</button><button class="filter-chip" data-category="جد سميك">جد سميك</button><button class="filter-chip" data-category="حر">حر</button><button class="filter-chip" data-category="دوائر">دوائر</button><button class="filter-chip" data-category="ديوان">ديوان</button><button class="filter-chip" data-category="رعب">رعب</button><button class="filter-chip" data-category="رقعة">رقعة</button><button class="filter-chip" data-category="رموز">رموز</button><button class="filter-chip" data-category="شائع">شائع</button><button class="filter-chip" data-category="عصري">عصري</button><button class="filter-chip" data-category="غريب">غريب</button><button class="filter-chip" data-category="غير مصنف">غير مصنف</button><button class="filter-chip" data-category="فرشاة">فرشاة</button><button class="filter-chip" data-category="قائم">قائم</button><button class="filter-chip" data-category="قلم">قلم</button><button class="filter-chip" data-category="كوفي">كوفي</button><button class="filter-chip" data-category="مثلثي">مثلثي</button><button class="filter-chip" data-category="مجعد">مجعد</button><button class="filter-chip" data-category="محدب">محدب</button><button class="filter-chip" data-category="مربع">مربع</button><button class="filter-chip" data-category="مرح">مرح</button><button class="filter-chip" data-category="مزدوج">مزدوج</button><button class="filter-chip" data-category="مزركش">مزركش</button><button class="filter-chip" data-category="مطور">مطور</button><button class="filter-chip" data-category="مغربي">مغربي</button><button class="filter-chip" data-category="مفرغة">مفرغة</button><button class="filter-chip" data-category="ملونة">ملونة</button><button class="filter-chip" data-category="منفصلة">منفصلة</button><button class="filter-chip" data-category="نحيف">نحيف</button><button class="filter-chip" data-category="نستعليق">نستعليق</button><button class="filter-chip" data-category="نسخ">نسخ</button><button class="filter-chip" data-category="نمطي">نمطي</button><button class="filter-chip" data-category="يدوي">يدوي</button>
+  </div>
+
+  <!-- Famous Font Families (Collections) -->
+  <div style="margin-bottom: 2rem;">
+    <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-secondary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem; text-transform: uppercase; letter-spacing: 0.5px;">
+      <span>📂 مجموعات وعائلات الخطوط الشهيرة (Collections)</span>
+    </div>
+    <div class="font-families-scroll" style="overflow-x: auto; white-space: nowrap; padding: 0.25rem 0; -webkit-overflow-scrolling: touch; display: flex; gap: 0.65rem; justify-content: flex-start; scrollbar-width: none;">
+      <button class="family-chip active" data-family="all">
+        <span class="family-dot"></span> الكل
+      </button>
+      <button class="family-chip" data-family="madani">
+        <span class="family-dot"></span> عائلة مدني (Madani)
+      </button>
+      <button class="family-chip" data-family="hacen">
+        <span class="family-dot"></span> عائلة حاسن (Hacen)
+      </button>
+      <button class="family-chip" data-family="ge">
+        <span class="family-dot"></span> عائلة جي إي (GE)
+      </button>
+      <button class="family-chip" data-family="ibm">
+        <span class="family-dot"></span> عائلة آي بي إم (IBM Plex)
+      </button>
+      <button class="family-chip" data-family="thmanyah">
+        <span class="family-dot"></span> عائلة ثمانية (Thmanyah)
+      </button>
+      <button class="family-chip" data-family="ukij">
+        <span class="family-dot"></span> عائلة يوكيج (UKIJ)
+      </button>
+      <button class="family-chip" data-family="digi">
+        <span class="family-dot"></span> عائلة ديجي (Digi)
+      </button>
+      <button class="family-chip" data-family="ts">
+        <span class="family-dot"></span> عائلة تاج (TS Fonts)
+      </button>
+    </div>
   </div>
 
   <!-- Status Bar -->
@@ -130,7 +166,8 @@
 
 <style>
   /* Custom scrollbar hiding for categories list */
-  .fonts-categories-scroll::-webkit-scrollbar {
+  .fonts-categories-scroll::-webkit-scrollbar,
+  .font-families-scroll::-webkit-scrollbar {
     display: none;
   }
   
@@ -155,6 +192,44 @@
     border: 1.5px solid var(--accent-green) !important;
     font-weight: 700;
   }
+
+  /* Custom styling for Families classification */
+  .family-chip {
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px; /* Distinct border radius */
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+  .family-chip:hover {
+    border-color: var(--accent-blue, #06b6d4);
+    color: var(--text-primary);
+  }
+  .family-chip.active {
+    background: rgba(6, 182, 212, 0.08) !important;
+    color: #06b6d4 !important;
+    border: 1.5px solid #06b6d4 !important;
+    font-weight: 700;
+  }
+  .family-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--text-muted);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+  .family-chip.active .family-dot {
+    background: #06b6d4 !important;
+    box-shadow: 0 0 8px #06b6d4;
+  }
 </style>
 
 <script>
@@ -163,6 +238,7 @@
     const grid = document.getElementById('fonts-grid');
     const countSpan = document.getElementById('fonts-count');
     const categoryChips = document.querySelectorAll('.filter-chip');
+    const familyChips = document.querySelectorAll('.family-chip');
     const dynamicStyles = document.getElementById('dynamic-font-styles');
     
     if (!searchInput || !grid || !countSpan || !dynamicStyles) return;
@@ -174,6 +250,7 @@
     
     let filteredFonts = [...allFonts];
     let activeCategory = 'all';
+    let activeFamily = 'all';
     let currentPage = 1;
     const pageSize = 24; // 24 fonts per batch
 
@@ -218,6 +295,16 @@
       });
     });
 
+    familyChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        familyChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeFamily = chip.getAttribute('data-family');
+        currentPage = 1;
+        filterFonts();
+      });
+    });
+
     // Initial render
     filterFonts();
 
@@ -228,8 +315,34 @@
         const nameMatches = f.name && f.name.toLowerCase().includes(query);
         const slugMatches = f.slug && f.slug.toLowerCase().includes(query);
         const matchesQuery = nameMatches || slugMatches;
+        
         const matchesCategory = activeCategory === 'all' || f.category === activeCategory;
-        return matchesQuery && matchesCategory;
+        
+        let matchesFamily = true;
+        if (activeFamily !== 'all') {
+          const nameLower = f.name ? f.name.toLowerCase() : '';
+          const slugLower = f.slug ? f.slug.toLowerCase() : '';
+          
+          if (activeFamily === 'madani') {
+            matchesFamily = nameLower.includes('madani') || nameLower.includes('مدني') || slugLower.includes('madani');
+          } else if (activeFamily === 'hacen') {
+            matchesFamily = nameLower.includes('hacen') || nameLower.includes('حاسن') || slugLower.includes('hacen');
+          } else if (activeFamily === 'ge') {
+            matchesFamily = slugLower.startsWith('ge-') || slugLower.startsWith('ge_') || nameLower.startsWith('ge ') || nameLower.startsWith('ge-');
+          } else if (activeFamily === 'ibm') {
+            matchesFamily = nameLower.includes('ibm') || slugLower.includes('ibm');
+          } else if (activeFamily === 'thmanyah') {
+            matchesFamily = nameLower.includes('thmanyah') || slugLower.includes('thmanyah');
+          } else if (activeFamily === 'ukij') {
+            matchesFamily = nameLower.includes('ukij') || slugLower.includes('ukij');
+          } else if (activeFamily === 'digi') {
+            matchesFamily = nameLower.includes('digi') || slugLower.includes('digi');
+          } else if (activeFamily === 'ts') {
+            matchesFamily = slugLower.startsWith('ts-') || slugLower.startsWith('ts_') || nameLower.startsWith('ts ') || nameLower.startsWith('ts-');
+          }
+        }
+        
+        return matchesQuery && matchesCategory && matchesFamily;
       });
 
       countSpan.textContent = `تم العثور على ${filteredFonts.length} خط عربي`;
