@@ -141,7 +141,7 @@ function checkSavedApiKey() {
   const clearBtn = document.getElementById("clear-api-key");
   const statusEl = document.getElementById("api-key-status");
 
-  if (saved && saved.startsWith("AIza")) {
+  if (saved && saved.length > 5) {
     input.value = saved;
     if (clearBtn) clearBtn.style.display = "inline-flex";
     if (statusEl) {
@@ -155,21 +155,31 @@ function saveApiKey() {
   const input = document.getElementById("api-key-input");
   const clearBtn = document.getElementById("clear-api-key");
   const statusEl = document.getElementById("api-key-status");
-  const key = input.value.trim();
+  
+  // Clean key from extra spaces, single/double quotes often pasted by mistake
+  let key = input.value.trim().replace(/^["']|["']$/g, "").trim();
 
-  if (!key || !key.startsWith("AIza")) {
+  if (!key || key.length < 10) {
     if (statusEl) {
       statusEl.style.display = "block";
-      statusEl.innerHTML = `<span style="color: #ef4444;">⚠️ المفتاح غير صحيح. يجب أن يبدأ بـ "AIza"</span>`;
+      statusEl.innerHTML = `<span style="color: #ef4444;">⚠️ الرجاء إدخال مفتاح API صالح.</span>`;
     }
     return;
   }
 
+  // Update input value with cleaned key
+  input.value = key;
+
   localStorage.setItem("gemini_api_key", key);
   if (clearBtn) clearBtn.style.display = "inline-flex";
+  
   if (statusEl) {
     statusEl.style.display = "block";
-    statusEl.innerHTML = `<span style="color: var(--accent-green);">✓ تم حفظ المفتاح بنجاح على جهازك — ${key.substring(0, 8)}...${key.slice(-4)}</span>`;
+    if (!key.startsWith("AIza")) {
+      statusEl.innerHTML = `<span style="color: #f59e0b;">⚠️ تم حفظ المفتاح بنجاح، لكنه لا يبدأ بـ "AIza". قد لا يعمل بشكل صحيح إذا لم يكن مفتاح Gemini API.</span>`;
+    } else {
+      statusEl.innerHTML = `<span style="color: var(--accent-green);">✓ تم حفظ المفتاح بنجاح على جهازك — ${key.substring(0, 8)}...${key.slice(-4)}</span>`;
+    }
   }
 }
 
@@ -210,7 +220,7 @@ async function generateCalligraphy() {
   const extraPrompt = document.getElementById("extra-prompt")?.value.trim() || "";
 
   // ── Validation ──────────────────────────────────────
-  if (!apiKey || !apiKey.startsWith("AIza")) {
+  if (!apiKey || apiKey.length < 10) {
     showError("الرجاء إدخال مفتاح Google AI Studio API أولاً.\nيمكنك الحصول على مفتاح مجاني من: https://aistudio.google.com/apikey");
     document.getElementById("api-key-input")?.focus();
     return;
