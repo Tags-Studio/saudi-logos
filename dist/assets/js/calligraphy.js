@@ -279,7 +279,7 @@ async function generateCalligraphy() {
 
   // ── Call Gemini API ─────────────────────────────────
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-preview-image-generation:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=${apiKey}`;
 
     const body = {
       contents: [
