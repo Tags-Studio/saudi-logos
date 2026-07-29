@@ -170,7 +170,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -352,6 +352,26 @@ def build_site():
     with open(os.path.join(DIST_DIR, "fonts", "index.html"), "w", encoding="utf-8") as f:
         f.write(fonts_rendered)
     print("✓ Fonts Page built.")
+
+    # 4.7. Build AI Calligraphy Page (calligraphy.html)
+    print("Building AI Calligraphy Page...")
+    calligraphy_content = load_template("calligraphy.html")
+    calligraphy_context = {
+        "title": "مولّد الخط العربي بالذكاء الاصطناعي - شعارات السعودية",
+        "meta_description": "أنشئ تصاميم خطية عربية احترافية بالذكاء الاصطناعي في ثوانٍ. اختر بين 8 أساليب خطية كالنسخ والثلث والديواني والكوفي وحمّل نتيجتك مجاناً.",
+        "canonical": "https://saudi-logos.vercel.app/calligraphy",
+        "og_title": "مولّد الخط العربي بالذكاء الاصطناعي - توليد تصاميم خطية احترافية",
+        "og_description": "أنشئ تصاميم الخط العربي الاحترافية في ثوانٍ بأسلوب النسخ والثلث والديواني والكوفي وأكثر - مجاناً بالذكاء الاصطناعي.",
+        "active_calligraphy": "active"
+    }
+    calligraphy_rendered = compile_page(calligraphy_content, base_template, calligraphy_context)
+    with open(os.path.join(DIST_DIR, "calligraphy.html"), "w", encoding="utf-8") as f:
+        f.write(calligraphy_rendered)
+
+    os.makedirs(os.path.join(DIST_DIR, "calligraphy"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "calligraphy", "index.html"), "w", encoding="utf-8") as f:
+        f.write(calligraphy_rendered)
+    print("\u2713 AI Calligraphy Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")

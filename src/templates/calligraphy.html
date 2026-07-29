@@ -1,0 +1,326 @@
+<!-- =====================================================
+     صفحة مولّد الخط العربي بالذكاء الاصطناعي
+     Arabic Calligraphy AI Generator
+     ===================================================== -->
+
+<!-- Page Hero Section -->
+<section class="calligraphy-hero" style="text-align: center; padding: 4rem 0 2rem; position: relative; overflow: hidden;">
+  <div class="calligraphy-hero-glow"></div>
+  <div class="container" style="position: relative; z-index: 1;">
+    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-green); padding: 0.35rem 1rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; color: var(--accent-green); margin-bottom: 1.5rem; letter-spacing: 0.5px;">
+      <span>✨</span>
+      <span>مدعوم بالذكاء الاصطناعي من Google</span>
+      <span>✨</span>
+    </div>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--text-primary);">
+      مولّد الخط العربي<br>
+      <span style="background: linear-gradient(135deg, var(--accent-green), var(--accent-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">بالذكاء الاصطناعي</span>
+    </h1>
+    <p style="font-size: 1.15rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">
+      اكتب نصك، اختر أسلوب الخط، واحصل على تصميم خطي احترافي في ثوانٍ معدودة
+    </p>
+  </div>
+</section>
+
+<!-- Main Generator Section -->
+<section class="container" style="padding-bottom: 5rem;">
+
+  <!-- API Key Setup Panel -->
+  <div id="api-key-panel" class="calligraphy-api-panel" style="background: var(--bg-secondary); border: 1.5px solid var(--accent-gold); border-radius: 16px; padding: 1.5rem; margin-bottom: 2.5rem;">
+    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+      <div style="background: rgba(245, 158, 11, 0.15); border-radius: 10px; padding: 0.6rem; flex-shrink: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+        </svg>
+      </div>
+      <div style="flex-grow: 1;">
+        <h3 style="font-size: 1rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 0.4rem;">مفتاح Google AI Studio API</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+          لتشغيل مولّد الخط، تحتاج لمفتاح API مجاني من Google AI Studio.
+          المفتاح يُحفظ على جهازك فقط ولا يُرسل لأي خادم آخر.
+          <a href="https://aistudio.google.com/apikey" target="_blank" style="color: var(--accent-green); font-weight: 700;">احصل على مفتاحك المجاني هنا ←</a>
+        </p>
+        <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+          <input
+            type="password"
+            id="api-key-input"
+            placeholder="الصق مفتاح API هنا... (AIza...)"
+            style="flex-grow: 1; min-width: 260px; padding: 0.65rem 1rem; border: 1.5px solid var(--border-color); border-radius: 10px; background: var(--bg-primary); color: var(--text-primary); font-family: monospace; font-size: 0.9rem; outline: none; transition: border-color 0.2s;"
+          >
+          <button id="save-api-key" class="btn-primary" style="padding: 0.65rem 1.5rem; border-radius: 10px; cursor: pointer; font-weight: 700; border: none; white-space: nowrap; display: flex; align-items: center; gap: 0.4rem;" onclick="saveApiKey()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+            حفظ المفتاح
+          </button>
+          <button id="clear-api-key" style="padding: 0.65rem 1rem; border-radius: 10px; cursor: pointer; border: 1px solid var(--border-color); background: transparent; color: var(--text-secondary); font-size: 0.85rem; display: none;" onclick="clearApiKey()">
+            حذف المفتاح
+          </button>
+        </div>
+        <div id="api-key-status" style="margin-top: 0.75rem; font-size: 0.8rem; display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Generator Main Card -->
+  <div class="calligraphy-main-card" style="background: var(--bg-secondary); border: 1.5px solid var(--border-color); border-radius: 20px; overflow: hidden;">
+
+    <!-- Text Input Area -->
+    <div style="padding: 2rem 2rem 1.5rem; border-bottom: 1px solid var(--border-color);">
+      <label style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">✍️ أدخل النص العربي</label>
+      <textarea
+        id="arabic-text-input"
+        placeholder="مثال: بسم الله الرحمن الرحيم • شركة النور للاستثمار • الهوية البصرية"
+        maxlength="120"
+        dir="rtl"
+        style="width: 100%; min-height: 80px; padding: 1rem; border: 1.5px solid var(--border-color); border-radius: 12px; background: var(--bg-primary); color: var(--text-primary); font-family: 'PingARLT', sans-serif; font-size: 1.4rem; line-height: 1.5; resize: vertical; outline: none; transition: border-color 0.2s;"
+        oninput="document.getElementById('char-count').textContent = this.value.length"
+      ></textarea>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem;">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">يُنصح بـ 3 كلمات أو أقل للحصول على أفضل النتائج</span>
+        <span style="font-size: 0.8rem; color: var(--text-muted);"><span id="char-count">0</span>/120</span>
+      </div>
+    </div>
+
+    <!-- Style Selection Grid -->
+    <div style="padding: 1.5rem 2rem; border-bottom: 1px solid var(--border-color);">
+      <label style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 1.25rem; text-transform: uppercase; letter-spacing: 0.5px;">🎨 اختر أسلوب الخط</label>
+      <div class="calligraphy-styles-grid" id="styles-grid">
+
+        <!-- Style Cards - will be populated by JS -->
+      </div>
+    </div>
+
+    <!-- Advanced Options (Collapsible) -->
+    <div style="padding: 1rem 2rem; border-bottom: 1px solid var(--border-color);">
+      <button onclick="toggleAdvanced()" style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; cursor: pointer; color: var(--text-secondary); font-size: 0.9rem; font-weight: 700; padding: 0;">
+        <svg id="advanced-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><polyline points="6 9 12 15 18 9"/></svg>
+        خيارات متقدمة
+      </button>
+      <div id="advanced-options" style="display: none; margin-top: 1rem; display: none;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.5rem;">لون الخلفية</label>
+            <select id="bg-color-select" style="width: 100%; padding: 0.6rem 0.75rem; border: 1.5px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font-family: 'PingARLT', sans-serif; font-size: 0.9rem; outline: none;">
+              <option value="white">أبيض ناصع</option>
+              <option value="transparent checkered">شفاف (PNG)</option>
+              <option value="black">أسود</option>
+              <option value="dark gold">ذهبي داكن</option>
+              <option value="cream parchment">عاجي / بردي</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.5rem;">اتجاه التصميم</label>
+            <select id="orientation-select" style="width: 100%; padding: 0.6rem 0.75rem; border: 1.5px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font-family: 'PingARLT', sans-serif; font-size: 0.9rem; outline: none;">
+              <option value="square centered">مربع متوسط</option>
+              <option value="wide horizontal">أفقي عريض</option>
+              <option value="tall vertical">عمودي طولي</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 1rem;">
+          <label style="display: block; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.5rem;">تعليمات إضافية (اختياري)</label>
+          <input type="text" id="extra-prompt" placeholder="مثال: أضف زخارف إسلامية، استخدم اللون الذهبي..." style="width: 100%; padding: 0.6rem 0.75rem; border: 1.5px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); font-family: 'PingARLT', sans-serif; font-size: 0.9rem; outline: none;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Generate Button -->
+    <div style="padding: 1.5rem 2rem;">
+      <button id="generate-btn" onclick="generateCalligraphy()" class="btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem; font-weight: 800; border-radius: 12px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.75rem; transition: all 0.3s; letter-spacing: 0.5px;">
+        <svg id="generate-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <span id="generate-text">✨ توليد التصميم الآن</span>
+      </button>
+      <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem;">
+        كل عملية توليد تستخدم حصة بسيطة من مفتاح API الخاص بك من Google AI Studio
+      </p>
+    </div>
+  </div>
+
+  <!-- Result Section (Hidden by default) -->
+  <div id="result-section" style="display: none; margin-top: 2rem;">
+    <div style="background: var(--bg-secondary); border: 1.5px solid var(--border-color); border-radius: 20px; overflow: hidden;">
+
+      <!-- Loading State -->
+      <div id="loading-state" style="padding: 4rem 2rem; text-align: center; display: none;">
+        <div class="calligraphy-spinner"></div>
+        <p style="margin-top: 1.5rem; font-size: 1rem; font-weight: 700; color: var(--text-primary);">جاري توليد تصميمك...</p>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.4rem;" id="loading-tip">يستغرق التوليد من 5 إلى 15 ثانية</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" style="padding: 2rem; display: none; text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>
+        <h3 style="color: #ef4444; margin-bottom: 0.5rem; font-size: 1rem;">حدث خطأ أثناء التوليد</h3>
+        <p id="error-message" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;"></p>
+        <button onclick="generateCalligraphy()" class="btn-primary" style="padding: 0.65rem 1.5rem; border-radius: 10px; cursor: pointer; font-weight: 700; border: none;">
+          إعادة المحاولة
+        </button>
+      </div>
+
+      <!-- Success State - Result Image -->
+      <div id="success-state" style="display: none;">
+        <div style="padding: 1.25rem 2rem; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div style="width: 8px; height: 8px; background: var(--accent-green); border-radius: 50%; box-shadow: 0 0 8px var(--accent-green);"></div>
+            <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">تم توليد التصميم بنجاح</span>
+          </div>
+          <span id="result-style-label" style="font-size: 0.8rem; color: var(--text-secondary); background: var(--bg-tertiary); padding: 0.3rem 0.75rem; border-radius: 999px;"></span>
+        </div>
+        <!-- Image Display -->
+        <div style="padding: 2rem; background: repeating-conic-gradient(var(--border-color) 0% 25%, transparent 0% 50%) 0 0 / 20px 20px; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+          <img id="result-image" src="" alt="التصميم الخطي المولّد" style="max-width: 100%; max-height: 600px; object-fit: contain; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+        </div>
+        <!-- Action Buttons -->
+        <div style="padding: 1.5rem 2rem; display: flex; gap: 1rem; flex-wrap: wrap; border-top: 1px solid var(--border-color);">
+          <button id="download-btn" onclick="downloadImage()" class="btn-primary" style="flex: 1; min-width: 160px; padding: 0.75rem; border-radius: 10px; cursor: pointer; font-weight: 700; border: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            تحميل PNG
+          </button>
+          <button onclick="generateCalligraphy()" class="btn-secondary" style="flex: 1; min-width: 160px; padding: 0.75rem; border-radius: 10px; cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            توليد نسخة جديدة
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tips Section -->
+  <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
+    <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem; display: flex; gap: 0.75rem; align-items: flex-start;">
+      <span style="font-size: 1.5rem; flex-shrink: 0;">✍️</span>
+      <div>
+        <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-primary);">نصوص قصيرة = نتائج أجمل</h4>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">استخدم من كلمة إلى 5 كلمات للحصول على خط متوازن وواضح</p>
+      </div>
+    </div>
+    <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem; display: flex; gap: 0.75rem; align-items: flex-start;">
+      <span style="font-size: 1.5rem; flex-shrink: 0;">🔄</span>
+      <div>
+        <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-primary);">جرّب أكثر من مرة</h4>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">الذكاء الاصطناعي يوّلد نتائج مختلفة في كل مرة، إعادة التوليد تعطيك خيارات متعددة</p>
+      </div>
+    </div>
+    <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem; display: flex; gap: 0.75rem; align-items: flex-start;">
+      <span style="font-size: 1.5rem; flex-shrink: 0;">🎨</span>
+      <div>
+        <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-primary);">استخدامات متعددة</h4>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">مثالي لشعارات المراكز الطبية، بطاقات الأعمال، الهدايا، ومنشورات السوشيال ميديا</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Page-specific CSS -->
+<style>
+  .calligraphy-hero {
+    background: radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+  }
+
+  .calligraphy-styles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .style-card {
+    position: relative;
+    padding: 1rem 0.75rem;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+  }
+  .style-card:hover {
+    border-color: var(--accent-green);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+  }
+  .style-card.selected {
+    border-color: var(--accent-green);
+    background: rgba(16, 185, 129, 0.07);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  }
+  .style-card .style-emoji {
+    font-size: 1.75rem;
+    display: block;
+    line-height: 1;
+  }
+  .style-card .style-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .style-card .style-desc {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+  }
+  .style-card.selected .style-name {
+    color: var(--accent-green);
+  }
+  .style-card .style-check {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    width: 18px;
+    height: 18px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .style-card.selected .style-check {
+    opacity: 1;
+  }
+
+  .calligraphy-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--accent-green);
+    border-radius: 50%;
+    animation: calligraphySpin 1s linear infinite;
+    margin: 0 auto;
+  }
+  @keyframes calligraphySpin {
+    to { transform: rotate(360deg); }
+  }
+
+  #arabic-text-input:focus,
+  #api-key-input:focus {
+    border-color: var(--accent-green) !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+  }
+
+  #generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  @media (max-width: 640px) {
+    .calligraphy-main-card > div {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+    .calligraphy-styles-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
+<!-- Calligraphy Generator Script -->
+<script src="/assets/js/calligraphy.js"></script>
