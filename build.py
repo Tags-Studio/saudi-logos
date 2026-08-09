@@ -170,7 +170,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_vectorizer", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_vectorizer", "active_bgremover", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -392,6 +392,26 @@ def build_site():
     with open(os.path.join(DIST_DIR, "vectorizer", "index.html"), "w", encoding="utf-8") as f:
         f.write(vectorizer_rendered)
     print("\u2713 Image Vectorizer Page built.")
+
+    # 4.9. Build Background Remover Page (bg-remover.html)
+    print("Building Background Remover Page...")
+    bgremover_content = load_template("bg-remover.html")
+    bgremover_context = {
+        "title": "إزالة خلفية الصور والشعارات مجاناً - شعارات السعودية",
+        "meta_description": "أداة مجانية لإزالة الخلفية البيضاء أو الملونة من الصور والشعارات فوراً وحفظها بصيغة PNG شفافة عالية الدقة.",
+        "canonical": "https://saudi-logos.vercel.app/bg-remover",
+        "og_title": "إزالة خلفية الصور مجاناً 100% - أداة حذف الخلفية",
+        "og_description": "احذف خلفية أي صورة أو شعار فوراً داخل متصفحك وحمّلها بصيغة PNG شفافة عالية الدقة.",
+        "active_bgremover": "active"
+    }
+    bgremover_rendered = compile_page(bgremover_content, base_template, bgremover_context)
+    with open(os.path.join(DIST_DIR, "bg-remover.html"), "w", encoding="utf-8") as f:
+        f.write(bgremover_rendered)
+
+    os.makedirs(os.path.join(DIST_DIR, "bg-remover"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "bg-remover", "index.html"), "w", encoding="utf-8") as f:
+        f.write(bgremover_rendered)
+    print("\u2713 Background Remover Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")

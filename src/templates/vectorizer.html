@@ -660,6 +660,20 @@
   let originalImageURL = null;
   let viewMode = 'svg';
 
+  // Check if image was sent from Background Remover
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedData = sessionStorage.getItem('vectorizer_input_image');
+    if (savedData) {
+      sessionStorage.removeItem('vectorizer_input_image');
+      fetch(savedData)
+        .then(res => res.blob())
+        .then(blob => {
+          const file = new File([blob], "cleaned-logo.png", { type: "image/png" });
+          handleFile(file);
+        });
+    }
+  });
+
   // ── Drag & Drop ──────────────────────────────────────
   const dz = document.getElementById('drop-zone');
   dz.addEventListener('dragover', (e) => { e.preventDefault(); dz.classList.add('drag-over'); });
