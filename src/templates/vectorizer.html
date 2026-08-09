@@ -3,8 +3,8 @@
      Image to SVG Vectorizer
      ===================================================== -->
 
-<!-- ImageTracer.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/imagetracer@1.2.6/imagetracer_v1.2.6.js"></script>
+<!-- ImageTracer.js - correct CDN -->
+<script src="https://cdn.jsdelivr.net/gh/jankovicsandras/imagetracerjs@master/imagetracer_v1.2.6.js"></script>
 
 <!-- Hero Section -->
 <section class="vectorizer-hero">
@@ -578,6 +578,12 @@
   // ── Main Trace ───────────────────────────────────────
   window.startTrace = function() {
     if (!currentFile) return;
+
+    // Guard: make sure library is loaded
+    if (typeof ImageTracer === 'undefined') {
+      alert('مكتبة التحويل لم تُحمَّل بعد. يرجى تحديث الصفحة والمحاولة مجدداً.');
+      return;
+    }
 
     showState('loading');
 
