@@ -170,7 +170,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_vectorizer", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -372,6 +372,26 @@ def build_site():
     with open(os.path.join(DIST_DIR, "calligraphy", "index.html"), "w", encoding="utf-8") as f:
         f.write(calligraphy_rendered)
     print("\u2713 AI Calligraphy Page built.")
+
+    # 4.8. Build Image Vectorizer Page (vectorizer.html)
+    print("Building Image Vectorizer Page...")
+    vectorizer_content = load_template("vectorizer.html")
+    vectorizer_context = {
+        "title": "محوّل الصور إلى SVG فيكتور - شعارات السعودية",
+        "meta_description": "حوّل أي صورة PNG أو JPG إلى ملف SVG فيكتوري احترافي بالكامل داخل المتصفح بدون رفع بيانات - مجاناً 100%.",
+        "canonical": "https://saudi-logos.vercel.app/vectorizer",
+        "og_title": "محوّل الصور إلى SVG مجاني - تحويل Raster إلى Vector",
+        "og_description": "أداة مجانية لتحويل أي صورة إلى SVG فيكتوري احترافي. يعمل بالكامل في المتصفح بدون اتصال بأي خادم.",
+        "active_vectorizer": "active"
+    }
+    vectorizer_rendered = compile_page(vectorizer_content, base_template, vectorizer_context)
+    with open(os.path.join(DIST_DIR, "vectorizer.html"), "w", encoding="utf-8") as f:
+        f.write(vectorizer_rendered)
+
+    os.makedirs(os.path.join(DIST_DIR, "vectorizer"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "vectorizer", "index.html"), "w", encoding="utf-8") as f:
+        f.write(vectorizer_rendered)
+    print("\u2713 Image Vectorizer Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")
