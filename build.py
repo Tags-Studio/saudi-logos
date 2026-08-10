@@ -170,7 +170,7 @@ def compile_page(template_content, base_template, context):
         page = page.replace(placeholder, str(val))
     
     # Clean remaining active states placeholders
-    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_vectorizer", "active_bgremover", "active_request", "active_contact"]:
+    for active_tag in ["active_home", "active_browse", "active_guidelines", "active_fonts", "active_calligraphy", "active_vectorizer", "active_bgremover", "active_palette", "active_mockup", "active_request", "active_contact"]:
         page = page.replace(f"{{{{ {active_tag} }}}}", "")
         
     return page
@@ -412,6 +412,46 @@ def build_site():
     with open(os.path.join(DIST_DIR, "bg-remover", "index.html"), "w", encoding="utf-8") as f:
         f.write(bgremover_rendered)
     print("\u2713 Background Remover Page built.")
+
+    # 4.10. Build Palette Extractor Page (palette-extractor.html -> /palette)
+    print("Building Palette Extractor Page...")
+    palette_content = load_template("palette-extractor.html")
+    palette_context = {
+        "title": "أداة استخراج ألوان الشعار ودليل الهوية البصرية - شعارات السعودية",
+        "meta_description": "استخرج ألوان أي شعار بجميع الصيغ العالمية (HEX, RGB, CMYK, Pantone) وولد كارت دليل الهوية البصرية مجاناً.",
+        "canonical": "https://saudi-logos.vercel.app/palette",
+        "og_title": "مستخرج ألوان الشعارات ودليل الهوية البصرية - مجاني 100%",
+        "og_description": "استخرج أكواد الألوان الدقيقة بجميع الصيغ وحمل دليل ألوان الهوية البصرية بضغطة زر.",
+        "active_palette": "active"
+    }
+    palette_rendered = compile_page(palette_content, base_template, palette_context)
+    with open(os.path.join(DIST_DIR, "palette.html"), "w", encoding="utf-8") as f:
+        f.write(palette_rendered)
+
+    os.makedirs(os.path.join(DIST_DIR, "palette"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "palette", "index.html"), "w", encoding="utf-8") as f:
+        f.write(palette_rendered)
+    print("\u2713 Palette Extractor Page built.")
+
+    # 4.11. Build Mockup Generator Page (mockup-generator.html -> /mockups)
+    print("Building Mockup Generator Page...")
+    mockup_content = load_template("mockup-generator.html")
+    mockup_context = {
+        "title": "مولد الموك آب المباشر والشبكة الهندسية للشعار - شعارات السعودية",
+        "meta_description": "أداة مجانية لتوليد موك آب 3D مباشر للشعار على الجدران، الكروت الشخصية، الأوراق الرسمية ورسم النسبة الذهبية.",
+        "canonical": "https://saudi-logos.vercel.app/mockups",
+        "og_title": "مولد الموك آب المباشر والشبكة الهندسية للشعار - مجاني 100%",
+        "og_description": "شاهد شعارك فورياً على موك آب جداري، كروت شخصية، وأوراق رسمية، أو ارسم شبكة النسبة الذهبية فوقه.",
+        "active_mockup": "active"
+    }
+    mockup_rendered = compile_page(mockup_content, base_template, mockup_context)
+    with open(os.path.join(DIST_DIR, "mockups.html"), "w", encoding="utf-8") as f:
+        f.write(mockup_rendered)
+
+    os.makedirs(os.path.join(DIST_DIR, "mockups"), exist_ok=True)
+    with open(os.path.join(DIST_DIR, "mockups", "index.html"), "w", encoding="utf-8") as f:
+        f.write(mockup_rendered)
+    print("\u2713 Mockup Generator Page built.")
 
     # 5. Build Individual Logo Pages (logos/[slug]/index.html)
     print("Building Logo Detail Pages...")

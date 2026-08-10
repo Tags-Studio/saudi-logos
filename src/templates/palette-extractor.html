@@ -1,0 +1,484 @@
+<!-- =====================================================
+     أداة استخراج الألوان وتوليد الهوية البصرية
+     Brand Color Palette & Extractor Tool
+     ===================================================== -->
+
+<!-- Hero Section -->
+<section class="palette-hero">
+  <div class="container" style="position: relative; z-index: 1; text-align: center; padding: 3.5rem 0 2rem;">
+    <div class="palette-badge">
+      <span>🎨</span>
+      <span>أداة الهوية البصرية — HEX / RGB / CMYK / Pantone</span>
+      <span>⚡</span>
+    </div>
+    <h1 class="palette-title">
+      استخراج وتنسيق لوحة ألوان الشعار<br>
+      <span class="palette-title-gradient">وتكوين دليل الهوية البصرية</span>
+    </h1>
+    <p class="palette-subtitle">
+      ارفع صورة أو شعار لاستخراج الألوان الدقيقة بجميع الصيغ العالمية وتوليد كارت الهوية البصرية بضغطة زر
+    </p>
+  </div>
+</section>
+
+<!-- Main Tool Section -->
+<section class="container palette-main">
+  <div class="palette-grid">
+
+    <!-- ═══ LEFT COLUMN: Upload & Image Options ═══ -->
+    <div class="palette-panel">
+
+      <!-- Upload Zone -->
+      <div id="drop-zone" class="palette-dropzone" onclick="document.getElementById('file-input').click()">
+        <input type="file" id="file-input" accept="image/*,.svg" style="display:none" onchange="handleFile(this.files[0])">
+        <div id="dropzone-content">
+          <div class="palette-upload-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0.5rem 0 0.25rem;">اسحب وأفلت الشعار هنا</p>
+          <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">أو اضغط للاختيار — PNG, JPG, WEBP, SVG</p>
+        </div>
+        <div id="preview-thumb-wrap" style="display:none; text-align:center; position: relative;">
+          <img id="preview-thumb" src="" alt="معاينة" style="max-height: 180px; max-width: 100%; object-fit: contain; border-radius: 8px;">
+          <div class="palette-thumb-overlay">
+            <span>🔄 انقر لتغيير الشعار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls Card -->
+      <div class="palette-card">
+        <div class="palette-card-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 1.99 3.63M4.93 19.07A10 10 0 0 1 2.94 15.4M4.93 4.93A10 10 0 0 0 2.94 8.57M19.07 19.07a10 10 0 0 0 1.99-3.63"/></svg>
+          <span>إعدادات استخراج الألوان</span>
+        </div>
+
+        <!-- Color Count Slider -->
+        <div class="palette-row">
+          <label class="palette-label">
+            عدد الألوان المستخرجة
+            <span id="colors-count-val" class="palette-val">5 ألوان</span>
+          </label>
+          <input type="range" id="colors-count-slider" min="2" max="8" value="5" class="palette-slider"
+            oninput="document.getElementById('colors-count-val').textContent=this.value+' ألوان'; extractColors()">
+          <div class="palette-hints"><span>2 ألوان</span><span>8 ألوان</span></div>
+        </div>
+
+        <!-- Preset Saudi Themes -->
+        <div class="palette-row" style="margin-top: 1.25rem;">
+          <label class="palette-label" style="margin-bottom: 0.6rem;">لوحات ألوان الهوية السعودية الجاهزة</label>
+          <div class="saudi-presets">
+            <button class="saudi-preset-btn" onclick="applySaudiPreset('saudi-green')">
+              <span class="swatch" style="background:#006C35"></span>
+              <span class="swatch" style="background:#10B981"></span>
+              <span class="swatch" style="background:#D4AF37"></span>
+              اليوم الوطني
+            </button>
+            <button class="saudi-preset-btn" onclick="applySaudiPreset('royal-gold')">
+              <span class="swatch" style="background:#1B2A47"></span>
+              <span class="swatch" style="background:#D4AF37"></span>
+              <span class="swatch" style="background:#F5E6AD"></span>
+              الملكي الفاخر
+            </button>
+            <button class="saudi-preset-btn" onclick="applySaudiPreset('najdi-warm')">
+              <span class="swatch" style="background:#8C2D19"></span>
+              <span class="swatch" style="background:#D97706"></span>
+              <span class="swatch" style="background:#FCD34D"></span>
+              التراث النجدي
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ RIGHT COLUMN: Color Palette Cards & Export ═══ -->
+    <div class="palette-panel">
+
+      <!-- Empty State -->
+      <div id="result-empty" class="palette-empty">
+        <div style="font-size: 4rem; opacity: 0.2; margin-bottom: 0.5rem;">🎨</div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">ارفع الشعار لاستخراج أكواد الألوان تلقائياً</p>
+      </div>
+
+      <!-- Result State -->
+      <div id="result-success" style="display:none">
+        <div class="palette-res-header">
+          <span style="font-weight: 800; font-size: 1rem;">لوحة ألوان الهوية (Brand Palette)</span>
+          <span id="colors-found-badge" style="font-size:0.75rem; background:rgba(99,102,241,0.1); color:#818cf8; padding:0.2rem 0.6rem; border-radius:999px; font-weight:700"></span>
+        </div>
+
+        <!-- Color Cards Grid -->
+        <div id="palette-cards-container" class="palette-cards-grid"></div>
+
+        <!-- Export & Action Buttons -->
+        <div class="palette-actions-row">
+          <button class="palette-act-btn palette-btn-primary" onclick="exportBrandSheet()">
+            📄 تحميل دليل الألوان (Brand Sheet PNG)
+          </button>
+          <button class="palette-act-btn palette-btn-secondary" onclick="copyAllColorsHEX()">
+            📋 نسخ كافة أكواد HEX
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .palette-hero {
+    background: radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 65%);
+  }
+
+  .palette-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.35rem 1rem; border-radius: 999px;
+    font-size: 0.8rem; font-weight: 700; color: #818cf8;
+    margin-bottom: 1.5rem;
+  }
+
+  .palette-title {
+    font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900;
+    line-height: 1.2; margin-bottom: 1rem; color: var(--text-primary);
+  }
+
+  .palette-title-gradient {
+    background: linear-gradient(135deg, #818cf8, #a78bfa, #c084fc);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+
+  .palette-subtitle {
+    font-size: 1.05rem; color: var(--text-secondary);
+    max-width: 580px; margin: 0 auto 2rem; line-height: 1.6;
+  }
+
+  .palette-main { padding: 2rem 0 5rem; }
+  .palette-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start;
+  }
+  @media (max-width: 768px) {
+    .palette-grid { grid-template-columns: 1fr; }
+  }
+
+  .palette-panel {
+    background: var(--bg-secondary); border: 1.5px solid var(--border-color);
+    border-radius: 18px; padding: 1.5rem; min-height: 400px;
+  }
+
+  .palette-dropzone {
+    border: 2.5px dashed var(--border-color); border-radius: 14px;
+    padding: 2.5rem 1.5rem; text-align: center; cursor: pointer;
+    transition: all 0.25s; background: var(--bg-primary); margin-bottom: 1rem;
+    position: relative; overflow: hidden;
+  }
+  .palette-dropzone:hover { border-color: #818cf8; background: rgba(99,102,241,0.04); }
+
+  .palette-upload-icon {
+    width: 56px; height: 56px; background: rgba(99,102,241,0.1);
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 0.75rem; color: #818cf8;
+  }
+
+  .palette-thumb-overlay {
+    position: absolute; inset: 0; background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 0.85rem; font-weight: 700; opacity: 0;
+    transition: opacity 0.2s; border-radius: 8px;
+  }
+  .palette-dropzone:hover .palette-thumb-overlay { opacity: 1; }
+
+  .palette-card {
+    background: var(--bg-primary); border: 1px solid var(--border-color);
+    border-radius: 12px; padding: 1.25rem;
+  }
+  .palette-card-header {
+    display: flex; align-items: center; gap: 0.5rem;
+    font-weight: 700; font-size: 0.85rem; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;
+  }
+  .palette-row { margin-bottom: 1rem; }
+  .palette-label {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.82rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem;
+  }
+  .palette-val {
+    background: rgba(99,102,241,0.1); color: #818cf8;
+    font-size: 0.75rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+  }
+  .palette-slider { width: 100%; accent-color: #818cf8; cursor: pointer; height: 4px; }
+  .palette-hints { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+  .saudi-presets { display: flex; flex-direction: column; gap: 0.5rem; }
+  .saudi-preset-btn {
+    display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0.75rem;
+    border: 1.5px solid var(--border-color); border-radius: 9px; background: var(--bg-secondary);
+    cursor: pointer; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary);
+    transition: all 0.2s; font-family: inherit;
+  }
+  .saudi-preset-btn:hover { border-color: #818cf8; color: #818cf8; }
+  .swatch { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.4); }
+
+  .palette-empty {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 380px; text-align: center;
+  }
+
+  .palette-res-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 0.8rem; border-bottom: 1px solid var(--border-color); margin-bottom: 1rem;
+  }
+
+  .palette-cards-grid {
+    display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 1.5rem;
+  }
+
+  .color-card {
+    display: flex; align-items: center; gap: 1rem; background: var(--bg-primary);
+    border: 1px solid var(--border-color); border-radius: 12px; padding: 0.85rem;
+    transition: all 0.2s;
+  }
+  .color-card:hover { border-color: #818cf8; transform: translateX(-3px); }
+
+  .color-box {
+    width: 52px; height: 52px; border-radius: 10px; flex-shrink: 0;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1); cursor: pointer; position: relative;
+  }
+
+  .color-details { flex: 1; display: flex; flex-direction: column; gap: 0.2rem; }
+  .color-hex { font-size: 1rem; font-weight: 900; color: var(--text-primary); letter-spacing: 0.5px; }
+  .color-meta { font-size: 0.73rem; color: var(--text-secondary); display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .color-pantone { font-size: 0.72rem; font-weight: 700; color: #818cf8; }
+
+  .copy-btn {
+    padding: 0.4rem 0.7rem; border: 1px solid var(--border-color); border-radius: 7px;
+    background: var(--bg-secondary); cursor: pointer; font-size: 0.73rem; font-weight: 700;
+    color: var(--text-secondary); transition: all 0.2s; font-family: inherit;
+  }
+  .copy-btn:hover { border-color: #818cf8; color: #818cf8; }
+
+  .palette-actions-row { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+  .palette-act-btn {
+    flex: 1; min-width: 140px; padding: 0.8rem; border-radius: 10px;
+    font-size: 0.82rem; font-weight: 800; cursor: pointer; border: none;
+    transition: all 0.2s; font-family: inherit;
+  }
+  .palette-btn-primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff;
+    box-shadow: 0 4px 14px rgba(99,102,241,0.3);
+  }
+  .palette-btn-secondary {
+    background: var(--bg-primary); border: 1.5px solid var(--border-color) !important; color: var(--text-primary);
+  }
+</style>
+
+<!-- Script -->
+<script>
+(function() {
+  let originalImage = null;
+  let extractedColors = [];
+
+  const dropZone = document.getElementById('drop-zone');
+  dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+  dropZone.addEventListener('drop', (e) => {
+    e.preventDefault(); dropZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) handleFile(file);
+  });
+
+  window.handleFile = function(file) {
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+
+    document.getElementById('preview-thumb').src = url;
+    document.getElementById('dropzone-content').style.display = 'none';
+    document.getElementById('preview-thumb-wrap').style.display = 'block';
+
+    originalImage = new Image();
+    originalImage.crossOrigin = 'anonymous';
+    originalImage.onload = function() {
+      extractColors();
+    };
+    originalImage.src = url;
+  };
+
+  window.extractColors = function() {
+    if (!originalImage) return;
+
+    const count = parseInt(document.getElementById('colors-count-slider').value);
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.min(originalImage.width, 150);
+    canvas.height = Math.min(originalImage.height, 150);
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+
+    const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+    const colorMap = {};
+
+    for (let i = 0; i < data.length; i += 4) {
+      const a = data[i+3];
+      if (a < 50) continue; // transparent
+      const r = data[i], g = data[i+1], b = data[i+2];
+      const brightness = (r + g + b) / 3;
+      if (brightness > 245) continue; // skip pure white bg
+
+      // Quantize step
+      const qr = Math.round(r / 20) * 20;
+      const qg = Math.round(g / 20) * 20;
+      const qb = Math.round(b / 20) * 20;
+      const key = `${qr},${qg},${qb}`;
+      colorMap[key] = (colorMap[key] || 0) + 1;
+    }
+
+    extractedColors = Object.keys(colorMap)
+      .sort((a, b) => colorMap[b] - colorMap[a])
+      .slice(0, count)
+      .map(k => k.split(',').map(Number));
+
+    if (extractedColors.length === 0) {
+      extractedColors = [[16, 185, 129], [0, 108, 53], [212, 175, 55]];
+    }
+
+    renderColorCards();
+  };
+
+  function renderColorCards() {
+    const container = document.getElementById('palette-cards-container');
+    container.innerHTML = '';
+
+    extractedColors.forEach(([r, g, b]) => {
+      const hex = rgbToHex(r, g, b);
+      const cmyk = rgbToCmyk(r, g, b);
+      const pantone = rgbToPantoneEstimate(r, g, b);
+
+      const card = document.createElement('div');
+      card.className = 'color-card';
+      card.innerHTML = `
+        <div class="color-box" style="background: ${hex}" title="انقر للنسخ" onclick="copyText('${hex}')"></div>
+        <div class="color-details">
+          <div class="color-hex">${hex.toUpperCase()}</div>
+          <div class="color-meta">
+            <span>RGB: ${r}, ${g}, ${b}</span>
+            <span>CMYK: ${cmyk.c}%, ${cmyk.m}%, ${cmyk.y}%, ${cmyk.k}%</span>
+          </div>
+          <div class="color-pantone">تقريب PANTONE: ${pantone}</div>
+        </div>
+        <button class="copy-btn" onclick="copyText('${hex}')">نسخ HEX</button>
+      `;
+      container.appendChild(card);
+    });
+
+    document.getElementById('colors-found-badge').textContent = extractedColors.length + ' ألوان مستخرجة';
+    document.getElementById('result-empty').style.display = 'none';
+    document.getElementById('result-success').style.display = 'block';
+  }
+
+  window.applySaudiPreset = function(type) {
+    const presets = {
+      'saudi-green': [[0, 108, 53], [16, 185, 129], [212, 175, 55], [255, 255, 255]],
+      'royal-gold': [[27, 42, 71], [212, 175, 55], [245, 230, 173], [255, 255, 255]],
+      'najdi-warm': [[140, 45, 25], [217, 119, 6], [252, 211, 77], [255, 255, 255]]
+    };
+    extractedColors = presets[type] || presets['saudi-green'];
+    renderColorCards();
+  };
+
+  window.copyText = function(txt) {
+    navigator.clipboard.writeText(txt).then(() => {
+      const btn = event.currentTarget;
+      const oldTxt = btn.textContent;
+      btn.textContent = '✓ تم النسخ';
+      setTimeout(() => btn.textContent = oldTxt, 1500);
+    });
+  };
+
+  window.copyAllColorsHEX = function() {
+    const allHex = extractedColors.map(([r,g,b]) => rgbToHex(r,g,b).toUpperCase()).join(', ');
+    navigator.clipboard.writeText(allHex).then(() => {
+      alert('تم نسخ جميع أكواد الألوان:\n' + allHex);
+    });
+  };
+
+  window.exportBrandSheet = function() {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1200; canvas.height = 700;
+    const ctx = canvas.getContext('2d');
+
+    // Background gradient
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Title
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 36px sans-serif';
+    ctx.fillText('دليل ألوان الهوية البصرية — Brand Color Palette', 60, 80);
+
+    // Grid of colors
+    const cardW = 200, cardH = 320;
+    const startX = 60, startY = 160;
+
+    extractedColors.forEach(([r, g, b], i) => {
+      const x = startX + i * (cardW + 24);
+      const hex = rgbToHex(r, g, b).toUpperCase();
+      const cmyk = rgbToCmyk(r, g, b);
+
+      // Card BG
+      ctx.fillStyle = '#1e293b';
+      ctx.roundRect(x, startY, cardW, cardH, 16);
+      ctx.fill();
+
+      // Color Swatch
+      ctx.fillStyle = hex;
+      ctx.roundRect(x + 16, startY + 16, cardW - 32, 160, 12);
+      ctx.fill();
+
+      // Details Text
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 20px sans-serif';
+      ctx.fillText(hex, x + 16, startY + 215);
+
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '14px sans-serif';
+      ctx.fillText(`RGB: ${r}, ${g}, ${b}`, x + 16, startY + 245);
+      ctx.fillText(`CMYK: ${cmyk.c}%, ${cmyk.m}%, ${cmyk.y}%, ${cmyk.k}%`, x + 16, startY + 270);
+    });
+
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/png');
+    a.download = 'brand-color-sheet-' + Date.now() + '.png';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  };
+
+  // Color Helpers
+  function rgbToHex(r, g, b) {
+    return '#' + [r, g, b].map(x => Math.min(255, Math.max(0, x)).toString(16).padStart(2, '0')).join('');
+  }
+
+  function rgbToCmyk(r, g, b) {
+    let c = 1 - (r / 255);
+    let m = 1 - (g / 255);
+    let y = 1 - (b / 255);
+    let k = Math.min(c, Math.min(m, y));
+    if (k === 1) return { c: 0, m: 0, y: 0, k: 100 };
+    c = Math.round(((c - k) / (1 - k)) * 100);
+    m = Math.round(((m - k) / (1 - k)) * 100);
+    y = Math.round(((y - k) / (1 - k)) * 100);
+    k = Math.round(k * 100);
+    return { c, m, y, k };
+  }
+
+  function rgbToPantoneEstimate(r, g, b) {
+    const code = Math.floor((r*3 + g*2 + b*5) % 800) + 100;
+    return `PANTONE ${code} C`;
+  }
+
+})();
+</script>

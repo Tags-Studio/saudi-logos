@@ -1,0 +1,579 @@
+<!-- =====================================================
+     أداة الموك آب المباشر والشبكة الهندسية للشعار
+     Instant Mockup & Logo Construction Grid Generator
+     ===================================================== -->
+
+<!-- Hero Section -->
+<section class="mockup-hero">
+  <div class="container" style="position: relative; z-index: 1; text-align: center; padding: 3.5rem 0 2rem;">
+    <div class="mockup-badge">
+      <span>📐</span>
+      <span>مُولّد الموك آب والشبكة الهندسية للشعار</span>
+      <span>⚡</span>
+    </div>
+    <h1 class="mockup-title">
+      معاينة الشعار على الموك آب<br>
+      <span class="mockup-title-gradient">ورسم الشبكة الهندسية فوراً</span>
+    </h1>
+    <p class="mockup-subtitle">
+      ارفع الشعار لعرضه فورياً على لوحات 3D وكروت شخصية وأوراق رسمية، أو رسم شبكة النسبة الذهبية (Golden Ratio) فوقه
+    </p>
+  </div>
+</section>
+
+<!-- Main Tool Section -->
+<section class="container mockup-main">
+  <div class="mockup-grid">
+
+    <!-- ═══ LEFT COLUMN: Upload & Controls ═══ -->
+    <div class="mockup-panel">
+
+      <!-- Upload Zone -->
+      <div id="drop-zone" class="mockup-dropzone" onclick="document.getElementById('file-input').click()">
+        <input type="file" id="file-input" accept="image/*,.svg" style="display:none" onchange="handleFile(this.files[0])">
+        <div id="dropzone-content">
+          <div class="mockup-upload-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0.5rem 0 0.25rem;">اسحب وأفلت الشعار هنا</p>
+          <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">أو اضغط للاختيار — PNG, JPG, WEBP, SVG</p>
+        </div>
+        <div id="preview-thumb-wrap" style="display:none; text-align:center; position: relative;">
+          <img id="preview-thumb" src="" alt="معاينة" style="max-height: 160px; max-width: 100%; object-fit: contain; border-radius: 8px;">
+          <div class="mockup-thumb-overlay">
+            <span>🔄 انقر لتغيير الشعار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Tool Tabs -->
+      <div class="tool-tabs">
+        <button id="tab-mockup" class="tab-btn active" onclick="switchToolTab('mockup')">📦 مولّد الموك آب</button>
+        <button id="tab-grid" class="tab-btn" onclick="switchToolTab('grid')">📐 الشبكة الهندسية (Grid)</button>
+      </div>
+
+      <!-- Mockup Controls Card -->
+      <div id="mockup-controls-card" class="mockup-card">
+        <div class="mockup-card-header">
+          <span>اختيار نوع الموك آب</span>
+        </div>
+
+        <div class="mockup-preset-grid">
+          <button class="mockup-type-btn active" id="mtype-wall" onclick="setMockupType('wall')">
+            <span class="m-icon">🏢</span>
+            <span>لوحة جدارية 3D</span>
+          </button>
+
+          <button class="mockup-type-btn" id="mtype-card" onclick="setMockupType('card')">
+            <span class="m-icon">💳</span>
+            <span>كارت شخصي</span>
+          </button>
+
+          <button class="mockup-type-btn" id="mtype-paper" onclick="setMockupType('paper')">
+            <span class="m-icon">📄</span>
+            <span>أوراق رسمية</span>
+          </button>
+
+          <button class="mockup-type-btn" id="mtype-shirt" onclick="setMockupType('shirt')">
+            <span class="m-icon">👕</span>
+            <span>قماش وتيشرت</span>
+          </button>
+        </div>
+
+        <!-- Scale slider -->
+        <div class="mockup-row" style="margin-top:1.2rem">
+          <label class="mockup-label">
+            حجم الشعار
+            <span id="scale-val" class="mockup-val">100%</span>
+          </label>
+          <input type="range" id="scale-slider" min="30" max="180" value="100" class="mockup-slider"
+            oninput="document.getElementById('scale-val').textContent=this.value+'%'; renderMockup()">
+        </div>
+
+        <!-- Shadow Intensity -->
+        <div class="mockup-row">
+          <label class="mockup-label">
+            شدة البروز والظلال
+            <span id="shadow-val" class="mockup-val">50%</span>
+          </label>
+          <input type="range" id="shadow-slider" min="0" max="100" value="50" class="mockup-slider"
+            oninput="document.getElementById('shadow-val').textContent=this.value+'%'; renderMockup()">
+        </div>
+      </div>
+
+      <!-- Grid Controls Card (hidden by default) -->
+      <div id="grid-controls-card" class="mockup-card" style="display:none">
+        <div class="mockup-card-header">
+          <span>خيارات الشبكة الهندسية</span>
+        </div>
+
+        <div class="grid-checkboxes">
+          <label class="grid-cb-label">
+            <input type="checkbox" id="cb-circles" checked onchange="renderGrid()"> <span>🟡 دواير النسبة الذهبية (Golden Ratio)</span>
+          </label>
+          <label class="grid-cb-label">
+            <input type="checkbox" id="cb-axes" checked onchange="renderGrid()"> <span>🌐 المحاور الرئيسية (Center Axes)</span>
+          </label>
+          <label class="grid-cb-label">
+            <input type="checkbox" id="cb-diagonals" checked onchange="renderGrid()"> <span>📐 الخطوط المائلة (Diagonals)</span>
+          </label>
+          <label class="grid-cb-label">
+            <input type="checkbox" id="cb-box" checked onchange="renderGrid()"> <span>🔳 الإطار الخارجي (Bounding Box)</span>
+          </label>
+        </div>
+
+        <!-- Grid Color -->
+        <div class="mockup-row" style="margin-top:1rem">
+          <label class="mockup-label">لون خطوط الشبكة</label>
+          <div style="display:flex; gap:0.5rem">
+            <input type="color" id="grid-color" value="#818cf8" style="width:100%; height:36px; border-radius:8px; border:1px solid var(--border-color); cursor:pointer" onchange="renderGrid()">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ RIGHT COLUMN: Output Preview & Download ═══ -->
+    <div class="mockup-panel">
+
+      <!-- Empty State -->
+      <div id="result-empty" class="mockup-empty">
+        <div style="font-size: 4rem; opacity: 0.2; margin-bottom: 0.5rem;">📦</div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">ارفع الشعار لعرض الموك آب والشبكة الهندسية فوراً</p>
+      </div>
+
+      <!-- Result State -->
+      <div id="result-success" style="display:none">
+        <div class="mockup-res-header">
+          <span id="result-title-text" style="font-weight: 800; font-size: 1rem;">معاينة الموك آب الجداري</span>
+          <span class="mockup-res-dot"></span>
+        </div>
+
+        <!-- Canvas Preview -->
+        <div class="mockup-preview-wrap">
+          <canvas id="output-canvas" style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius:12px;"></canvas>
+        </div>
+
+        <!-- Download Button -->
+        <button class="mockup-dl-btn" onclick="downloadResult()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          تحميل الصورة عالية الدقة (HD PNG)
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  .mockup-hero {
+    background: radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 65%);
+  }
+
+  .mockup-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.35rem 1rem; border-radius: 999px;
+    font-size: 0.8rem; font-weight: 700; color: #818cf8;
+    margin-bottom: 1.5rem;
+  }
+
+  .mockup-title {
+    font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900;
+    line-height: 1.2; margin-bottom: 1rem; color: var(--text-primary);
+  }
+
+  .mockup-title-gradient {
+    background: linear-gradient(135deg, #818cf8, #a78bfa, #c084fc);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+
+  .mockup-subtitle {
+    font-size: 1.05rem; color: var(--text-secondary);
+    max-width: 580px; margin: 0 auto 2rem; line-height: 1.6;
+  }
+
+  .mockup-main { padding: 2rem 0 5rem; }
+  .mockup-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start;
+  }
+  @media (max-width: 768px) {
+    .mockup-grid { grid-template-columns: 1fr; }
+  }
+
+  .mockup-panel {
+    background: var(--bg-secondary); border: 1.5px solid var(--border-color);
+    border-radius: 18px; padding: 1.5rem; min-height: 400px;
+  }
+
+  .mockup-dropzone {
+    border: 2.5px dashed var(--border-color); border-radius: 14px;
+    padding: 2rem 1.5rem; text-align: center; cursor: pointer;
+    transition: all 0.25s; background: var(--bg-primary); margin-bottom: 1rem;
+    position: relative; overflow: hidden;
+  }
+  .mockup-dropzone:hover { border-color: #818cf8; background: rgba(99,102,241,0.04); }
+
+  .mockup-upload-icon {
+    width: 52px; height: 52px; background: rgba(99,102,241,0.1);
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 0.6rem; color: #818cf8;
+  }
+
+  .mockup-thumb-overlay {
+    position: absolute; inset: 0; background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 0.85rem; font-weight: 700; opacity: 0;
+    transition: opacity 0.2s; border-radius: 8px;
+  }
+  .mockup-dropzone:hover .mockup-thumb-overlay { opacity: 1; }
+
+  .tool-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+  .tab-btn {
+    flex: 1; padding: 0.6rem; border: 1.5px solid var(--border-color);
+    border-radius: 10px; background: var(--bg-primary); cursor: pointer;
+    font-size: 0.82rem; font-weight: 800; color: var(--text-secondary);
+    transition: all 0.2s; font-family: inherit;
+  }
+  .tab-btn.active {
+    border-color: #818cf8; color: #818cf8; background: rgba(99,102,241,0.08);
+  }
+
+  .mockup-card {
+    background: var(--bg-primary); border: 1px solid var(--border-color);
+    border-radius: 12px; padding: 1.25rem;
+  }
+  .mockup-card-header {
+    font-weight: 700; font-size: 0.85rem; color: var(--text-secondary);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;
+  }
+
+  .mockup-preset-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .mockup-type-btn {
+    padding: 0.75rem 0.5rem; border: 1.5px solid var(--border-color);
+    border-radius: 10px; background: var(--bg-secondary); cursor: pointer;
+    display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+    font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);
+    transition: all 0.2s; font-family: inherit;
+  }
+  .mockup-type-btn.active {
+    border-color: #818cf8; color: #818cf8; background: rgba(99,102,241,0.08);
+  }
+  .m-icon { font-size: 1.4rem; }
+
+  .mockup-row { margin-bottom: 1rem; }
+  .mockup-label {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.82rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.4rem;
+  }
+  .mockup-val {
+    background: rgba(99,102,241,0.1); color: #818cf8;
+    font-size: 0.75rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+  }
+  .mockup-slider { width: 100%; accent-color: #818cf8; cursor: pointer; height: 4px; }
+
+  .grid-checkboxes { display: flex; flex-direction: column; gap: 0.6rem; }
+  .grid-cb-label {
+    display: flex; align-items: center; gap: 0.5rem; font-size: 0.82rem;
+    font-weight: 700; color: var(--text-primary); cursor: pointer;
+  }
+
+  .mockup-empty {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 380px; text-align: center;
+  }
+
+  .mockup-res-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 0.8rem; border-bottom: 1px solid var(--border-color); margin-bottom: 1rem;
+  }
+  .mockup-res-dot { width: 8px; height: 8px; background: #818cf8; border-radius: 50%; box-shadow: 0 0 8px #818cf8; }
+
+  .mockup-preview-wrap {
+    background: #0f172a; border-radius: 14px; overflow: hidden;
+    padding: 1rem; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.25rem; border: 1px solid var(--border-color);
+  }
+
+  .mockup-dl-btn {
+    width: 100%; padding: 0.85rem; border-radius: 12px; font-size: 0.9rem;
+    font-weight: 800; cursor: pointer; border: none; font-family: inherit;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff;
+    box-shadow: 0 4px 14px rgba(99,102,241,0.3); display: flex; align-items: center;
+    justify-content: center; gap: 0.5rem; transition: all 0.2s;
+  }
+  .mockup-dl-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(99,102,241,0.4); }
+</style>
+
+<!-- Script -->
+<script>
+(function() {
+  let logoImage = null;
+  let activeTab = 'mockup'; // 'mockup' or 'grid'
+  let mockupType = 'wall';  // 'wall', 'card', 'paper', 'shirt'
+
+  const dropZone = document.getElementById('drop-zone');
+  dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+  dropZone.addEventListener('drop', (e) => {
+    e.preventDefault(); dropZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) handleFile(file);
+  });
+
+  window.handleFile = function(file) {
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+
+    document.getElementById('preview-thumb').src = url;
+    document.getElementById('dropzone-content').style.display = 'none';
+    document.getElementById('preview-thumb-wrap').style.display = 'block';
+
+    logoImage = new Image();
+    logoImage.crossOrigin = 'anonymous';
+    logoImage.onload = function() {
+      renderActiveView();
+    };
+    logoImage.src = url;
+  };
+
+  window.switchToolTab = function(tab) {
+    activeTab = tab;
+    document.getElementById('tab-mockup').classList.toggle('active', tab === 'mockup');
+    document.getElementById('tab-grid').classList.toggle('active', tab === 'grid');
+
+    document.getElementById('mockup-controls-card').style.display = tab === 'mockup' ? 'block' : 'none';
+    document.getElementById('grid-controls-card').style.display = tab === 'grid' ? 'block' : 'none';
+
+    renderActiveView();
+  };
+
+  window.setMockupType = function(type) {
+    mockupType = type;
+    document.querySelectorAll('.mockup-type-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('mtype-' + type).classList.add('active');
+    renderMockup();
+  };
+
+  function renderActiveView() {
+    if (!logoImage) return;
+    document.getElementById('result-empty').style.display = 'none';
+    document.getElementById('result-success').style.display = 'block';
+
+    if (activeTab === 'mockup') {
+      renderMockup();
+    } else {
+      renderGrid();
+    }
+  }
+
+  window.renderMockup = function() {
+    if (!logoImage) return;
+    document.getElementById('result-title-text').textContent = 'معاينة الموك آب';
+
+    const canvas = document.getElementById('output-canvas');
+    canvas.width = 1000; canvas.height = 650;
+    const ctx = canvas.getContext('2d');
+
+    const scale = parseInt(document.getElementById('scale-slider').value) / 100;
+    const shadowIntensity = parseInt(document.getElementById('shadow-slider').value) / 100;
+
+    // Draw Mockup Backgrounds
+    if (mockupType === 'wall') {
+      // Dark Studio Wall Texture
+      const grad = ctx.createRadialGradient(500, 325, 50, 500, 325, 550);
+      grad.addColorStop(0, '#1e293b');
+      grad.addColorStop(1, '#0f172a');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1000, 650);
+
+      // Subtly embossed wall grid
+      ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+      ctx.lineWidth = 1;
+      for(let x=0; x<1000; x+=40) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,650); ctx.stroke(); }
+
+      // Logo 3D Shadow
+      const logoW = logoImage.width * scale * (400 / logoImage.width);
+      const logoH = logoImage.height * scale * (400 / logoImage.width);
+      const lx = (1000 - logoW) / 2;
+      const ly = (650 - logoH) / 2;
+
+      ctx.save();
+      ctx.shadowColor = `rgba(0, 0, 0, ${0.7 * shadowIntensity})`;
+      ctx.shadowBlur = 30 * shadowIntensity;
+      ctx.shadowOffsetX = 12 * shadowIntensity;
+      ctx.shadowOffsetY = 16 * shadowIntensity;
+
+      ctx.drawImage(logoImage, lx, ly, logoW, logoH);
+      ctx.restore();
+
+    } else if (mockupType === 'card') {
+      // Business Card Angle
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0, 0, 1000, 650);
+
+      // Card Base
+      ctx.save();
+      ctx.translate(500, 325);
+      ctx.rotate(-0.08);
+
+      ctx.shadowColor = 'rgba(0,0,0,0.6)';
+      ctx.shadowBlur = 40;
+      ctx.shadowOffsetY = 20;
+
+      ctx.fillStyle = '#ffffff';
+      ctx.roundRect(-300, -180, 600, 360, 16);
+      ctx.fill();
+      ctx.shadowColor = 'transparent';
+
+      // Logo on card
+      const logoW = 220 * scale;
+      const logoH = (logoImage.height / logoImage.width) * logoW;
+      ctx.drawImage(logoImage, -logoW/2, -logoH/2, logoW, logoH);
+
+      // Card Subtle Shine
+      const shineGrad = ctx.createLinearGradient(-300, -180, 300, 180);
+      shineGrad.addColorStop(0, 'rgba(255,255,255,0.2)');
+      shineGrad.addColorStop(0.5, 'rgba(255,255,255,0)');
+      shineGrad.addColorStop(1, 'rgba(0,0,0,0.05)');
+      ctx.fillStyle = shineGrad;
+      ctx.roundRect(-300, -180, 600, 360, 16);
+      ctx.fill();
+
+      ctx.restore();
+
+    } else if (mockupType === 'paper') {
+      // Paper Letterhead
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(0, 0, 1000, 650);
+
+      ctx.save();
+      ctx.translate(500, 325);
+
+      // Paper Shadow
+      ctx.shadowColor = 'rgba(0,0,0,0.5)';
+      ctx.shadowBlur = 35; ctx.shadowOffsetY = 15;
+
+      ctx.fillStyle = '#f8fafc';
+      ctx.fillRect(-220, -280, 440, 560);
+      ctx.shadowColor = 'transparent';
+
+      // Logo on top header of letterhead
+      const logoW = 140 * scale;
+      const logoH = (logoImage.height / logoImage.width) * logoW;
+      ctx.drawImage(logoImage, -logoW/2, -240, logoW, logoH);
+
+      // Letter text lines simulation
+      ctx.fillStyle = '#cbd5e1';
+      for(let y = -140; y < 220; y += 22) {
+        ctx.fillRect(-170, y, 340 * (y % 40 === 0 ? 0.7 : 1), 6);
+      }
+      ctx.restore();
+
+    } else if (mockupType === 'shirt') {
+      // Fabric / Apparel Mockup
+      ctx.fillStyle = '#090d16';
+      ctx.fillRect(0, 0, 1000, 650);
+
+      // Fabric texture
+      ctx.fillStyle = '#1e293b';
+      ctx.roundRect(250, 60, 500, 530, 24);
+      ctx.fill();
+
+      const logoW = 260 * scale;
+      const logoH = (logoImage.height / logoImage.width) * logoW;
+      const lx = (1000 - logoW) / 2;
+      const ly = (650 - logoH) / 2;
+
+      ctx.save();
+      ctx.globalCompositeOperation = 'source-over';
+      ctx.drawImage(logoImage, lx, ly, logoW, logoH);
+      ctx.restore();
+    }
+  };
+
+  window.renderGrid = function() {
+    if (!logoImage) return;
+    document.getElementById('result-title-text').textContent = 'معاينة الشبكة الهندسية (Golden Ratio Grid)';
+
+    const canvas = document.getElementById('output-canvas');
+    canvas.width = 1000; canvas.height = 650;
+    const ctx = canvas.getContext('2d');
+
+    const gridColor = document.getElementById('grid-color').value || '#818cf8';
+
+    // Dark Background
+    ctx.fillStyle = '#0f172a';
+    ctx.fillRect(0, 0, 1000, 650);
+
+    // Draw logo centered
+    const maxW = 400, maxH = 400;
+    let logoW = maxW;
+    let logoH = (logoImage.height / logoImage.width) * logoW;
+    if (logoH > maxH) {
+      logoH = maxH;
+      logoW = (logoImage.width / logoImage.height) * logoH;
+    }
+    const lx = (1000 - logoW) / 2;
+    const ly = (650 - logoH) / 2;
+
+    ctx.save();
+    ctx.globalAlpha = 0.85;
+    ctx.drawImage(logoImage, lx, ly, logoW, logoH);
+    ctx.restore();
+
+    ctx.strokeStyle = gridColor;
+    ctx.lineWidth = 1.5;
+
+    const cx = 500, cy = 325;
+
+    // Bounding Box
+    if (document.getElementById('cb-box').checked) {
+      ctx.strokeRect(lx, ly, logoW, logoH);
+    }
+
+    // Main Axes
+    if (document.getElementById('cb-axes').checked) {
+      ctx.beginPath();
+      ctx.moveTo(cx, 50); ctx.lineTo(cx, 600);
+      ctx.moveTo(100, cy); ctx.lineTo(900, cy);
+      ctx.stroke();
+    }
+
+    // Diagonals
+    if (document.getElementById('cb-diagonals').checked) {
+      ctx.beginPath();
+      ctx.moveTo(lx, ly); ctx.lineTo(lx + logoW, ly + logoH);
+      ctx.moveTo(lx + logoW, ly); ctx.lineTo(lx, ly + logoH);
+      ctx.stroke();
+    }
+
+    // Golden Ratio Circles
+    if (document.getElementById('cb-circles').checked) {
+      const baseR = Math.min(logoW, logoH) / 2;
+      const ratios = [1.618, 1, 0.618, 0.382, 0.236];
+      ratios.forEach(r => {
+        ctx.beginPath();
+        ctx.arc(cx, cy, baseR * (r / 1.618), 0, Math.PI * 2);
+        ctx.stroke();
+      });
+    }
+  };
+
+  window.downloadResult = function() {
+    const canvas = document.getElementById('output-canvas');
+    if (!canvas) return;
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/png');
+    a.download = 'saudi-logos-mockup-' + Date.now() + '.png';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  };
+
+})();
+</script>
