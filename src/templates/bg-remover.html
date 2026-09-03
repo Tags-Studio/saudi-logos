@@ -152,8 +152,33 @@
         </div>
 
         <!-- Canvas Preview Container -->
-        <div class="bgremover-preview-wrap checkers-bg" id="preview-container">
-          <canvas id="output-canvas" style="max-width: 100%; max-height: 380px; object-fit: contain;"></canvas>
+        <div class="bgremover-preview-wrap checkers-bg" id="preview-container" style="position: relative;">
+          <canvas id="output-canvas" style="max-width: 100%; max-height: 380px; object-fit: contain; cursor: crosshair;"></canvas>
+        </div>
+
+        <!-- Manual Correction Toolbar (فرشاة التعديل والترميم اليدوي) -->
+        <div class="bgremover-brush-toolbar">
+          <div class="brush-tools-header">
+            <span style="font-weight: 700; font-size: 0.82rem; color: var(--text-primary);">🛠️ فرشاة التعديل والترميم اليدوي (مرّر على الأجهزة المستعادة):</span>
+          </div>
+          <div class="brush-btn-row">
+            <button id="btn-brush-restore" class="brush-btn active" onclick="setBrushMode('restore')">
+              🖌️ استعادة الأجزاء (Restore)
+            </button>
+            <button id="btn-brush-erase" class="brush-btn" onclick="setBrushMode('erase')">
+              🧹 مسح زائد (Erase)
+            </button>
+            <button class="brush-btn" onclick="resetToOriginal()">
+              ↺ إعادة التعيين
+            </button>
+          </div>
+          <div class="brush-size-row">
+            <label style="font-size:0.75rem; font-weight:700; color:var(--text-secondary)">
+              حجم الفرشاة: <span id="brush-size-val" class="bgremover-val">30px</span>
+            </label>
+            <input type="range" id="brush-size-slider" min="5" max="100" value="30" class="bgremover-slider"
+              oninput="document.getElementById('brush-size-val').textContent=this.value+'px'; brushSize=parseInt(this.value)">
+          </div>
         </div>
 
         <!-- Download & Export Buttons -->
@@ -333,6 +358,25 @@
     box-shadow: 0 4px 14px rgba(99,102,241,0.3);
   }
 
+  /* Brush Toolbar */
+  .bgremover-brush-toolbar {
+    background: var(--bg-primary); border: 1px solid var(--border-color);
+    border-radius: 12px; padding: 0.85rem; margin-bottom: 1.25rem;
+    display: flex; flex-direction: column; gap: 0.6rem;
+  }
+  .brush-btn-row { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .brush-btn {
+    padding: 0.4rem 0.7rem; border: 1.5px solid var(--border-color);
+    border-radius: 8px; background: var(--bg-secondary); cursor: pointer;
+    font-size: 0.76rem; font-weight: 700; color: var(--text-secondary);
+    transition: all 0.2s; font-family: inherit;
+  }
+  .brush-btn.active {
+    border-color: #10b981; color: #10b981; background: rgba(16,185,129,0.08);
+  }
+  .brush-btn:hover:not(.active) { border-color: #10b981; color: #10b981; }
+  .brush-size-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
   .bgremover-spinner {
     width: 48px; height: 48px; border: 4px solid var(--border-color);
     border-top-color: #10b981; border-radius: 50%;
@@ -463,31 +507,137 @@
       const ctx = canvas.getContext('2d');
       ctx.drawImage(originalImage, 0, 0);
 
-      const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const data = imgData.data;
-
       const tolerance = parseInt(document.getElementById('tolerance-slider').value) * 2.55;
       const feather = parseInt(document.getElementById('feather-slider').value);
       const [tr, tg, tb] = targetColorRGB;
 
-      for (let i = 0; i < data.length; i += 4) {
-        const r = data[i], g = data[i+1], b = data[i+2];
-
-        const dist = Math.sqrt((r - tr)**2 + (g - tg)**2 + (b - tb)**2);
-
-        if (dist <= tolerance) {
-          if (feather > 0 && dist > tolerance - (feather * 15)) {
-            const alphaFactor = (dist - (tolerance - feather * 15)) / (feather * 15);
-            data[i+3] = Math.round(data[i+3] * alphaFactor);
-          } else {
-            data[i+3] = 0;
+      if (removeMode === 'auto') {
+        // Use Edge-Connected FloodFill so internal white appliances are preserved
+        removeEdgeConnectedBackground(ctx, canvas.width, canvas.height, [tr, tg, tb], tolerance, feather);
+      } else {
+        // Color Picker mode: Remove matching pixel color everywhere
+        const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imgData.data;
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i], g = data[i+1], b = data[i+2];
+          const dist = Math.sqrt((r - tr)**2 + (g - tg)**2 + (b - tb)**2);
+          if (dist <= tolerance) {
+            if (feather > 0 && dist > tolerance - (feather * 15)) {
+              const alphaFactor = (dist - (tolerance - feather * 15)) / (feather * 15);
+              data[i+3] = Math.round(data[i+3] * alphaFactor);
+            } else {
+              data[i+3] = 0;
+            }
           }
         }
+        ctx.putImageData(imgData, 0, 0);
       }
-
-      ctx.putImageData(imgData, 0, 0);
     }
   };
+
+  // ── Edge-connected FloodFill to preserve internal white objects ──────
+  function removeEdgeConnectedBackground(ctx, width, height, targetRGB, tolerance, feather) {
+    const imgData = ctx.getImageData(0, 0, width, height);
+    const data = imgData.data;
+    const visited = new Uint8Array(width * height);
+    const queue = [];
+    const [tr, tg, tb] = targetRGB;
+
+    function isMatch(idx) {
+      const r = data[idx], g = data[idx+1], b = data[idx+2], a = data[idx+3];
+      if (a === 0) return false;
+      const dist = Math.sqrt((r - tr)**2 + (g - tg)**2 + (b - tb)**2);
+      return dist <= tolerance;
+    }
+
+    // Seed border pixels
+    for (let x = 0; x < width; x++) {
+      queue.push(x, 0);
+      queue.push(x, height - 1);
+    }
+    for (let y = 0; y < height; y++) {
+      queue.push(0, y);
+      queue.push(width - 1, y);
+    }
+
+    let head = 0;
+    while (head < queue.length) {
+      const x = queue[head++];
+      const y = queue[head++];
+      const pIdx = y * width + x;
+
+      if (visited[pIdx]) continue;
+      visited[pIdx] = 1;
+
+      const dIdx = pIdx * 4;
+      if (!isMatch(dIdx)) continue;
+
+      data[dIdx + 3] = 0; // Erase outer background pixel
+
+      if (x > 0 && !visited[pIdx - 1]) queue.push(x - 1, y);
+      if (x < width - 1 && !visited[pIdx + 1]) queue.push(x + 1, y);
+      if (y > 0 && !visited[pIdx - width]) queue.push(x, y - 1);
+      if (y < height - 1 && !visited[pIdx + width]) queue.push(x, y + 1);
+    }
+    ctx.putImageData(imgData, 0, 0);
+  }
+
+  // ── Manual Correction Brush Engine ───────────────────────
+  window.brushMode = 'restore'; // 'restore' or 'erase'
+  window.brushSize = 30;
+  let isPainting = false;
+
+  window.setBrushMode = function(mode) {
+    window.brushMode = mode;
+    document.getElementById('btn-brush-restore').classList.toggle('active', mode === 'restore');
+    document.getElementById('btn-brush-erase').classList.toggle('active', mode === 'erase');
+  };
+
+  window.resetToOriginal = function() {
+    if (!originalImage) return;
+    const canvas = document.getElementById('output-canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(originalImage, 0, 0);
+  };
+
+  const outputCanvas = document.getElementById('output-canvas');
+
+  function paintBrush(e) {
+    if (!isPainting || !originalImage) return;
+    const rect = outputCanvas.getBoundingClientRect();
+    const scaleX = outputCanvas.width / rect.width;
+    const scaleY = outputCanvas.height / rect.height;
+
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+    const x = (clientX - rect.left) * scaleX;
+    const y = (clientY - rect.top) * scaleY;
+    const radius = window.brushSize * scaleX;
+
+    const ctx = outputCanvas.getContext('2d');
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+
+    if (window.brushMode === 'restore') {
+      ctx.clip();
+      ctx.drawImage(originalImage, 0, 0, outputCanvas.width, outputCanvas.height);
+    } else {
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.fill();
+    }
+    ctx.restore();
+  }
+
+  outputCanvas.addEventListener('mousedown', (e) => { isPainting = true; paintBrush(e); });
+  outputCanvas.addEventListener('mousemove', (e) => { if (isPainting) paintBrush(e); });
+  window.addEventListener('mouseup', () => { isPainting = false; });
+
+  outputCanvas.addEventListener('touchstart', (e) => { isPainting = true; paintBrush(e); });
+  outputCanvas.addEventListener('touchmove', (e) => { if (isPainting) { e.preventDefault(); paintBrush(e); } });
+  window.addEventListener('touchend', () => { isPainting = false; });
 
   function showState(state) {
     document.getElementById('result-empty').style.display = 'none';
